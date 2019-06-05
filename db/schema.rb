@@ -10,10 +10,73 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_03_162534) do
+ActiveRecord::Schema.define(version: 2019_06_05_135959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: :cascade do |t|
+    t.string "name"
+    t.integer "bridge_id"
+    t.bigint "user_id"
+    t.bigint "bank_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bank_id"], name: "index_accounts_on_bank_id"
+    t.index ["user_id"], name: "index_accounts_on_user_id"
+  end
+
+  create_table "banks", force: :cascade do |t|
+    t.string "name"
+    t.integer "bridge_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.integer "bridge_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "operations", force: :cascade do |t|
+    t.string "description"
+    t.integer "amount"
+    t.date "date"
+    t.integer "bridge_id"
+    t.bigint "user_id"
+    t.bigint "subscription_id"
+    t.bigint "category_id"
+    t.bigint "account_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_operations_on_account_id"
+    t.index ["category_id"], name: "index_operations_on_category_id"
+    t.index ["subscription_id"], name: "index_operations_on_subscription_id"
+    t.index ["user_id"], name: "index_operations_on_user_id"
+  end
+
+  create_table "operators", force: :cascade do |t|
+    t.string "name"
+    t.integer "category"
+    t.integer "unsubcribe_number"
+    t.string "unsubcribe_details"
+    t.string "unsubcribe_address"
+    t.string "logo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer "frequency"
+    t.date "anniversary_date"
+    t.date "next_date"
+    t.bigint "operator_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["operator_id"], name: "index_subscriptions_on_operator_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +90,11 @@ ActiveRecord::Schema.define(version: 2019_06_03_162534) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "accounts", "banks"
+  add_foreign_key "accounts", "users"
+  add_foreign_key "operations", "accounts"
+  add_foreign_key "operations", "categories"
+  add_foreign_key "operations", "subscriptions"
+  add_foreign_key "operations", "users"
+  add_foreign_key "subscriptions", "operators"
 end
