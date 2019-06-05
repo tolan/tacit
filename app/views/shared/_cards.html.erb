@@ -12,8 +12,11 @@
       <div class="card-subscription-price">
         <h2>6,99€</h2>
       </div>
-      <% way = trend(subscription) %>
-      <img src='https://res.cloudinary.com/dpnte3nr8/image/upload/v1559738600/arrow_up_ezbmjn.png' alt="icon" class="card-subscription-trend"/>
+      <% if trend? %>
+        <% direction = up_or_down(subscription) %>
+        <img src='https://res.cloudinary.com/dpnte3nr8/image/upload/v1559738600/arrow_up_ezbmjn.png' alt="icon" class="card-subscription-trend"/>
+      <% end %>
+
     </div>
   </div>
   <div class="card-subscription-right">
@@ -23,6 +26,9 @@
     </div>
   </div>
 </div>
+
+
+//
 
 <% @subscriptions.each do |sub| %>
 <%= render("shared/card", subscription: sub, operator: sub;operator %>
