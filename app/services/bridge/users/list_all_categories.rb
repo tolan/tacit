@@ -1,7 +1,7 @@
 class Bridge::Users::ListAllCategories
   require 'rest-client'
 
-  test = def self.call
+  def self.call
     url = "https://sync.bankin.com/v2/categories?limit=500"
     params = {
       limit: 500,
@@ -14,8 +14,5 @@ class Bridge::Users::ListAllCategories
     })
     JSON.parse(response.body)["resources"]
   end
-
-  valid_names = [""]
-  test.where({id: 165})
 end
 
