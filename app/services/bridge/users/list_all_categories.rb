@@ -10,7 +10,8 @@ class Bridge::Users::ListAllCategories
     }
     response = RestClient.get(url, {
       params: params,
-      "Bankin-Version": "2018-06-15"
+      "Bankin-Version": "2018-06-15",
+      "Accept-Language": "FR"
     })
     JSON.parse(response.body)["resources"]
   end
