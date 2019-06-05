@@ -1,0 +1,67 @@
+.card-subscription {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.card-subscription-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-subscription-bottom-left {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+}
+
+
+.card-subscription-operator h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: $dark-blue;
+}
+
+.card-subscription-frequency p {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: $dark-blue;
+}
+
+.card-subscription-price h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: $vibrant-blue;
+}
+
+.card-subscription-trend {
+  width: 16px;
+  height: 16px;
+}
+
+.card-subscription-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+
+}
+
+.card-subscription-date {
+  display: flex;
+  align-items: center;
+}
