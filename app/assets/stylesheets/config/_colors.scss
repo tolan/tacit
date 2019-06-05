@@ -1,10 +1,12 @@
-// Define variables for your color scheme
+// Variables for color scheme
 
-// For example:
-$red: #FD1015;
-$blue: #167FFB;
-$yellow: #FFC65A;
-$orange: #E67E22;
-$green: #1EDD88;
-$gray: #0E0000;
-$light-gray: #F4F4F4;
+
+$vibrant-blue: #004BB4;
+$vibrant-blue-lighter: #0F5AC8;
+$light-gradient: linear-gradient(180deg, #F1F8FF 0%, #F8FAFC 0.01%, rgba(255, 255, 255, 0) 100%);
+$light-blue: #F8FAFC;
+$dark-blue: #173049;
+$dark-blue-light: #BABABA;
+$green-validation: #3A9679;
+$red-warning: #E16262;
+
