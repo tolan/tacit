@@ -29,7 +29,15 @@
   align-items: center;
 }
 
-.card-subscription-date {
-  display: flex;
-  align-items: center;
+
+.card-synthesis-trend-up.var-amount {
+  color: $red-warning;
+  font-weight: 400;
+
+}
+
+.card-synthesis-trend-down.var-amount {
+  color: $green-validation;
+  font-weight: 400;
+
 }
