@@ -3,7 +3,7 @@ class Bridge::Transactions::List
 
   def self.call(user)
     user.create_bridge_user! unless user.has_bridge_account?
-    access_token = Bridge::Users::GetAccessToken.call(user)
+    access_token = Bridge::Users::GetAccessToken.call(user)["access_token"]
 
     unless Bridge::Users::ValidateEmail.is_needed?(access_token)
       url = "https://sync.bankin.com/v2/transactions"

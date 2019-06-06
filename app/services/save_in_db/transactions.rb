@@ -1,4 +1,4 @@
-class SaveInDb::Transactions
+class
 
   def self.call(bridge_tranactions, user, access_token)
     bridge_tranactions.each do |transaction|
