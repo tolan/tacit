@@ -8,4 +8,13 @@ class User < ApplicationRecord
   has_many :operators, through: :subscriptions
   has_many :accounts
   has_many :banks, through: :accounts
+
+  def has_bridge_account?
+    self.uuid.present?
+  end
+
+  def create_bridge_user!
+    self.uuid = Bridge::Users::Create.call(self)
+    self.save
+  end
 end

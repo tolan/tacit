@@ -7,8 +7,8 @@ class SaveInDb::Transactions
       bridge_account_id = transaction["account"]["id"]
       account = Account.find_by(bridge_id: bridge_account_id)
       if account.nil?
-        bridge_account = Bidge::Accounts::Fetch.call(bridge_account_id, bridge_temp_access_token)
-        # account = Bridge::SaveInDb::Account.call(bridge_account)
+        bridge_account = Bidge::Accounts::Fetch.call(bridge_account_id, access_token)
+        account = Bridge::SaveInDb::Account.call(bridge_account)
       end
       #create or find bank
         #code exteral methods, and call if don't have account and/or bank
