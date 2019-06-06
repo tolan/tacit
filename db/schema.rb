@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_05_135959) do
+ActiveRecord::Schema.define(version: 2019_06_05_180236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "accounts", force: :cascade do |t|
     t.string "name"
-    t.integer "bridge_id"
+    t.bigint "bridge_id"
     t.bigint "user_id"
     t.bigint "bank_id"
     t.datetime "created_at", null: false
@@ -28,14 +28,14 @@ ActiveRecord::Schema.define(version: 2019_06_05_135959) do
 
   create_table "banks", force: :cascade do |t|
     t.string "name"
-    t.integer "bridge_id"
+    t.bigint "bridge_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.integer "bridge_id"
+    t.bigint "bridge_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2019_06_05_135959) do
     t.string "description"
     t.integer "amount"
     t.date "date"
-    t.integer "bridge_id"
+    t.bigint "bridge_id"
     t.bigint "user_id"
     t.bigint "subscription_id"
     t.bigint "category_id"
