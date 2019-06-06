@@ -5,31 +5,23 @@
         <h3><%= subscription.operator.name %></h3>
       </div>
       <div class="card-subscription-frequency">
-        <p><%= subscription.frequency %></p>
+        <p><%= subscription.payment_frequency %></p>
       </div>
     </div>
     <div class="card-subscription-bottom-left">
       <div class="card-subscription-price">
-        <h2>6,99€</h2>
+        <h2><%= subscription.avg_fee  %></h2>
       </div>
-
-<!--       Display trend icon depending on last transactions variation -->
-      <% if trend? %>
-        <% direction = up_or_down(subscription) %>
-        <% image_tag("arrow_#{direction}.png", class: "card-subscription-trend") %>
+      <!--  Unless it's a new sub, display trend icon - up, down, flat - depending on last transactions variation -->
+      <% unless subscription.new_sub? %>
+        <% image_tag("icons/#{ subscription.trend }.png", class: "card-subscription-trend") %>
       <% end %>
     </div>
   </div>
   <div class="card-subscription-right">
-    <img src="https://res.cloudinary.com/dpnte3nr8/image/upload/v1559739406/n26_l6turg.png" alt="logo" class="card-subscription-logo">
+    <% image_tag( subscription.operator.image , class: "card-subscription-logo") %>
     <div class="card-subscription-date">
-      <p><strong>4</strong>mai</p>
+      <p><%=  hightlight( subscription.time_before_next_payment , /\d/, highlighter: '<strong>\1</strong>') %></p>
     </div>
   </div>
 </div>
-
-
-//
-
-
-<%= render("shared/card", subscription: @sub, operator: sub;operator %>
