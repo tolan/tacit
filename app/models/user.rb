@@ -17,6 +17,9 @@ class User < ApplicationRecord
     end.inject(0) { |sum, x| sum + x }                 # sum the elements of the array (float)
   end
 
+  def last_month_spent
+    spent_between_two_date(Time.now - 30.days, Time.now)
+
   def last_month_var
     spent_between_two_date(Time.now - 30.days, Time.now) - spent_between_two_date(Time.now - 60.days, Time.now - 30.days)
   end
