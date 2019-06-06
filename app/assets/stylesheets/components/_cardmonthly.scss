@@ -8,6 +8,8 @@
     font-size: 32px;
     line-height: 38px;
     text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 0px;
     color: $vibrant-blue;
   }
   p{
@@ -16,7 +18,9 @@
     font-weight: 200;
     font-size: 12px;
     line-height: 14px;
+    text-align: center;
     color: $dark-blue;
+    margin-bottom: 0px;
   }
 }
 
@@ -24,8 +28,6 @@
   display: flex;
   align-items: center;
 }
-
-
 
 .card-subscription-date {
   display: flex;

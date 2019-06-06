@@ -19,6 +19,7 @@ class User < ApplicationRecord
 
   def last_month_spent
     spent_between_two_date(Time.now - 30.days, Time.now)
+  end
 
   def last_month_var
     spent_between_two_date(Time.now - 30.days, Time.now) - spent_between_two_date(Time.now - 60.days, Time.now - 30.days)

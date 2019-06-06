@@ -1,14 +1,18 @@
 .card-subscription {
   overflow: hidden;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   padding: 16px;
+  border-radius: 2px;
+  background-color: white;
 }
 
 .card-subscription-right {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   align-items: center;
 }
 
@@ -27,11 +31,12 @@
   line-height: 16px;
   text-transform: capitalize;
   color: $dark-blue;
+  margin-bottom: 0px;
 }
 
 .card-subscription-frequency p {
   font-family: Raleway;
-  font-style: normal;
+  font-style: thin;
   font-weight: 200;
   font-size: 12px;
   line-height: 14px;
@@ -50,18 +55,26 @@
 }
 
 .card-subscription-trend {
-  width: 16px;
   height: 16px;
+  position: relative;
+  align-self: center;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .card-subscription-logo {
   width: 40px;
   height: 40px;
   object-fit: contain;
+  flex: 1;
 
 }
 
 .card-subscription-date {
+  flex: 1;
   display: flex;
   align-items: center;
+  p {
+    margin-bottom: 0px;
+  }
 }
