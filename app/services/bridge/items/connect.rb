@@ -1,7 +1,8 @@
 class Bridge::Items::Connect
   require 'rest-client'
 
-  def self.call(access_token)
+  def self.call(user)
+    access_token = access_token = Bridge::Users::GetAccessToken.call(user)["access_token"]
     url = "https://sync.bankin.com/v2/connect/items/add/url"
     params = {
       client_id: ENV["bridge_client_id"],
@@ -12,6 +13,7 @@ class Bridge::Items::Connect
       "Bankin-Version": "2018-06-15",
       "Authorization": "Bearer #{access_token}"
     })
-    response.code == 200 ? JSON.parse(response.body)["redirect_url"] : response
+    action_redirect_url = JSON.parse(response.body)["redirect_url"]
+    response.code == 200 ? action_redirect_url : response
   end
 end

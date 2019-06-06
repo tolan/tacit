@@ -14,7 +14,9 @@ class User < ApplicationRecord
   end
 
   def create_bridge_user!
+    #check with TA arpimd
     self.uuid = Bridge::Users::Create.call(self)
     self.save
   end
 end
+
