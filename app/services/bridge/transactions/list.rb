@@ -2,7 +2,7 @@ class Bridge::Transactions::List
   require 'rest-client'
 
   def self.call(user)
-    user.create_bridge_user! unless user.has_bridge_account?
+
     access_token = Bridge::Users::GetAccessToken.call(user)["access_token"]
 
     unless Bridge::Users::ValidateEmail.is_needed?(access_token)
