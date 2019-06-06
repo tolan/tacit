@@ -16,11 +16,11 @@ class Subscription < ApplicationRecord
     if new_sub?
       "none"
     elsif avg_fee == operations.last.amount
-      "flat fee"
+      "flat_fee"
     elsif operations.last.amount > operations[-2].amount
-      "up"
+      "arrow_up"
     else
-      "down"
+      "arrow_down"
     end
   end
 
