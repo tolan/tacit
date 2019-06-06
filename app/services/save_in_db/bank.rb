@@ -1,23 +1,6 @@
 class SaveInDb::BankId
-  def self.call(bridge_categories)
-    bridge_categories.each do |parent_category|
-      parent_category_name = parent_category["name"]
-      # parent_category = parent_category["name"]
-
-      parent_category["categories"].each do |category|
-        ope_category = OperationCategory.where(bridge_id: category["id"]).first_or_initialize
-
-        ope_category.name = category["name"]
-        ope_category.parent_category = parent_category_name
-        # ope_category
-        ope_category.save
-
-        # OperationCategory.create(
-        #   name: category["name"],
-        #   bridge_id: category["id"],
-        #   parent_category: parent_category_name
-        # )
-      end
-    end
+  def self.call(account_id)
+    # bank.bridge_id = Bridge::Banks::Fetch.call(account_id)
+    # bank.name = Bridge::Banks::Fetch.call(account_id)["name"]
   end
 end
