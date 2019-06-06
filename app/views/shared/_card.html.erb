@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="card-subscription-right">
-    <% image_tag( subscription.operator.image , class: "card-subscription-logo") %>
+    <% image_tag( subscription.operator.logo , class: "card-subscription-logo") %>
     <div class="card-subscription-date">
       <p><%=  hightlight( subscription.time_before_next_payment , /\d/, highlighter: '<strong>\1</strong>') %></p>
     </div>
