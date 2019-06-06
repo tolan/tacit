@@ -1,6 +1,6 @@
 <div class="card-synthesis">
   <p><%=  hightlight( Subscriptions last month , 'Subscriptions', highlighter: '<strong>\1</strong>') %></p>
-  <h2>250€</h2>
+  <h2><%= user.last_month_spent %>€</h2>
   <div class="d-flex">
     <% image_tag("icons/#{ user.last_month_trend }.png", class: "card-subscription-trend") %>
     <% if user.last_month_trend == 'arrow_up' %>
