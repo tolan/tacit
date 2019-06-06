@@ -1,4 +1,4 @@
-class Bridge::Transactions::ListTransactions
+class Bridge::Transactions::List
   require 'rest-client'
 
   def self.call(access_token)
