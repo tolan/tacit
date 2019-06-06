@@ -13,6 +13,8 @@ class SaveInDb::Transactions
         bridge_id: transaction["id"],
         user: user,
         category: category
+        #ask TA
+        # account_id: transaction["account"]["id"]
       )
       operation.save
     end
