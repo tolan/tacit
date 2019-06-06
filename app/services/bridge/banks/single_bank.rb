@@ -1,9 +1,9 @@
-class Bridge::Users::SingleBank
+class Bridge::Banks::SingleBank
   require 'rest-client'
 
-  def self.call(access_token)
+  def self.call(bank_id, access_token)
     # bank_id = 365
-    url = "https://sync.bankin.com/v2/banks/#{bank_id}"
+    url = "https://sync.bankin.com/v2/banks/#{bank_id}?client_id=#{ENV["bridge_client_id"]}&client_secret=#{ENV["bridge_client_secret"]}"
     params = {
       client_id: ENV["bridge_client_id"],
       client_secret: ENV["bridge_client_secret"]
