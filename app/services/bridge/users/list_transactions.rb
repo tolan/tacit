@@ -1,7 +1,8 @@
 class Bridge::Users::ListTransactions
   require 'rest-client'
 
-  def self.call(access_token)
+  def self.call(user)
+    access_token = Bridge::Users::GetAccessToken.call(user)
     url = "https://sync.bankin.com/v2/transactions"
     params = {
       client_id: ENV["bridge_client_id"],

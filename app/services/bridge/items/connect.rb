@@ -1,9 +1,8 @@
-class Bridge::Accounts::SingleAccount
+class Bridge::Items::Connect
   require 'rest-client'
 
-  def self.call(account_id, access_token)
-    # account_id = ???
-    url = "https://sync.bankin.com/v2/accounts/#{account_id}?client_id=#{ENV["bridge_client_id"]}&client_secret=#{ENV["bridge_client_secret"]}"
+  def self.call(access_token)
+    url = "https://sync.bankin.com/v2/connect/items/add/url"
     params = {
       client_id: ENV["bridge_client_id"],
       client_secret: ENV["bridge_client_secret"]
@@ -13,7 +12,6 @@ class Bridge::Accounts::SingleAccount
       "Bankin-Version": "2018-06-15",
       "Authorization": "Bearer #{access_token}"
     })
-    JSON.parse(response.body)["resources"]
+    response.code == 200 ? JSON.parse(response.body)["redirect_url"] : response
   end
 end
-
