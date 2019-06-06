@@ -16,4 +16,3 @@ class Bridge::Categories::List
     JSON.parse(response.body)["resources"]
   end
 end
-

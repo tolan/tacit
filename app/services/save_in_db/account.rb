@@ -1,4 +1,4 @@
-class Bridge::SaveInDb::Account
+class SaveInDb::Account
   def self.call(birdge_account, user)
 
   end
