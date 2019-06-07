@@ -8,9 +8,9 @@ class Bridge::Transactions::CheckEmailValidation
     access_token = Bridge::Users::GetAccessToken.call(user)["access_token"]
 
     puts access_token
-    Bridge::Users::ValidateEmail.call(access_token)
+    email_validation_url = Bridge::Users::ValidateEmail.call(access_token)
     puts "Check your email for a validation code"
-    # return response_url
+    return email_validation_url
     #open external website
   end
 end

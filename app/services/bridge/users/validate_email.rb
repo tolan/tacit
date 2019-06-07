@@ -13,7 +13,7 @@ class Bridge::Users::ValidateEmail
         "Bankin-Version": "2018-06-15",
         "Authorization": "Bearer #{access_token}"
       })
-      response.code == 200 ? JSON.parse(response.body)["redirect_url"] : response
+      return (response.code == 200 ? JSON.parse(response.body)["redirect_url"] : response)
       #TA assistance on how to assign variable
       # response_url = JSON.parse(response.body)["redirect_url"]
       # response.code == 200 ? response_url : response
