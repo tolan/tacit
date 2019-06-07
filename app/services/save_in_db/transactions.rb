@@ -2,7 +2,7 @@ class SaveInDb::Transactions
 
   def self.call(user)
     bridge_tranactions = Bridge::Transactions::List.call(user)
-    access_token = Bridge::Users::GetAccessToken.call(user)["access_token"]
+    # access_token = Bridge::Users::GetAccessToken.call(user)["access_token"]
     bridge_tranactions.each do |transaction|
       category = Category.find_by(bridge_id: transaction["category"]["id"])
       # create or find account
