@@ -6,6 +6,7 @@ class Bridge::Users::Create
     header = {
       "Bankin-Version" => "2018-06-15"
     }
+    RestClient.proxy = ENV["QUOTAGUARDSTATIC_URL"] if Rails.env.production?
     response = RestClient.post(url, {}, header)
     uuid = JSON.parse(response.body)["uuid"]
     # user.uuid = uuid
