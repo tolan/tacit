@@ -1,0 +1,31 @@
+.footer {
+  background: $light-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px;
+  color: $dark-blue;
+  font-size: 16px;
+  padding: 0px 16px;
+  font-family: raleway;
+  font-weight: 200;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0px 16px;
+  font-family: raleway;
+  font-weight: 200;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: $red-warning;
+}
