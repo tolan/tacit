@@ -53,3 +53,10 @@ puts "Creating Operations!"
   SaveInDb::Transactions.call(cg)
 puts "Operations Saved The Database!"
 
+#récupère toutes les transactions
+transac = Operation.all
+
+#traite les transactions
+Converttransaction.call(transac)
+puts "Operations transformed into subscriptions!"
+
