@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
+  get "/pages/:page" => "pages#demoindex"
     resources :subscriptions, only: [ :index, :show ]
 
 get "subscriptions", to: "subscriptions#index"
