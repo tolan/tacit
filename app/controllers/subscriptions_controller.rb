@@ -1,12 +1,11 @@
 class SubscriptionsController < ApplicationController
 
   def index
-    @user = current_user
-    @subscriptions = Subscription.where(user_id: current_user.id)
+    @subscriptions = current_user.subscriptions
   end
 
   def show
-    @subscription = Subscription.find(params(:subscription_id))
+    @subscription = Subscription.find(params[:id])
   end
 
   private
