@@ -141,9 +141,10 @@ body {
 }
 .news_container {
   // display: grid;
-  // grid-template-columns: repeat(6, minmax(100px, auto));
+  // grid-template-columns: 1;
   // grid-template-rows: repeat(6, 320px);
   // grid-gap: 20px;
+  padding: 24px;
 }
 .large_plane {
   max-width: 700px;
@@ -188,13 +189,14 @@ body {
 .news {
   max-width: 265px;
   h3 {
-    font-weight: bold;
     line-height: 35px;
     font-size: 30px;
+    text-transform: none;
   }
   p {
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 16px;
   }
 }
 .news_1 {
