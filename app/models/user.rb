@@ -9,6 +9,17 @@ class User < ApplicationRecord
   has_many :accounts
   has_many :banks, through: :accounts
 
+  def has_bridge_account?
+    self.uuid.present?
+  end
+
+  def create_bridge_user!
+    #check with TA arpimd
+    self.uuid = Bridge::Users::Create.call(self)
+    ##logic if already exists?
+    self.save
+  end
+
   def spent_between_two_date(date1, date2)
     operations.select do |operation|
       operation.date < date2 && operation.date > date1 # filter operations within two date
@@ -33,3 +44,4 @@ class User < ApplicationRecord
     end
   end
 end
+

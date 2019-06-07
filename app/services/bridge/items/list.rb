@@ -1,8 +1,8 @@
-class Bridge::Banks::ListBanks
+class Bridge::Items::List
   require 'rest-client'
 
-def self.call(access_token)
-    url = "https://sync.bankin.com/v2/banks"
+  def self.call(access_token)
+    url = "https://sync.bankin.com/v2/items"
     params = {
       client_id: ENV["bridge_client_id"],
       client_secret: ENV["bridge_client_secret"]
