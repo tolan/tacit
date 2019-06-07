@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: transparent;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +9,19 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-brand h1 {
+font-family: Abril Fatface;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 54px;
+text-transform: capitalize;
+color: $vibrant-blue;
+}
+
+#nav-toggler {
+  color: $vibrant-blue;
+  border: none;
 }

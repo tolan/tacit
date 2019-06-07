@@ -1,1 +1,228 @@
-// Specific CSS for your home-page
+$color-1: #ffe1d1;
+$color-2: #ffdbca;
+
+// :root {
+//     /* BASE COLORS */
+//     --color-1:  #ffe1d1;
+//     --color-2: #ffdbca;
+// }
+body {
+  overflow-x: hidden;
+  padding: 0px;
+  // font-family: Alegreya, serif;
+}
+
+
+//Hero section
+.container {
+  background: linear-gradient(to left, $color-1, $color-2);
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.hero_container {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "lamp title sun sun"
+    "lamp title sun sun";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(20px, auto));
+}
+
+.hero_cta {
+  grid-area: title;
+  justify-self: end;
+  align-self: center;
+  z-index: 3;
+}
+
+.lamp {
+  grid-area: lamp;
+  height: auto;
+  justify-self: start;
+  align-self: end;
+  position: absolute;
+  bottom: -350px;
+}
+
+//Hero Call to Action
+.cta_title {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 16px;
+  // line-height: 69px;
+}
+.cta_description {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.cta_btn {
+  width: 200px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  background: $vibrant-blue;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+    background: $vibrant-blue-lighter;
+    color: white;
+  }
+}
+
+//Waves
+.hide {
+  visibility: visible;
+}
+
+#waves {
+  justify-self: end;
+  max-width: 1500px;
+  width: 100%;
+  grid-column: 1/5;
+  align-self: end;
+  grid-row: 2/2;
+
+}
+
+//Sun
+.container_sun {
+  grid-area: sun;
+  align-self: end;
+  justify-self: start;
+  img {
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
+  }
+}
+// Plane SVG
+#planes {
+  width: 100%;
+  transform-style: preserve-3d;
+  grid-area: sun;
+  justify-self: end;
+  align-self: end;
+}
+
+.fly_right {
+  opacity: 0;
+  transform-origin: center center 0px;
+  transform: translate(-500px, 300px);
+  animation: fly_right 3s ease-out 0.8s 1 forwards;
+}
+@keyframes fly_right {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(800px) translateZ(-3em) translateX(-200px) scale(2);
+    opacity: 1;
+  }
+}
+
+//second section
+.two {
+  background: $light-gradient;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/Group%202-1.png");
+  background-repeat: no-repeat;
+  background-position: 35% 0;
+  background-size: cover;
+}
+.news_container {
+  // display: grid;
+  // grid-template-columns: repeat(6, minmax(100px, auto));
+  // grid-template-rows: repeat(6, 320px);
+  // grid-gap: 20px;
+}
+.large_plane {
+  max-width: 700px;
+  min-width: 300px;
+  width: 100%;
+  grid-column: 2/5;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+  img {
+    width: 100%;
+  }
+}
+.luggage {
+  min-width: 300px;
+  grid-column: 5/7;
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+  img {
+    width: 100%;
+  }
+}
+.fly_container {
+  max-width: 1000px;
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 2/6;
+  align-self: center;
+  justify-self: end;
+}
+.stairs {
+  max-width: 300px;
+  grid-column: 1/4;
+  grid-row: 3/5;
+  align-self: center;
+  justify-self: center;
+}
+.path {
+  visibility: hidden;
+}
+.news {
+  max-width: 265px;
+  h3 {
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+.news_1 {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  align-self: center;
+  justify-self: center;
+}
+.news_2 {
+  grid-column: 5/7;
+  grid-row: 2/4;
+  align-self: start;
+  justify-content: center;
+  margin-top: 5.5rem;
+}
+.news_3 {
+  grid-column: 3/4;
+  grid-row: 5/7;
+  align-self: center;
+  justify-self: center;
+}
+
+.furniture {
+  grid-column: 4/6;
+  grid-row: 5/7;
+  align-self: center;
+  justify-self: start;
+  img {
+    width: 100%;
+  }
+}
