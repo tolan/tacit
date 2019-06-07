@@ -1,19 +1,14 @@
 class Bridge::Users::Create
   require 'rest-client'
 
-  def self.call(email, password)
-    url = "https://sync.bankin.com/v2/users?email=#{email}&password=#{password}&client_id=#{ENV["bridge_client_id"]}&client_secret=#{ENV["bridge_client_secret"]}"
-    puts url
-    # params = {
-    #   email: email,
-    #   password: password,
-    #   client_id: ENV["bridge_client_id"],
-    #   client_secret: ENV["bridge_client_secret"]
-    # }
+  def self.call(user)
+    url = "https://sync.bankin.com/v2/users?email=#{user.email}&password=#{ENV["bridge_user_password"]}&client_id=#{ENV["bridge_client_id"]}&client_secret=#{ENV["bridge_client_secret"]}"
     header = {
       "Bankin-Version" => "2018-06-15"
     }
     response = RestClient.post(url, {}, header)
-    # JSON.parse(response.body)
+    uuid = JSON.parse(response.body)["uuid"]
+    # user.uuid = uuid
+    # user.save
   end
 end
