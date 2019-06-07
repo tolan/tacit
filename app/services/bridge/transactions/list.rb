@@ -8,6 +8,7 @@ class Bridge::Transactions::List
     unless Bridge::Users::ValidateEmail.is_needed?(access_token)
       url = "https://sync.bankin.com/v2/transactions"
       params = {
+        limit: 500,
         client_id: ENV["bridge_client_id"],
         client_secret: ENV["bridge_client_secret"]
       }

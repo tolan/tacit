@@ -10,7 +10,7 @@ class Bridge::Transactions::CheckEmailValidation
     puts access_token
     Bridge::Users::ValidateEmail.call(access_token)
     puts "Check your email for a validation code"
-    return response_url
+    # return response_url
     #open external website
   end
 end
