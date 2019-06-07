@@ -1,0 +1,81 @@
+.card-subscription {
+  overflow: hidden;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 16px;
+}
+
+.card-subscription-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-subscription-bottom-left {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+}
+
+
+.card-subscription-operator h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: $dark-blue;
+  margin-bottom: 0px;
+}
+
+.card-subscription-frequency p {
+  font-family: Raleway;
+  font-style: thin;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: $dark-blue;
+}
+
+.card-subscription-price h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  color: $vibrant-blue;
+}
+
+.card-subscription-trend {
+  height: 16px;
+  position: relative;
+  align-self: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.card-subscription-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex: 1;
+
+}
+
+.card-subscription-date {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  p {
+    margin-bottom: 0px;
+  }
+}

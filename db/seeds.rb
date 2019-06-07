@@ -1,15 +1,39 @@
+
 Operation.destroy_all
 puts "Operations are destroyed!"
 
 Category.destroy_all
 puts "Categories destroyed!"
 
+Subscription.destroy_all
+
+Operator.destroy_all
+puts "Categories destroyed!"
+
+User.destroy_all
+puts "Users are destroyed!"
+
 puts "Create Categories..."
 bridge_categories = Bridge::Categories::List.call
 SaveInDb::Categories.call(bridge_categories)
 
-User.destroy_all
-puts "Users are destroyed!"
+
+puts "create operators"
+require 'csv'
+
+csv_options = { col_sep: ',', headers: :first_row }
+filepath    = Rails.root + 'db/operators.csv'
+
+CSV.foreach(filepath, csv_options) do |row|
+  # Here, row is an array of columns
+  Operator.create(
+    name: row["name"],
+    regex: row["regex"],
+    category: row["category"],
+    logo: row["logo"]
+  )
+end
+
 
 puts "Creating Users!"
 # créer user (User.create) avec le mail de Cyril => cyril
@@ -28,3 +52,4 @@ cg.uuid = bridge_cyril["uuid"]
 puts "Creating Operations!"
   SaveInDb::Transactions.call(cg)
 puts "Operations Saved The Database!"
+
