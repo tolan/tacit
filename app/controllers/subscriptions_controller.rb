@@ -2,7 +2,7 @@ class SubscriptionsController < ApplicationController
 
   def index
     @user = current_user
-    @subscriptions = Subscription.where(user_id: current_user.id)
+    @subscriptions = @user.subscriptions
   end
 
   def show
