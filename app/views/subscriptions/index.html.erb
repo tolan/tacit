@@ -1,13 +1,4 @@
-<div class="card-synthesis">
-  <p><strong>Subscriptions</strong> last month</p>
-  <h2>220€</h2>
-  <div class="d-flex justify-content-center mr-3">
-    <%= image_tag("arrow_up.png", class:"card-subscription-trend") %>
-      <div class="card-synthesis-trend-up">
-        <p>increase by <span class="var-amount">12€</span></p>
-      </div>
-  </div>
-</div>
+<%= render 'shared/cardmonthly', user: @user %>
 
 <% @subscriptions.each do |subscription|%>
 

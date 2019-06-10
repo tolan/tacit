@@ -7,9 +7,7 @@
         <h3><%= subscription.operator.name %></h3>
       </div>
       <div class="card-subscription-frequency">
-        <%# unless subscription.payment_frequency.blank? %>
           <p><%= subscription.payment_frequency[:type] %></p>
-        <%# end %>
       </div>
     </div>
     <div class="card-subscription-bottom-left">

@@ -4,13 +4,17 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :operations
-  has_many :subscriptions, through: :operations, source: :subscription # allow to find the column operations
+  has_many :subscriptions, through: :operations, source: :subscription# allow to find the column operations
   has_many :operators, through: :subscriptions
   has_many :accounts
   has_many :banks, through: :accounts
 
   def has_bridge_account?
     self.uuid.present?
+  end
+
+  def uniq_subscriptions
+    subscriptions.uniq
   end
 
   def create_bridge_user!
@@ -20,12 +24,26 @@ class User < ApplicationRecord
     self.save
   end
 
+  # ORIGINAL_CODE
+
+  # def spent_between_two_date(date1, date2)
+  #   operations.select do |operation|
+  #     operation.date < date2 && operation.date > date1 # filter operations within two date
+  #   end.map do |operation|                             # operation to operation.amount (float)
+  #     operation.amount
+  #   end.inject(0) { |sum, x| sum + x }                 # sum the elements of the array (float)
+  # end
+
+  # TEST_CODE
+
+
   def spent_between_two_date(date1, date2)
     operations.select do |operation|
+      operation.subscription.present? &&
       operation.date < date2 && operation.date > date1 # filter operations within two date
     end.map do |operation|                             # operation to operation.amount (float)
       operation.amount
-    end.inject(0) { |sum, x| sum + x }                 # sum the elements of the array (float)
+    end.inject(0) { |sum, x| sum + x }.abs                 # sum the elements of the array (float)
   end
 
   def last_month_spent
