@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
 get "subscriptions", to: "subscriptions#index"
 get "subscriptions/:id", to: "subscriptions#show"
+get "subscriptions/:id/operators/:id", to: "subscriptions#show"
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
