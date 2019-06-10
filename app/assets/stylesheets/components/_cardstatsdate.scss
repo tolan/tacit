@@ -1,0 +1,21 @@
+.card-dates-container {
+  overflow: hidden;
+  padding: 16px;
+}
+
+.date-row, .date-header, .date-result {
+  display: flex;
+  align-items: center;
+}
+
+.card-dates-row {
+  justify-content: space-between;
+}
+
+.date-header {
+  justify-content: flex-start;
+}
+
+.date-result {
+  justify-content: flex-end;
+}
