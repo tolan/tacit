@@ -1,0 +1,707 @@
+date,description,amount
+2017-06-26,CB Amazon.fr/prem,-49.00
+2018-06-07,CB Amazon.fr/prem,-49.00
+2019-06-06,CB Amazon.fr/prem,-49.00
+2016-03-16,Prlv De Axa,-122.07
+2016-03-16,Prlv De Axa,-364.11
+2016-04-08,Prlv De Axa,-234.99
+2016-06-06,Prlv De Axa,-117.19
+2016-07-05,Prlv De Axa,-117.19
+2016-08-05,Prlv De Axa,-117.19
+2016-09-05,Prlv De Axa,-117.19
+2016-10-05,Prlv De Axa,-117.19
+2016-11-07,Prlv De Axa,-117.19
+2016-12-05,Prlv De Axa,-117.19
+2017-01-05,Prlv De Axa,-117.40
+2017-02-06,Prlv De Axa,-117.40
+2017-03-06,Prlv De Axa,-128.55
+2017-03-06,Prlv De Axa,-117.40
+2017-03-06,Prlv De Axa,-400.30
+2017-04-05,Prlv De Axa,-119.23
+2017-05-05,Prlv De Axa,-119.23
+2017-06-06,Prlv De Axa,-119.23
+2017-07-05,Prlv De Axa,-119.23
+2017-08-07,Prlv De Axa,-119.23
+2017-09-05,Prlv De Axa,-119.23
+2017-10-05,Prlv De Axa,-119.23
+2017-11-06,Prlv De Axa,-119.23
+2017-12-05,Prlv De Axa,-119.23
+2018-01-05,Prlv De Axa,-119.23
+2018-02-05,Prlv De Axa,-119.23
+2018-03-05,Prlv De Axa,-421.85
+2018-03-05,Prlv De Axa,-119.23
+2018-04-05,Prlv De Axa,-124.94
+2018-05-07,Prlv De Axa,-124.94
+2018-06-05,Prlv De Axa,-124.94
+2018-07-03,Prlv De Axa,-29.80
+2018-07-05,Prlv De Axa,-124.94
+2018-08-06,Prlv De Axa,-124.94
+2018-09-05,Prlv De Axa,-124.94
+2018-10-05,Prlv De Axa,-124.94
+2018-11-05,Prlv De Axa,-124.94
+2018-12-05,Prlv De Axa,-124.94
+2019-01-07,Prlv De Axa,-124.94
+2019-02-05,Prlv De Axa,-124.94
+2019-03-05,Prlv De Axa,-124.94
+2019-03-05,Prlv De Axa,-465.99
+2019-04-05,Prlv De Axa,-130.45
+2019-05-06,Prlv De Axa,62.86
+2019-06-06,Prlv De Axa,62.89
+2016-11-30,Prlv De Bouygues Telecom,-39.90
+2016-12-30,Prlv De Bouygues Telecom,-41.05
+2017-01-30,Prlv De Bouygues Telecom,-39.90
+2017-03-02,Prlv De Bouygues Telecom,-39.90
+2017-03-30,Prlv De Bouygues Telecom,-52.94
+2017-05-02,Prlv De Bouygues Telecom,-40.61
+2017-05-31,Prlv De Bouygues Telecom,-40.34
+2017-06-30,Prlv De Bouygues Telecom,-84.00
+2017-07-31,Prlv De Bouygues Telecom,-39.90
+2017-08-30,Prlv De Bouygues Telecom,-39.90
+2017-10-02,Prlv De Bouygues Telecom,-40.29
+2017-10-30,Prlv De Bouygues Telecom,-39.90
+2017-11-30,Prlv De Bouygues Telecom,-39.90
+2017-12-29,Prlv De Bouygues Telecom,-39.90
+2018-01-30,Prlv De Bouygues Telecom,-67.00
+2018-02-23,Vir Bouygues Telecom,-38.61
+2018-09-17,Prlv De Canalsat Groupe Cana,-25.70
+2018-10-04,Prlv De Canalsat Groupe Cana,-24.90
+2018-11-05,Prlv De Canalsat Groupe Cana,-24.90
+2018-12-04,Prlv De Canalsat Groupe Cana,-24.90
+2019-01-04,Prlv De Canalsat Groupe Cana,-24.90
+2019-02-04,Prlv De Canalsat Groupe Cana,-24.90
+2019-03-04,Prlv De Canalsat Groupe Cana,-24.90
+2019-04-04,Prlv De Canalsat Groupe Cana,-24.90
+2019-05-06,Prlv De Canalsat Groupe Cana,-24.90
+2019-06-04,Prlv De Canalsat Groupe Cana,-24.90
+2016-04-13,Prlv De Edf Clients Particulie,-67.82
+2016-05-04,Prlv De Edf Clients Particulie,-50.00
+2016-05-10,Prlv De Edf Clients Particulie,-38.82
+2016-06-03,Prlv De Edf Clients Particulie,-50.00
+2016-06-09,Prlv De Edf Clients Particulie,-38.82
+2016-07-04,Prlv De Edf Clients Particulie,-50.00
+2016-07-11,Prlv De Edf Clients Particulie,-38.82
+2016-08-03,Prlv De Edf Clients Particulie,-50.00
+2016-08-09,Prlv De Edf Clients Particulie,-38.82
+2016-09-05,Prlv De Edf Clients Particulie,-50.00
+2016-09-09,Prlv De Edf Clients Particulie,-38.82
+2016-10-04,Prlv De Edf Clients Particulie,-50.00
+2016-10-10,Prlv De Edf Clients Particulie,-38.82
+2016-11-03,Prlv De Edf Clients Particulie,-50.00
+2016-12-05,Prlv De Edf Clients Particulie,-50.00
+2017-01-03,Prlv De Edf Clients Particulie,-50.00
+2017-02-03,Prlv De Edf Clients Particulie,-50.00
+2017-03-24,Prlv De Edf Clients Particulie,-464.75
+2017-04-03,Prlv De Edf Clients Particulie,-111.27
+2017-04-06,Prlv De Edf Clients Particulie,-4.73
+2017-05-04,Prlv De Edf Clients Particulie,-111.27
+2017-05-18,Prlv De Edf Clients Particulie,-20.42
+2017-06-06,Prlv De Edf Clients Particulie,-111.27
+2017-07-04,Prlv De Edf Clients Particulie,-111.27
+2017-08-03,Prlv De Edf Clients Particulie,-111.27
+2017-09-04,Prlv De Edf Clients Particulie,-111.27
+2017-10-04,Prlv De Edf Clients Particulie,-111.27
+2017-11-03,Prlv De Edf Clients Particulie,-111.27
+2017-12-04,Prlv De Edf Clients Particulie,-111.27
+2018-01-03,Prlv De Edf Clients Particulie,-111.27
+2018-02-05,Prlv De Edf Clients Particulie,-111.27
+2018-04-03,Prlv De Edf Clients Particulie,-91.65
+2018-05-04,Prlv De Edf Clients Particulie,-91.65
+2018-06-04,Prlv De Edf Clients Particulie,-91.65
+2018-07-04,Prlv De Edf Clients Particulie,-91.65
+2018-08-03,Prlv De Edf Clients Particulie,-91.65
+2018-09-03,Prlv De Edf Clients Particulie,-91.65
+2018-10-04,Prlv De Edf Clients Particulie,-91.65
+2018-11-05,Prlv De Edf Clients Particulie,-91.65
+2018-12-04,Prlv De Edf Clients Particulie,-91.65
+2019-01-03,Prlv De Edf Clients Particulie,-91.65
+2019-02-04,Prlv De Edf Clients Particulie,-91.65
+2019-03-07,Prlv De Edf Clients Particulie,-30.98
+2019-04-03,Prlv De Edf Clients Particulie,-95.40
+2019-05-06,Prlv De Edf Clients Particulie,-95.40
+2019-06-03,Prlv De Edf Clients Particulie,-95.40
+2016-12-05,Prlv De Engie Home Services,-17.47
+2017-01-05,Prlv De Engie Home Services,-17.48
+2017-03-06,Prlv De Engie Home Services,-14.82
+2017-04-05,Prlv De Engie Home Services,-14.82
+2017-05-05,Prlv De Engie Home Services,-14.82
+2017-06-06,Prlv De Engie Home Services,-14.82
+2017-07-05,Prlv De Engie Home Services,-14.82
+2017-08-07,Prlv De Engie Home Services,-14.82
+2017-09-05,Prlv De Engie Home Services,-14.82
+2017-10-05,Prlv De Engie Home Services,-14.82
+2017-11-06,Prlv De Engie Home Services,-14.82
+2017-12-05,Prlv De Engie Home Services,-14.82
+2018-01-05,Prlv De Engie Home Services,-14.82
+2018-02-05,Prlv De Engie Home Services,-14.83
+2018-03-05,Prlv De Engie Home Services,-15.09
+2018-04-05,Prlv De Engie Home Services,-15.09
+2018-05-07,Prlv De Engie Home Services,-15.09
+2018-06-05,Prlv De Engie Home Services,-15.09
+2018-07-05,Prlv De Engie Home Services,-15.09
+2018-08-06,Prlv De Engie Home Services,-15.09
+2018-09-05,Prlv De Engie Home Services,-15.09
+2018-10-05,Prlv De Engie Home Services,-15.09
+2018-11-05,Prlv De Engie Home Services,-15.09
+2018-12-05,Prlv De Engie Home Services,-15.09
+2019-01-07,Prlv De Engie Home Services,-15.09
+2019-02-05,Prlv De Engie Home Services,-15.06
+2019-03-05,Prlv De Engie Home Services,-15.36
+2019-04-05,Prlv De Engie Home Services,-15.36
+2019-05-06,Prlv De Engie Home Services,-15.36
+2019-05-06,Prlv De Engie Home Services,-15.36
+2019-06-06,Prlv De Engie Home Services,-15.36
+2016-04-25,Prlv De Engie,-40.92
+2016-05-03,"Prlv De Engie, Ex Gdfsuez",-95.00
+2016-06-02,"Prlv De Engie, Ex Gdfsuez",-95.00
+2016-07-04,"Prlv De Engie, Ex Gdfsuez",-95.00
+2016-08-02,Prlv De Engie,-95.00
+2016-09-02,Prlv De Engie,-95.00
+2016-10-03,Prlv De Engie,-95.00
+2016-11-02,Prlv De Engie,-95.00
+2016-12-05,Prlv De Engie,-95.00
+2017-01-02,Prlv De Engie,-95.00
+2017-02-02,Prlv De Engie,-95.00
+2017-03-09,Prlv De Engie,-170.85
+2017-04-03,Prlv De Engie,-100.08
+2017-05-03,Prlv De Engie,-100.08
+2017-06-02,Prlv De Engie,-100.08
+2017-07-03,Prlv De Engie,-100.08
+2017-08-02,Prlv De Engie,-100.08
+2017-09-04,Prlv De Engie,-100.08
+2017-10-03,Prlv De Engie,-100.08
+2017-11-02,Prlv De Engie,-100.08
+2017-12-04,Prlv De Engie,-100.08
+2018-01-02,Prlv De Engie,-100.08
+2018-02-02,Prlv De Engie,-100.08
+2018-04-04,Prlv De Engie,-94.19
+2018-05-03,Prlv De Engie,-94.19
+2018-06-04,Prlv De Engie,-94.19
+2018-07-03,Prlv De Engie,-94.19
+2018-08-02,Prlv De Engie,-94.19
+2018-09-03,Prlv De Engie,-94.19
+2018-10-03,Prlv De Engie,-94.19
+2018-11-02,Prlv De Engie,-94.19
+2018-12-03,Prlv De Engie,-94.19
+2019-01-02,Prlv De Engie,-94.19
+2019-02-04,Prlv De Engie,-94.19
+2019-03-11,Prlv De Engie,-208.53
+2019-04-02,Prlv De Engie,-120.05
+2019-05-10,Prlv De Engie,-101.68
+2019-06-05,Prlv De Engie,-101.68
+2018-05-01,CB Free Mobile,-15.99
+2018-06-01,CB Free Mobile,-15.99
+2018-07-01,CB Free Mobile,-15.99
+2018-08-01,CB Free Mobile,-15.99
+2018-09-01,CB Free Mobile,-15.99
+2018-10-01,CB Free Mobile,-15.99
+2018-11-01,CB Free Mobile,-29.00
+2018-12-01,CB Free Mobile,-15.99
+2019-01-05,CB Free Mobile,-15.99
+2019-02-05,CB Free Mobile,-17.00
+2019-03-05,CB Free Mobile,-15.99
+2019-04-05,CB Free Mobile,-15.99
+2019-05-07,Prlv De Free Mobile,-15.99
+2019-06-03,Prlv De Free Mobile,-15.99
+2018-05-01,Prlv De Free Telecom,-25.00
+2018-06-01,Prlv De Free Telecom,-25.00
+2018-07-01,Prlv De Free Telecom,-25.00
+2018-08-01,Prlv De Free Telecom,-24.00
+2018-09-01,Prlv De Free Telecom,-20.00
+2018-10-01,Prlv De Free Telecom,-22.00
+2018-11-01,Prlv De Free Telecom,-22.00
+2018-12-01,Prlv De Free Telecom,-25.00
+2019-01-05,Prlv De Free Telecom,-21.00
+2019-02-05,Prlv De Free Telecom,-22.00
+2019-03-05,Prlv De Free Telecom,-20.00
+2019-04-05,Prlv De Free Telecom,-48.00
+2019-05-07,Prlv De Free Telecom,-52.00
+2019-06-03,Prlv De Free Telecom,-57.00
+2016-03-11,CB Etranger Netflix,-9.99
+2016-04-11,CB Etranger Netflix,-9.99
+2016-05-10,CB Etranger Netflix,-9.99
+2016-06-13,CB Etranger Netflix,-9.99
+2016-07-11,CB Etranger Netflix,-9.99
+2016-08-10,CB Etranger Netflix,-9.99
+2016-09-12,CB Etranger Netflix,-9.99
+2016-10-10,CB Etranger Netflix,-9.99
+2016-11-10,CB Etranger Netflix,-9.99
+2016-12-12,CB Etranger Netflix,-9.99
+2017-01-10,CB Etranger Netflix,-9.99
+2017-02-10,CB Etranger Netflix,-9.99
+2017-03-10,CB Etranger Netflix,-14.99
+2017-04-10,CB Etranger Netflix,-14.99
+2017-05-10,CB Etranger Netflix,-14.99
+2017-06-12,CB Etranger Netflix,-14.99
+2017-07-10,CB Etranger Netflix,-14.99
+2017-08-10,CB Etranger Netflix,-14.99
+2017-09-11,CB Etranger Netflix,-14.99
+2017-10-10,CB Etranger Netflix,-9.99
+2017-11-13,CB Etranger Netflix,-9.99
+2017-12-11,CB Etranger Netflix,-9.99
+2018-01-15,CB Etranger Netflix,-9.99
+2018-02-14,CB Etranger Netflix,-9.99
+2018-03-14,CB Etranger Netflix,-9.99
+2018-04-17,CB Etranger Netflix,-9.99
+2018-05-16,CB Etranger Netflix,-9.99
+2018-06-14,CB Etranger Netflix,-9.99
+2018-07-16,CB Etranger Netflix,-9.99
+2018-08-14,CB Etranger Netflix,-9.99
+2018-09-14,CB Etranger Netflix,-9.99
+2018-10-15,CB Etranger Netflix,-9.99
+2018-11-14,CB Etranger Netflix,-14.99
+2018-12-14,CB Etranger Netflix,-14.99
+2019-01-10,CB Etranger Netflix,-14.99
+2019-02-08,CB Etranger Netflix,-14.99
+2019-03-08,CB Etranger Netflix,-14.99
+2019-04-09,CB Etranger Netflix,-14.99
+2019-05-09,CB Etranger Netflix,-14.99
+2019-06-06,CB Etranger Netflix,-14.99
+2018-02-12,CB Orange,-65.97
+2018-03-02,CB Orange Vad,-136.15
+2018-04-03,Prlv De Orange,-91.94
+2018-04-30,Prlv De Orange,-118.45
+2018-05-29,Prlv De Orange,-120.85
+2018-07-02,Prlv De Orange,-90.73
+2018-07-30,Prlv De Orange,-109.87
+2018-08-31,Prlv De Orange,-86.32
+2018-10-01,Prlv De Orange,-60.98
+2018-10-29,Prlv De Orange,-74.24
+2018-11-30,Prlv De Orange,-64.98
+2018-12-31,Prlv De Orange,-65.65
+2019-01-29,Prlv De Orange,-81.87
+2019-03-04,Prlv De Orange,-104.08
+2019-03-25,Prlv De Orange,-27.40
+2019-04-01,Prlv De Orange,-16.25
+2019-04-26,Prlv De Orange,-34.99
+2019-04-26,Prlv De Orange,-47.39
+2019-05-24,Prlv De Orange,-94.60
+2019-06-05,Prlv De Orange,-105.50
+2016-08-16,Prlv De Securitas Direct Sas S,-55.35
+2016-09-07,Prlv De Securitas Direct Sas S,-39.90
+2016-10-07,Prlv De Securitas Direct Sas S,-39.90
+2016-11-07,Prlv De Securitas Direct Sas S,-39.90
+2016-12-05,Prlv De Securitas Direct Sas S,-39.90
+2017-01-05,Prlv De Securitas Direct Sas,-39.90
+2017-02-06,Prlv De Securitas Direct Sas,-39.90
+2017-03-06,Prlv De Securitas Direct Sas,-39.90
+2017-04-05,Prlv De Securitas Direct Sas,-39.90
+2017-05-05,Prlv De Securitas Direct Sas,-39.90
+2017-06-06,Prlv De Securitas Direct Sas,-39.90
+2017-07-05,Prlv De Securitas Direct Sas,-39.90
+2017-08-07,Prlv De Securitas Direct Sas,-39.90
+2017-09-07,Prlv De Securitas Direct Sas,-39.90
+2017-10-05,Prlv De Securitas Direct Sas,-39.90
+2017-11-07,Prlv De Securitas Direct Sas,-39.90
+2017-12-06,Prlv De Securitas Direct Sas,-39.90
+2018-01-05,Prlv De Securitas Direct Sas,-41.49
+2018-02-06,Prlv De Securitas Direct Sas,-41.49
+2018-03-07,Prlv De Securitas Direct Sas,-41.49
+2018-04-05,Prlv De Securitas Direct Sas,-41.49
+2018-04-19,Prlv De Securitas Direct Sas,-4.38
+2018-05-07,Prlv De Securitas Direct Sas,-45.49
+2018-05-11,Prlv De Securitas Direct Sas,-109.45
+2018-06-05,Prlv De Securitas Direct Sas,-45.49
+2018-07-05,Prlv De Securitas Direct Sas,-45.49
+2018-08-06,Prlv De Securitas Direct Sas,-45.49
+2018-09-05,Prlv De Securitas Direct Sas,-45.49
+2018-10-05,Prlv De Securitas Direct Sas,-45.49
+2018-11-06,Prlv De Securitas Direct Sas,-45.49
+2018-12-05,Prlv De Securitas Direct Sas,-45.49
+2019-01-07,Prlv De Securitas Direct Sas,-47.49
+2019-02-05,Prlv De Securitas Direct Sas,-47.49
+2019-03-05,Prlv De Securitas Direct Sas,-47.49
+2019-04-05,Prlv De Securitas Direct Sas,-47.49
+2019-05-06,Prlv De Securitas Direct Sas,-47.49
+2019-06-06,Prlv De Securitas Direct Sas,-47.49
+2016-03-11,CB Etranger Spotify,-9.99
+2016-04-11,CB Spotify France,-9.99
+2016-05-10,CB Spotify France,-9.99
+2016-06-13,CB Etranger Spotify,-9.99
+2016-07-11,CB Spotify France,-9.99
+2016-08-10,CB Spotify France,-9.99
+2016-09-12,CB Etranger Spotify,-9.99
+2016-10-10,CB Etranger Spotify,-9.99
+2016-11-10,CB Spotify France,-9.99
+2016-12-12,CB Etranger Spotify,-9.99
+2017-01-10,CB Etranger Spotify,-9.99
+2017-02-10,CB Spotify France,-9.99
+2017-03-10,CB Etranger Spotify,-9.99
+2017-04-10,CB Spotify France,-9.99
+2017-05-10,CB Etranger Spotify,-9.99
+2017-06-12,CB Spotify France,-9.99
+2017-07-10,CB Etranger Spotify,-9.99
+2017-08-10,CB Etranger Spotify,-9.99
+2017-09-11,CB Spotify France,-9.99
+2017-10-10,CB Etranger Spotify,-9.99
+2017-11-13,CB Spotify France,-9.99
+2017-12-11,CB Spotify France,-9.99
+2018-01-15,CB Spotify France,-9.99
+2018-02-14,CB Spotify France,-9.99
+2018-03-14,CB Spotify France,-9.99
+2018-04-17,CB Spotify France,-9.99
+2018-05-16,CB Etranger Spotify,-9.99
+2018-06-14,CB Spotify France,-9.99
+2018-07-16,CB Spotify,-9.99
+2018-08-14,CB Spotify,-9.99
+2018-09-14,CB Spotify,-9.99
+2018-10-15,CB Spotify,-9.99
+2018-11-14,CB Spotify France,-9.99
+2018-12-14,CB Spotify,-9.99
+2019-01-10,CB Spotify France,-14.99
+2019-02-08,CB Spotify France,-14.99
+2019-03-08,CB Spotify,-14.99
+2019-04-09,CB Spotify,-14.99
+2019-05-09,CB Spotify,-14.99
+2019-06-09,CB Spotify,-14.99
+2018-04-10,Prlv De Suez Eau France,-45.00
+2018-05-11,Prlv De Suez Eau France,-45.00
+2018-06-11,Prlv De Suez Eau France,-45.00
+2018-08-10,Prlv De Suez Eau France,-209.00
+2018-09-10,Prlv De Suez Eau France,-209.00
+2018-10-10,Prlv De Suez Eau France,-209.00
+2018-11-12,Prlv De Suez Eau France,-209.00
+2018-12-10,Prlv De Suez Eau France,-209.00
+2019-01-10,Prlv De Suez Eau France,-209.00
+2019-02-11,Prlv De Suez Eau France,-209.00
+2019-03-11,Prlv De Suez Eau France,-209.00
+2019-05-10,Prlv De Suez Eau France,-120.00
+2019-06-10,Prlv De Suez Eau France,-120.00
+2018-03-05,Prlv De Axa France Vie Sa,-131.77
+2019-03-05,Prlv De Axa France Vie Sa,-137.04
+2016-03-14,CB Franprix Garenn,-79.06
+2016-03-14,Prlv De A,-330.74
+2016-03-17,CB Somel Franprix,-49.23
+2016-03-22,CB Franprix Garenn,-88.05
+2016-03-22,CB Somel Franprix,-38.10
+2016-03-22,CB Somel Franprix,-24.40
+2016-04-05,Prlv De A,"-2,211.66"
+2016-05-02,CB Franprix Garenn,-65.97
+2016-05-02,CB Franprix Garenn,-28.35
+2016-05-03,CB Franprix Garenn,-12.22
+2016-05-04,CB Franprix Garenn,-53.79
+2016-05-06,CB Franprix Garenn,-25.89
+2016-05-06,CB Franprix Garenn,-12.26
+2016-05-06,Prlv De A,"-2,211.66"
+2016-05-09,CB Franprix Garenn,-30.51
+2016-05-17,CB Franprix Garenn,-60.91
+2016-05-20,CB Franprix Garenn,-34.12
+2016-05-23,CB Franprix Garenn,-58.27
+2016-05-25,CB Franprix Garenn,-49.77
+2016-05-30,CB Franprix Garenn,-35.58
+2016-05-30,CB Franprix Garenn,-60.02
+2016-06-02,CB Franprix Garenn,-29.52
+2016-06-06,CB Franprix Garenn,-46.55
+2016-06-06,Prlv De A,"-2,211.66"
+2016-06-20,CB Franprix Garenn,-50.62
+2016-06-20,CB Franprix Garenn,-42.85
+2016-06-23,CB Franprix Garenn,-23.13
+2016-06-27,CB Franprix Garenn,-11.61
+2016-07-01,CB Franprix Garenn,-67.16
+2016-07-04,CB Franprix Garenn,-22.81
+2016-07-05,Prlv De A,"-2,211.66"
+2016-07-11,CB Franprix Garenn,-18.95
+2016-07-21,CB Franprix Garenn,-22.58
+2016-07-25,CB Franprix Garenn,-11.58
+2016-07-25,CB Franprix Garenn,-26.36
+2016-07-29,CB Franprix Garenn,-19.74
+2016-08-05,Prlv De A,"-2,211.66"
+2016-08-26,CB Franprix Garenn,-7.98
+2016-09-01,CB Franprix Garenn,-18.29
+2016-09-02,CB Franprix Garenn,-18.50
+2016-09-05,CB Franprix Garenn,-24.36
+2016-09-05,Prlv De A,"-2,211.66"
+2016-09-08,CB Franprix Garenn,-34.30
+2016-09-14,CB Franprix Garenn,-12.30
+2016-09-20,CB Franprix Garenn,-8.48
+2016-09-21,CB Franprix Clichy,-5.65
+2016-09-22,CB Franprix Garenn,-13.84
+2016-09-26,CB Franprix Garenn,-23.04
+2016-09-29,CB Franprix Garenn,-14.55
+2016-10-03,CB Franprix Garenn,-26.71
+2016-10-03,CB Franprix Garenn,-16.35
+2016-10-05,Prlv De A,"-2,211.66"
+2016-10-27,CB Franprix Garenn,-16.05
+2016-11-03,CB Franprix Garenn,-24.89
+2016-11-07,CB Franprix Garenn,-51.66
+2016-11-07,CB Franprix Garenn,-15.10
+2016-11-07,Prlv De A,"-2,211.66"
+2016-11-15,CB Franprix Garenn,-14.29
+2016-11-18,CB Franprix Garenn,-6.40
+2016-11-22,CB Franprix Garenn,-19.24
+2016-11-22,CB Franprix Garenn,-12.26
+2016-11-28,CB Franprix Garenn,-17.75
+2016-12-01,CB Franprix Garenn,-6.30
+2016-12-05,Prlv De A,"-2,211.66"
+2016-12-15,CB Franprix Garenn,-3.55
+2017-01-05,CB Franprix Garenn,-14.84
+2017-01-05,Prlv De A,"-2,211.66"
+2017-01-09,CB Franprix Garenn,-3.25
+2017-01-09,CB Franprix Garenn,-23.02
+2017-01-12,CB Franprix Garenn,-14.10
+2017-01-18,CB Franprix Garenn,-27.79
+2017-01-23,CB Franprix Garenn,-41.23
+2017-02-02,Payt Cdiscount,-29.99
+2017-02-06,CB Franprix Garenn,-16.90
+2017-02-06,Prlv De A,"-2,211.66"
+2017-02-07,CB Franprix Garenn,-45.26
+2017-02-23,CB Franprix Garenn,-30.19
+2017-03-02,CB Franprix Clichy,-4.50
+2017-03-02,CB Franprix Garenn,-28.39
+2017-03-06,CB Franprix Garenn,-41.50
+2017-03-06,Prlv De A,"-2,211.66"
+2017-03-20,CB Franprix Garenn,-18.92
+2017-03-30,CB Franprix Garenn,-53.73
+2017-04-03,CB Franprix Garenn,-4.38
+2017-04-03,CB Franprix Garenn,-1.39
+2017-04-05,Prlv De A,"-2,211.66"
+2017-04-24,CB Franprix Garenn,-14.39
+2017-05-04,CB Franprix Garenn,-25.03
+2017-05-05,Prlv De A,"-2,211.66"
+2017-05-11,CB Franprix Garenn,-12.34
+2017-05-11,CB Franprix Garenn,-7.50
+2017-05-17,CB Franprix Garenn,-26.24
+2017-05-18,CB Franprix Garenn,-18.64
+2017-05-22,CB Franprix Garenn,-69.22
+2017-06-06,Prlv De A,"-2,211.66"
+2017-06-12,CB Franprix Garenn,-36.66
+2017-06-19,CB Franprix Garenn,-46.21
+2017-06-29,CB Franprix Clichy,-6.48
+2017-07-03,CB Franprix Garenn,-102.27
+2017-07-05,Prlv De A,"-2,211.66"
+2017-07-10,CB Franprix Garenn,-61.20
+2017-08-07,Prlv De A,"-2,211.66"
+2017-08-25,CB Franprix Garenn,-17.87
+2017-09-04,CB Franprix Garenn,-20.09
+2017-09-05,Prlv De A,"-2,211.66"
+2017-09-07,CB Franprix Garenn,-20.80
+2017-09-11,CB Franprix Garenn,-25.59
+2017-09-18,CB Franprix Garenn,-33.21
+2017-09-21,CB Franprix Garenn,-26.54
+2017-09-25,CB Franprix Lgc,-50.30
+2017-09-26,CB Franprix Lgc,-14.29
+2017-10-05,Prlv De A,"-2,211.66"
+2017-10-09,CB Franprix Lgc,-19.08
+2017-10-16,CB Franprix Lgc,-22.97
+2017-10-16,CB Franprix Lgc,-18.09
+2017-10-16,CB Franprix Lgc,-12.35
+2017-10-19,CB Franprix Lgc,-63.56
+2017-10-26,CB Franprix Lgc,-28.79
+2017-10-30,CB Franprix Lgc,-19.93
+2017-11-02,CB Franprix Lgc,-46.76
+2017-11-06,CB Franprix Lgc,-36.57
+2017-11-06,Prlv De A,"-2,211.66"
+2017-11-07,CB Franprix Lgc,-5.81
+2017-11-27,CB Franprix Lgc,-22.94
+2017-12-05,Prlv De A,"-2,211.66"
+2017-12-11,CB Franprix Lgc,-17.35
+2017-12-11,CB Franprix Lgc,-11.80
+2017-12-18,CB Franprix Lgc,-25.47
+2017-12-22,CB Franprix Lgc,-10.19
+2017-12-22,CB Franprix Lgc,-9.50
+2018-01-05,Prlv De A,"-2,211.66"
+2018-01-08,CB Sc Franprix,-54.84
+2018-01-12,CB Franprix Lgc,-14.89
+2018-01-12,CB Franprix Lgc,-12.15
+2018-01-15,CB Franprix Lgc,-33.06
+2018-02-01,CB Franprix Lgc,-7.05
+2018-02-02,Payt Cdiscount,-29.99
+2018-02-05,CB Franprix Garenn,-15.04
+2018-02-05,Prlv De A,"-2,211.66"
+2018-02-08,CB Franprix Garenn,-19.84
+2018-02-09,CB Franprix Lgc,-6.85
+2018-03-05,Prlv De A,"-2,211.66"
+2018-03-19,CB Franprix Lgc,-37.84
+2018-03-27,CB Franprix Lgc,-12.35
+2018-04-05,CB Franprix Garenn,-13.34
+2018-04-05,CB Franprix Lgc,-10.79
+2018-04-05,CB Franprix Lgc,-16.47
+2018-04-05,Prlv De A,"-2,211.66"
+2018-04-16,Prlv De A,-319.19
+2018-04-17,CB Franprix Lgc,-40.11
+2018-04-20,CB Franprix Lgc,-26.55
+2018-04-23,CB Franprix Garenn,-3.48
+2018-04-23,CB Franprix Lgc,-13.17
+2018-04-24,CB Franprix Lgc,-32.63
+2018-05-07,CB Franprix Garenn,-19.98
+2018-05-07,Prlv De A,"-2,130.85"
+2018-05-09,CB Franprix Garenn,-15.19
+2018-05-09,CB Franprix Lgc,-25.62
+2018-05-17,CB Franprix,-4.70
+2018-05-22,CB Franprix Lgc,-44.26
+2018-05-22,CB Franprix Lgc,-17.79
+2018-05-22,CB Franprix Lgc,-6.20
+2018-05-24,CB Franprix Lgc,-22.92
+2018-05-25,CB Franprix Lgc,-9.25
+2018-05-28,CB Franprix Garenn,-14.00
+2018-05-28,CB Franprix Lgc,-43.79
+2018-05-28,CB Franprix Lgc,-65.20
+2018-05-28,CB Franprix Lgc,-46.82
+2018-05-29,CB Franprix Lgc,-70.11
+2018-05-31,CB Franprix Lgc,-8.52
+2018-06-04,CB Franprix Lgc,-2.85
+2018-06-05,Prlv De A,"-2,130.85"
+2018-06-07,CB Franprix Lgc,-11.68
+2018-06-11,CB Franprix Lgc,-12.63
+2018-06-13,CB Franprix Lgc,-5.39
+2018-06-18,CB Franprix Lgc,-35.47
+2018-06-19,CB Franprix Lgc,-23.96
+2018-06-20,CB Franprix Lgc,-24.31
+2018-07-02,CB Franprix Lgc,-41.64
+2018-07-03,CB Franprix Lgc,-19.15
+2018-07-05,Prlv De A,"-2,130.85"
+2018-07-18,CB Franprix Lgc,-27.84
+2018-07-24,CB Franprix Lgc,-19.44
+2018-07-26,CB Franprix Lgc,-45.59
+2018-07-30,CB Franprix Lgc,-8.25
+2018-08-06,CB Franprix Lgc,-26.60
+2018-08-06,Prlv De A,"-2,130.85"
+2018-08-07,CB Franprix Lgc,-18.04
+2018-08-28,CB Franprix Lgc,-19.17
+2018-08-30,CB Franprix Lgc,-17.20
+2018-09-03,CB Franprix Lgc,-25.60
+2018-09-04,CB Franprix Lgc,-21.19
+2018-09-05,Prlv De A,"-2,130.85"
+2018-09-10,CB Franprix Lgc,-21.15
+2018-09-13,CB Franprix Lgc,-17.94
+2018-09-17,CB Franprix Lgc,-64.84
+2018-09-24,CB Franprix Lgc,-35.61
+2018-09-26,CB Franprix Lgc,-35.00
+2018-10-02,CB Franprix Lgc,-24.50
+2018-10-05,CB Franprix Lgc,-7.80
+2018-10-05,Prlv De A,"-2,130.85"
+2018-10-08,CB Franprix Garenn,-6.19
+2018-10-10,CB Franprix Lgc,-40.12
+2018-10-15,CB Franprix Lgc,-18.78
+2018-10-16,CB Franprix Lgc,-37.40
+2018-10-25,CB Franprix Lgc,-16.70
+2018-10-29,CB Franprix Garenn,-11.90
+2018-11-05,Prlv De A,"-2,130.85"
+2018-11-06,CB Franprix Lgc,-21.40
+2018-11-07,CB Franprix Lgc,-23.55
+2018-11-12,CB Franprix Lgc,-16.03
+2018-11-16,CB Franprix Lgc,-18.02
+2018-11-19,CB Franprix Garenn,-7.39
+2018-11-19,CB Franprix Lgc,-21.83
+2018-11-22,CB Franprix Lgc,-19.19
+2018-11-27,CB Franprix Lgc,-48.38
+2018-12-03,CB Franprix Lgc,-11.83
+2018-12-05,Prlv De A,"-2,130.85"
+2018-12-07,CB Franprix Lgc,-17.49
+2018-12-07,CB Franprix Lgc,-29.12
+2018-12-14,CB Franprix Lgc,-54.90
+2018-12-17,CB Franprix Lgc,-19.68
+2018-12-17,CB Franprix Lgc,-21.24
+2018-12-18,CB Franprix Garenn,-12.67
+2018-12-20,CB Franprix Lgc,-27.71
+2018-12-26,CB Franprix Lgc,-50.67
+2019-01-07,CB Franprix Lgc,-48.84
+2019-01-07,Prlv De A,"-2,130.85"
+2019-01-14,CB Franprix Garenn,-14.88
+2019-01-14,CB Franprix Lgc,-52.72
+2019-01-21,CB Franprix Garenn,-14.40
+2019-01-21,CB Franprix Lgc,-30.40
+2019-01-21,CB Franprix Lgc,-18.03
+2019-01-22,CB Franprix Lgc,-53.99
+2019-01-29,CB Franprix Lgc,-54.80
+2019-02-04,CB Franprix Garenn,-11.93
+2019-02-04,CB Franprix Lgc,-53.75
+2019-02-04,Payt Cdiscount,-29.99
+2019-02-05,Prlv De A,"-2,130.85"
+2019-02-08,CB Franprix Lgc,-23.40
+2019-02-11,CB Franprix Garenn,-10.25
+2019-02-11,CB Franprix Garenn,-9.70
+2019-02-19,CB Franprix Garenn,-15.20
+2019-02-19,CB Franprix Garenn,-3.70
+2019-02-19,CB Franprix Lgc,-6.15
+2019-02-19,CB Franprix Lgc,-5.98
+2019-02-21,CB Franprix Lgc,-16.54
+2019-02-21,CB Franprix Lgc,-27.55
+2019-02-22,CB Franprix Lgc,-14.90
+2019-03-05,CB Franprix Garenn,-9.59
+2019-03-05,Prlv De A,"-2,130.85"
+2019-03-06,CB Franprix Garenn,-11.30
+2019-03-11,CB Franprix Lgc,-14.15
+2019-03-12,CB Franprix Lgc,-33.21
+2019-03-18,CB Franprix Lgc,-8.95
+2019-03-18,CB Franprix Lgc,-5.65
+2019-03-22,CB Franprix Lgc,-24.04
+2019-03-25,CB Franprix Garenn,-11.95
+2019-03-25,CB Franprix Lgc,-16.54
+2019-03-27,CB Franprix Garenn,-10.09
+2019-04-02,CB Franprix Lgc,-27.96
+2019-04-04,CB Franprix Lgc,-22.70
+2019-04-05,CB Franprix Lgc,-32.22
+2019-04-05,Prlv De A,"-2,130.85"
+2019-04-10,CB Franprix Lgc,-52.88
+2019-04-23,CB Franprix,-6.09
+2019-05-03,CB Boucherie Avenue,-15.63
+2019-05-03,CB C F Primeurs,-14.10
+2019-05-03,CB Franprix Lgc,-23.18
+2019-05-03,CB Mus,-11.50
+2019-05-06,CB Ange De Mer,-35.48
+2019-05-06,CB Cyrillus.fr,-80.00
+2019-05-06,CB Franprix Lgc,-11.99
+2019-05-06,CB Indigo,-8.20
+2019-05-06,CB Julien Bablon,-31.00
+2019-05-06,CB Nagoya,-42.30
+2019-05-06,CB Nautelyo,-22.20
+2019-05-06,CB Sapn,-9.00
+2019-05-06,CB Sarl Goudenhooft,-12.85
+2019-05-06,CB Sncf Internet,-105.10
+2019-05-06,CB Sncf Internet,-210.20
+2019-05-06,CB Veau David,-25.45
+2019-05-06,F Cotisation Formule Oligo,-8.25
+2019-05-06,Prlv De A,"-2,130.85"
+2019-05-06,Vir Payt Carla Cyril,-373.95
+2019-05-07,CB Amazon Payments,-20.96
+2019-05-07,CB Cultura,-26.90
+2019-05-07,CB Docteur Dournon,-50.00
+2019-05-07,CB Fnac.com,-44.99
+2019-05-07,CB Franprix Lgc,-12.35
+2019-05-07,CB Pitaya Obkf,-10.50
+2019-05-07,CB Sapn,-11.40
+2019-05-07,Cheque,-380.00
+2019-05-07,Retrait Dab La Garenne V,-60.00
+2019-05-09,CB Amazon Eu Sarl,-6.95
+2019-05-09,CB Amazon Payments,-23.39
+2019-05-09,CB Amazon Payments,-19.98
+2019-05-09,CB Annikids.com,-41.50
+2019-05-09,CB Apcm Primeurs,-15.09
+2019-05-09,CB Auchan Super Ma,-76.70
+2019-05-09,CB Bio Life,-42.00
+2019-05-09,CB Cavissima,"-1,167.60"
+2019-05-09,CB La Cave De Disqu,-12.00
+2019-05-09,CB Sc Bousch/fils,-18.00
+2019-05-27,CB Franprix Lgc,-19.67
+2019-05-28,CB Franprix Lgc,-46.30
+2019-05-28,CB Just Eat,-59.45
+2019-05-28,CB Lydia App,-75.08
+2019-05-28,Prlv De Activite Scolaire Per,-156.00
+2019-05-29,CB Biocoop Les Bru,-66.10
+2019-05-29,CB Digitick Billet,-39.00
+2019-05-29,CB Franprix,-8.14
+2019-05-29,CB Promod,-152.96
+2019-06-03,CB A Mains A Pi,-135.80
+2019-06-03,CB Amazon Eu Sarl,-11.96
+2019-06-03,CB Auchan Super Ma,-58.87
+2019-06-03,CB Auchan Super Ma,-12.45
+2019-06-03,CB Auchan Super Ma,-12.45
+2019-06-03,CB Baby Sittor,-41.56
+2019-06-03,CB Baby Sittor,-41.56
+2019-06-03,CB C F Primeurs,-52.73
+2019-06-03,CB C F Primeurs,-52.73
+2019-06-03,CB Delyse Ocean,-43.00
+2019-06-03,CB Dr Morin Jeanne,-65.00
+2019-06-03,CB Etal Du Marche,-22.13
+2019-06-03,CB Etal Du Marche,-22.13
+2019-06-03,CB Fsc Sarl,-24.63
+2019-06-03,CB Gdpalais moka,-9.10
+2019-06-03,CB Nagoya,-109.40
+2019-06-03,CB Nespresso Franc,-35.00
+2019-06-03,CB Ooshop,-196.08
+2019-06-03,CB Ufc Que Choisir,-6.99
+2019-06-03,Retrait Dab La Garenne V,-120.00
+2019-06-03,Vir Payt Chateauneuf,-230.00
+2019-06-04,CB Amazon Payments,-32.88
+2019-06-04,CB Soleil Oberkampf,-8.60
+2019-06-04,Retrait Dab Paris Saint,-100.00
