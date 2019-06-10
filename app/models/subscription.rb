@@ -7,7 +7,7 @@ class Subscription < ApplicationRecord
   end
 
   def avg_fee
-    operations.average(:amount)
+    operations.average(:amount) # float
   end
 
   # give infos relative to subscription fees variation
@@ -27,9 +27,11 @@ class Subscription < ApplicationRecord
   # give payment frequency in string type and integer days
 
   def payment_frequency
-    diff_date = (operations.last.date - operations[-2].date)
+    unless new_sub?
+      diff_date = (operations[-2].date - operations.last.date)
+    end
     if new_sub?
-      { type: "nouvel abonnement" }
+      { type: "nouvel abonnement", days: 0  }
     elsif diff_date.between?(5, 15)
       { type: "hebdomadaire", days: 7 }
     elsif diff_date.between?(15, 45)
@@ -48,6 +50,6 @@ class Subscription < ApplicationRecord
   def time_before_next_payment
     delay = payment_frequency[:days]
     next_payment_date = operations.last.date + delay.days
-    distance_of_time_in_words(Time.now, next_payment_date)
+    distance_of_time_in_words(Date.today, next_payment_date)
   end
 end
