@@ -1,3 +1,5 @@
+include ActionView::Helpers::DateHelper
+
 class Subscription < ApplicationRecord
   belongs_to :operator
   has_many :operations
