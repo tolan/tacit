@@ -6,7 +6,7 @@ class Bridge::Users::GetAccessToken
     header = {
       "Bankin-Version" => "2018-06-15"
     }
-    RestClient.proxy = ENV["QUOTAGUARDSTATIC_URL"] if Rails.env.production?
+    RestClient.proxy = ENV["FIXIE_URL"] if Rails.env.production?
     response = RestClient.post(url, {}, header)
     # JSON.parse(response.body)["access_token"]
     JSON.parse(response.body)

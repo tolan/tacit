@@ -1,15 +1,17 @@
 logo,name,regex,category
-logos/amazon.png,Amazon,Amazon.fr/prem,Shopping
-logos/bouygues.png,Bouygues Telecom,Bouygues Telecom,Telco
-logos/canal.png,Canal+,Canalsat,Entertainment
-logos/edf.png,Edf,Edf ,Energie
-logos/engie.png,Engie,Engie,Energie
-logos/engiehs.png,Engie Home Services,Engie Home Services,Home Services
-logos/free.png,amazon,Free Mobile,Telco
-logos/freem.png,Free internet,Free Telecom,Telco
-logos/orange.png,Orange,Orange,Telco
-logos/securitas.png,Securitas,Securitas,Home Services
-logos/spotify.png,Spotify,Spotify,Entertainment
-logos/suez.jpg,Suez,Suez Eau,Energie
-logos/axa.png,Axa habitation,Axa France Vie,Assurance
-logos/axa.png,Axa auto,Prlv De Axa,Assurance
+'logos/amazon.png',Amazon,Amazon.fr/prem,Shopping
+'logos/bouygues.png',Bouygues Telecom,Bouygues Telecom,Telco
+'logos/canal.png',Canal+,Canalsat,Entertainment
+'logos/edf.png',Edf,Edf ,Energie
+'logos/engie.png',Engie,Engie,Energie
+'logos/engiehs.png',Engie Home Services,Engie Home Services,Home Services
+'logos/free.png',amazon,Free Mobile,Telco
+'logos/freem.png',Free internet,Free Telecom,Telco
+'logos/orange.png',Orange,Orange,Telco
+'logos/securitas.png',Securitas,Securitas,Home Services
+'logos/spotify.png',Spotify,Spotify,Entertainment
+'logos/suez.jpg',Suez,Suez Eau,Energie
+'logos/axa.png',Axa habitation,Axa France Vie,Assurance
+'logos/axa.png',Axa auto,Prlv De Axa,Assurance
+'logos/cdiscount.png',Cdiscount,Payt Cdiscount,Shopping
+

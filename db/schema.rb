@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_06_223434) do
+ActiveRecord::Schema.define(version: 2019_06_10_131039) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2019_06_06_223434) do
     t.bigint "bank_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
+    t.string "logo"
     t.index ["bank_id"], name: "index_accounts_on_bank_id"
     t.index ["user_id"], name: "index_accounts_on_user_id"
   end
@@ -61,12 +63,13 @@ ActiveRecord::Schema.define(version: 2019_06_06_223434) do
     t.string "name"
     t.string "category"
     t.integer "unsubcribe_number"
-    t.string "unsubcribe_details"
+    t.text "unsubcribe_details"
     t.string "unsubcribe_address"
     t.string "logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "regex"
+    t.string "unsubcribe_letter"
   end
 
   create_table "subscriptions", force: :cascade do |t|
@@ -76,6 +79,7 @@ ActiveRecord::Schema.define(version: 2019_06_06_223434) do
     t.bigint "operator_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "end_date"
     t.index ["operator_id"], name: "index_subscriptions_on_operator_id"
   end
 
@@ -88,6 +92,10 @@ ActiveRecord::Schema.define(version: 2019_06_06_223434) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "uuid"
+    t.string "first_name"
+    t.string "last_name"
+    t.integer "household"
+    t.string "photo"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
