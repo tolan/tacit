@@ -9,33 +9,35 @@
   </div>
 </div>
 
-<% 10.times do %>
+<% @subscriptions.each do |subscription|%>
 
-<div class="card-subscription">
-  <div class="card-subscription-left">
-    <div class="card-subscription-top-left">
-      <div class="card-subscription-operator">
-        <h3>amazon prime</h3>
+  <%= render 'card', subscription: @subscription %>
+
+  <div class="card-subscription">
+    <div class="card-subscription-left">
+      <div class="card-subscription-top-left">
+        <div class="card-subscription-operator">
+          <h3>amazon prime</h3>
+        </div>
+        <div class="card-subscription-frequency">
+          <p>mensuel</p>
+        </div>
       </div>
-      <div class="card-subscription-frequency">
-        <p>mensuel</p>
+      <div class="card-subscription-bottom-left">
+        <div class="card-subscription-price">
+          <h2>6,99€</h2>
+        </div>
+        <%= image_tag("arrow_up.png", class:"card-subscription-trend") %>
       </div>
     </div>
-    <div class="card-subscription-bottom-left">
-      <div class="card-subscription-price">
-        <h2>6,99€</h2>
+    <div class="card-subscription-right">
+      <div>
+        <img src="https://res.cloudinary.com/dpnte3nr8/image/upload/v1559739406/n26_l6turg.png" alt="logo" class="card-subscription-logo">
       </div>
-      <%= image_tag("arrow_up.png", class:"card-subscription-trend") %>
+      <div class="card-subscription-date">
+        <p><strong>4</strong> mai</p>
+      </div>
     </div>
   </div>
-  <div class="card-subscription-right">
-    <div>
-      <img src="https://res.cloudinary.com/dpnte3nr8/image/upload/v1559739406/n26_l6turg.png" alt="logo" class="card-subscription-logo">
-    </div>
-    <div class="card-subscription-date">
-      <p><strong>4</strong> mai</p>
-    </div>
-  </div>
-</div>
 
 <% end %>

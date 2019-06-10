@@ -7,7 +7,7 @@ class Subscription < ApplicationRecord
   end
 
   def avg_fee
-    operations.average(:amount)
+    operations.average(:amount) # float
   end
 
   # give infos relative to subscription fees variation
