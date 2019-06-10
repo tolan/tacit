@@ -1,3 +1,5 @@
+<%= require 'action_view' %>
+
 <div class="card-subscription">
   <div class="card-subscription-left">
     <div class="card-subscription-top-left">
@@ -5,7 +7,9 @@
         <h3><%= subscription.operator.name %></h3>
       </div>
       <div class="card-subscription-frequency">
-        <p><%= subscription.payment_frequency %></p>
+        <% unless subscription.payment_frequency.blank? %>
+          <p><%= subscription.payment_frequency[:type] %></p>
+        <% end %>
       </div>
     </div>
     <div class="card-subscription-bottom-left">
@@ -14,14 +18,15 @@
       </div>
       <!--  Unless it's a new sub, display trend icon - up, down, flat - depending on last transactions variation -->
       <% unless subscription.new_sub? %>
-        <% image_tag("icons/#{ subscription.trend }.png", class: "card-subscription-trend") %>
+        <%= image_tag("#{subscription.trend}.png", class: "card-subscription-trend") %>
       <% end %>
     </div>
   </div>
   <div class="card-subscription-right">
-    <% image_tag( subscription.operator.logo , class: "card-subscription-logo") %>
+    <%= image_tag("#{subscription.operator.logo.gsub(/\s|"|'/, '')}", class: "card-subscription-logo") %>
     <div class="card-subscription-date">
       <p><%=  highlight( subscription.time_before_next_payment , /\d/, highlighter: '<strong>\1</strong>') %></p>
     </div>
   </div>
 </div>
+
