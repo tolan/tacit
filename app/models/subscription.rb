@@ -3,13 +3,16 @@ include ActionView::Helpers::DateHelper
 class Subscription < ApplicationRecord
   belongs_to :operator
   has_many :operations
+  # monetize :amount_cents
+   monetize :price_cents
+   price = amount
 
   def new_sub?
     operations.count == 1
   end
 
   def avg_fee
-    operations.average(:amount) # float
+    operations.average(:price) # float
   end
 
   # give infos relative to subscription fees variation
@@ -17,9 +20,9 @@ class Subscription < ApplicationRecord
   def trend
     if new_sub?
       "none"
-    elsif avg_fee == operations.last.amount
+    elsif avg_fee == operations.last.price
       "flat_fee"
-    elsif operations.last.amount > operations[-2].amount
+    elsif operations.last.price > operations[-2].price
       "arrow_up"
     else
       "arrow_down"
