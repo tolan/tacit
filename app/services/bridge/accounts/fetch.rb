@@ -8,6 +8,8 @@ class Bridge::Accounts::Fetch
       client_id: ENV["bridge_client_id"],
       client_secret: ENV["bridge_client_secret"]
     }
+    #dnac.dry_refacto w/method
+    RestClient.proxy = ENV["FIXIE_URL"] if Rails.env.production?
     response = RestClient.get(url, {
       params: params,
       "Bankin-Version": "2018-06-15",

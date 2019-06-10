@@ -6,6 +6,7 @@ class Bridge::Items::Refresh
       "Bankin-Version": "2018-06-15",
       "Authorization": "Bearer #{access_token}"
     }
+    RestClient.proxy = ENV["FIXIE_URL"] if Rails.env.production?
     response = RestClient.post(url, {}, header)
     # JSON.parse(response.body)
   end
