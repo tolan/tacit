@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :banks, through: :accounts
   mount_uploader :photo, PhotoUploader
 
+
   def has_bridge_account?
     self.uuid.present?
   end
