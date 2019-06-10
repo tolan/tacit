@@ -7,11 +7,11 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
 
-.navbar-brand h1 {
+.zapit {
 font-family: Abril Fatface;
 font-style: normal;
 font-weight: normal;
@@ -24,4 +24,22 @@ color: $vibrant-blue;
 #nav-toggler {
   color: $vibrant-blue;
   border: none;
+}
+
+#logo {
+  align-self: center;
+  justify-self: center;
+  margin-right: 8px;
+  transition: all 0.5s ease-out;
+
+}
+
+#logo:hover {
+  transform: perspective(400px) translate3d(-10px, 0px, -10px) scale(0.93);
+}
+
+.nav-logo-brand {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
 }

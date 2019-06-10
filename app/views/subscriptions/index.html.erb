@@ -1,8 +1,8 @@
+
 <%= render 'shared/cardmonthly', user: @user %>
 
 <% @subscriptions.each do |subscription|%>
 
   <%= render 'shared/card', subscription: subscription %>
-
 
 <% end %>

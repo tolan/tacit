@@ -1,0 +1,19 @@
+.navbar-show-container {
+  height: 62px;
+  color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #004BB4;
+}
+
+.navbar-show-title {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 32px;
+  margin-left: 24px;
+}
