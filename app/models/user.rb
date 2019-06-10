@@ -4,11 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :operations
-  has_many :subscriptions, through: :operations, source: :subscription # allow to find the column operations
+  has_many :subscriptions, through: :operations #, source: :subscription # allow to find the column operations
   has_many :operators, through: :subscriptions
   has_many :accounts
   has_many :banks, through: :accounts
   mount_uploader :photo, PhotoUploader
+
 
   def has_bridge_account?
     self.uuid.present?

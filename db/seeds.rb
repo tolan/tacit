@@ -52,7 +52,7 @@ cg = User.create( email: "cyril.gaitte@gmail.com",
 puts "cyril created"
 
 csv_options = { col_sep: ',', headers: :first_row }
-filepath    = Rails.root + 'cyril_gaitte.csv'
+filepath    = Rails.root + 'db/cyril_gaitte.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
   # Here, row is an array of columns
@@ -62,15 +62,12 @@ CSV.foreach(filepath, csv_options) do |row|
     date: row["date"],
     description: row["description"]
   )
-
-puts "#{cg[first_name]}'s conversions added"
-
 end
-
+puts "#{cg.first_name}'s conversions added"
 
 puts "create similar users"
 
-10.times do
+1.times do
 url = 'https://uinames.com/api/?ext&region=france'
 
 user_serialized = open(url).read
@@ -84,10 +81,10 @@ similar = User.create(  email: user["email"],
                         photo: user["photo"]
                         )
 
-puts "#{similar[first_name]} created"
+puts "#{similar.first_name} created"
 
 csv_options = { col_sep: ',', headers: :first_row }
-filepath    = Rails.root + 'similar_users.csv'
+filepath    = Rails.root + 'db/similar_users.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
   # Here, row is an array of columns
@@ -99,13 +96,13 @@ CSV.foreach(filepath, csv_options) do |row|
   )
 end
 
-puts "#{single[first_name]}'conversions added in the database"
+puts "#{similar.first_name}'s conversions added to the database"
 
 end
 
 puts "create single users"
 
-10.times do
+1.times do
 url = 'https://uinames.com/api/?ext&region=france'
 
 user_serialized = open(url).read
@@ -119,10 +116,10 @@ single = User.create(  email: user["email"],
                         photo: user["photo"]
                         )
 
-puts "#{single[first_name]} created"
+puts "#{single.first_name} created"
 
 csv_options = { col_sep: ',', headers: :first_row }
-filepath    = Rails.root + 'single_users.csv'
+filepath    = Rails.root + 'db/single_users.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
   # Here, row is an array of columns
@@ -133,7 +130,7 @@ CSV.foreach(filepath, csv_options) do |row|
     description: row["description"]
   )
 end
-puts "#{single[first_name]}'conversions added in the database"
+puts "#{single.first_name}'conversions added to the database"
 end
 
 puts "processing transactions..."

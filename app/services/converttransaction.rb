@@ -19,7 +19,7 @@ class Converttransaction
             subs = Subscription.find_by(operator: operator)
             transaction.update(subscription: subs)
           else
-            new_subs = Subscription.new(operator: operator)
+            new_subs = Subscription.create(operator: operator)
             transaction.update(subscription: new_subs)
           end
         end
