@@ -3,19 +3,43 @@
   padding: 16px;
 }
 
-.date-row, .date-header, .date-result {
+.date-row, .date-header, .date-result, .card-add-reminder {
   display: flex;
   align-items: center;
 }
 
-.card-dates-row {
+.date-row, .card-add-reminder {
   justify-content: space-between;
 }
 
 .date-header {
   justify-content: flex-start;
+  p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-blue;
+    margin-bottom: 0px;
+  }
 }
 
 .date-result {
   justify-content: flex-end;
+  p {
+    font-weight: 400;
+  }
+}
+
+.card-dates-title {
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: normal;
+  color: $vibrant-blue;
+}
+
+.card-dates-header {
+  padding: 16px 0px;
+  border-top-style: solid 1px $dark-blue-light;
 }
