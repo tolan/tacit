@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   end
 
   def charts
+    @data = Operation.group_by_month(:date).where.not(subscription: nil).count.to_json
   end
 end
