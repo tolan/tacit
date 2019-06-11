@@ -14,3 +14,4 @@ logo,name,regex,category,bank_name,bank_logo,category_logo
 'logos/axa.png',Axa habitation,Axa France Vie,Assurance,N26,'logos/n26.png','category/insurance.png'
 'logos/axa.png',Axa auto,Prlv De Axa,Assurance,N26,'logos/n26.png','category/insurance.png'
 'logos/cdiscount.png',Cdiscount,Payt Cdiscount,Shopping,N26,'logos/n26.png','category/shopping.png'
+

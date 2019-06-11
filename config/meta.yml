@@ -1,0 +1,5 @@
+meta_product_name: "Zapit.fr"
+meta_title: "Zapit.fr - zapitfr"
+meta_description: "Suivez facilement vos paiements récurrents et comparez-les aux autres membres de la communauté Zapit!"
+meta_image: "android-icon-144x144.png" # should exist in `app/assets/images/`
+twitter_account: "@zapitfr_twitter_account"   # required for Twitter Cards

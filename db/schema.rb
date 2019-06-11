@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2019_06_11_073026) do
 
   # These are extensions that must be enabled in order to support this database
@@ -23,7 +24,6 @@ ActiveRecord::Schema.define(version: 2019_06_11_073026) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
-    t.string "logo"
     t.index ["bank_id"], name: "index_accounts_on_bank_id"
     t.index ["user_id"], name: "index_accounts_on_user_id"
   end
@@ -44,7 +44,6 @@ ActiveRecord::Schema.define(version: 2019_06_11_073026) do
 
   create_table "operations", force: :cascade do |t|
     t.string "description"
-    t.float "amount"
     t.date "date"
     t.bigint "bridge_id"
     t.bigint "user_id"
@@ -53,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_06_11_073026) do
     t.bigint "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "amount_cents", default: 0, null: false
     t.index ["account_id"], name: "index_operations_on_account_id"
     t.index ["category_id"], name: "index_operations_on_category_id"
     t.index ["subscription_id"], name: "index_operations_on_subscription_id"
