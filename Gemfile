@@ -21,6 +21,11 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'rest-client'
 
+# dates manipulation
+gem 'chartjs-ror'
+gem "chartkick"
+gem 'groupdate'
+
 #add monetization and rounding functions
 gem 'money-rails'
 

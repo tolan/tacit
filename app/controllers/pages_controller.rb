@@ -4,9 +4,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def demoindex
-    @subscritption = subscriptions.uniq.find(189)
+  def charts
   end
-
-
 end
