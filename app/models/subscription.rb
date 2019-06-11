@@ -12,7 +12,7 @@ class Subscription < ApplicationRecord
   end
 
   def avg_fee
-    operations.average(:price) # float
+    operations.where("amount < 0").average(:amount) # float
   end
 
   # give infos relative to subscription fees variation
@@ -33,7 +33,8 @@ class Subscription < ApplicationRecord
 
   def payment_frequency
     unless new_sub?
-      diff_date = (operations[-2].date - operations.last.date)
+      withdrawls = operations.where("amount < 0").order(date: :desc)
+      diff_date = (withdrawls.first.date - withdrawls[1].date)
     end
     if new_sub?
       { type: "nouvel abonnement", days: 0  }
