@@ -1,0 +1,68 @@
+.card-dates-container {
+  overflow: hidden;
+  padding: 16px;
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.date-row, .date-header, .date-result, .card-add-reminder {
+  display: flex;
+  align-items: center;
+}
+
+.date-row, .card-add-reminder {
+  justify-content: space-between;
+}
+
+.date-header {
+  justify-content: flex-start;
+  p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-blue;
+    margin-bottom: 0px;
+  }
+}
+
+.card-add-reminder {
+  justify-content: flex-end;
+}
+
+.date-row {
+  margin-bottom: 16px;
+}
+
+.date-result {
+  justify-content: flex-end;
+  p {
+    font-weight: 400;
+    color: $vibrant-blue;
+    font-size: 16px;
+  }
+}
+
+.card-dates-title {
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: normal;
+  color: $vibrant-blue;
+}
+
+.card-dates-header {
+  margin-bottom: 16px;
+  border-top-style: solid 1px $dark-blue-light;
+}
+
+.card-add-reminder {
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    color: $dark-blue-light
+  }
+}
+
+

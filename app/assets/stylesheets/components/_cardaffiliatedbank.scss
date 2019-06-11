@@ -1,0 +1,23 @@
+.card-affiliated-bank {
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .description {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-blue;
+    margin-bottom: 0px;
+  }
+}
+
+.bank-logo {
+  width: 32px;
+  margin-left: 8px;
+
+}
+
