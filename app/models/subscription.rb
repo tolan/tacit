@@ -9,8 +9,8 @@ class Subscription < ApplicationRecord
   end
 
   def avg_fee
-    operations.where("amount_cents < 0").average(:amount_cents).fdiv(100) # float
-    operations.where("amount_cents < 0").average(:amount_cents).fdiv(100) # float
+    operations.where("amount_cents < 0").average(:amount_cents) # float
+    # curr_format(10000)
   end
 
   # give infos relative to subscription fees variation
@@ -18,9 +18,9 @@ class Subscription < ApplicationRecord
   def trend
     if new_sub?
       "none"
-    elsif avg_fee == operations.last.amount_cents.fdiv(100)
+    elsif avg_fee == operations.last.amount_cents
       "flat_fee"
-    elsif operations.last.amount_cents.fdiv(100) > operations[-2].amount_cents.fdiv(100)
+    elsif operations.last.amount_cents > operations[-2].amount_cents
       "arrow_up"
     else
       "arrow_down"

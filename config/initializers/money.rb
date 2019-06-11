@@ -1,5 +1,5 @@
 MoneyRails.configure do |config|
-  config.default_currency = :eur
+  # config.default_currency = :eur
 
   # config.no_cents_if_whole = false
 
@@ -17,11 +17,12 @@ MoneyRails.configure do |config|
   #   decimal_mark:        ","
   # }
 
-    config.default_format = {
-    no_cents_if_whole: nil,
-    symbol: nil,
-    sign_before_symbol: false
-  }
+
+  #   config.default_format = {
+  #   no_cents_if_whole: nil,
+  #   symbol: nil,
+  #   sign_before_symbol: false
+  # }
 
 
 end
