@@ -1,0 +1,45 @@
+// svg icons
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $dark-blue-light;
+}
+
+.svg-icon circle {
+  stroke: $dark-blue-light;
+  stroke-width: 1;
+}
+
+.bell, .list {
+  margin-right: 8px;
+}
+
+.edit {
+  margin-left: 8px;
+  margin-bottom: 3px;
+}
+
+
+
+// dust bin design
+.bin {
+  width: 32px;
+  height: 32px;
+}
+
+.bin path,
+.bin polygon,
+.bin rect {
+  fill: $red-warning;
+}
+
+.bin circle {
+  stroke: $red-warning;
+  stroke-width: 1;
+}

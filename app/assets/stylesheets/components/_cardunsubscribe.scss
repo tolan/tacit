@@ -1,0 +1,42 @@
+.cta_btn_show {
+  width: 100px;
+  height: 44px;
+  // position: absolute;
+  cursor: pointer;
+  font-family: $body-font;
+  background: $vibrant-blue;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  // transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  padding: 5px 20px;
+
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+    background: $vibrant-blue-lighter;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+.card-unsubscribe {
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .description {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-blue;
+    margin-bottom: 0px;
+  }
+}
