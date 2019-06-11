@@ -5,11 +5,11 @@
     <% image_tag("#{ user.last_month_trend.gsub(/\s|"|'/, '') }", class: "card-subscription-trend") %>
     <% if user.last_month_trend == 'arrow_up' %>
       <div class="card-synthesis-trend-up">
-        <p>increase by <span class="var-amount"><%= user.last_month_var.abs %></span></p>
+        <p>increase by <span class="var-amount"><%= curr_format(user.last_month_var.abs) %></span></p>
       </div>
     <% else %>
       <div class="card-synthesis-trend-down">
-        <p>decrease by <span class="var-amount"><%= user.last_month_var.abs %>€</span></p>
+        <p>decrease by <span class="var-amount"><%= curr_format(user.last_month_var.abs) %></span></p>
       </div>
     <% end %>
   </div>
