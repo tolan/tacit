@@ -9,7 +9,7 @@ class Subscription < ApplicationRecord
   end
 
   def avg_fee
-    operations.where("amount < 0").average(:amount) # float
+    operations.where("amount_cents < 0").average(:amount_cents) # float
   end
 
   # give infos relative to subscription fees variation
@@ -17,9 +17,9 @@ class Subscription < ApplicationRecord
   def trend
     if new_sub?
       "none"
-    elsif avg_fee == operations.last.price
+    elsif avg_fee == operations.last.amount_cents
       "flat_fee"
-    elsif operations.last.price > operations[-2].price
+    elsif operations.last.amount_cents > operations[-2].amount_cents
       "arrow_up"
     else
       "arrow_down"
@@ -30,7 +30,7 @@ class Subscription < ApplicationRecord
 
   def payment_frequency
     unless new_sub?
-      withdrawls = operations.where("amount < 0").order(date: :desc)
+      withdrawls = operations.where("amount_cents < 0").order(date: :desc)
       diff_date = (withdrawls.first.date - withdrawls[1].date)
     end
     if new_sub?
