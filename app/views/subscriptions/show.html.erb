@@ -1,2 +1,13 @@
-<h1>show#session</h1>
-<p>Find me in app/views/subscriptions/show.html.erb</p>
+<%= render 'shared/navbarshow' %>
+<%= render 'shared/cardaffiliatedbank' %>
+<div class="lineseparator"></div>
+<%= render 'shared/card' subscription: @subscription %>
+<%= render 'shared/cardstats' %>
+<div class="lineseparator"></div>
+<%= render 'shared/cardstatsdate' %>
+<div class="lineseparator"></div>
+
+<%= render 'shared/cardunsubscribe' %>
+
+
+
