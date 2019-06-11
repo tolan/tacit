@@ -1,17 +1,17 @@
-logo,name,regex,category
-'logos/amazon.png',Amazon,Amazon.fr/prem,Shopping
-'logos/bouygues.png',Bouygues Telecom,Bouygues Telecom,Telco
-'logos/canal.png',Canal+,Canalsat,Entertainment
-'logos/edf.png',Edf,Edf ,Energie
-'logos/engie.png',Engie,Engie,Energie
-'logos/engiehs.png',Engie Home Services,Engie Home Services,Home Services
-'logos/free.png',amazon,Free Mobile,Telco
-'logos/freem.png',Free internet,Free Telecom,Telco
-'logos/orange.png',Orange,Orange,Telco
-'logos/securitas.png',Securitas,Securitas,Home Services
-'logos/spotify.png',Spotify,Spotify,Entertainment
-'logos/suez.jpg',Suez,Suez Eau,Energie
-'logos/axa.png',Axa habitation,Axa France Vie,Assurance
-'logos/axa.png',Axa auto,Prlv De Axa,Assurance
-'logos/cdiscount.png',Cdiscount,Payt Cdiscount,Shopping
+logo,name,regex,category,bank_name,bank_logo,category_logo
+'logos/amazon.png',Amazon,Amazon.fr/prem,Shopping,N26,'logos/n26.png','category/shopping.png'
+'logos/bouygues.png',Bouygues Telecom,Bouygues Telecom,Telco,Lydia,'logos/lydia.png','category/telco.png'
+'logos/canal.png',Canal+,Canalsat,Entertainment,Lydia,'logos/lydia.png','category/entertainment.png'
+'logos/edf.png',Edf,Edf ,Energie,Lydia,'logos/lydia.png','category/energy.png'
+'logos/engie.png',Engie,Engie,Energie,Lydia,'logos/lydia.png','category/energy.png'
+'logos/engiehs.png',Engie Home Services,Engie Home Services,Home Services,Lydia,'logos/lydia.png','category/home_services.png'
+'logos/free.png',amazon,Free Mobile,Telco,Lydia,'logos/lydia.png','category/telco.png'
+'logos/freem.png',Free internet,Free Telecom,Telco,Lydia,'logos/lydia.png','category/telco.png'
+'logos/orange.png',Orange,Orange,Telco,N26,'logos/n26.png','category/telco.png'
+'logos/securitas.png',Securitas,Securitas,Home Services,N26,'logos/n26.png','category/home_services.png'
+'logos/spotify.png',Spotify,Spotify,Entertainment,N26,'logos/n26.png','category/entertainment.png'
+'logos/suez.jpg',Suez,Suez Eau,Energie,N26,'logos/n26.png','category/energy.png'
+'logos/axa.png',Axa habitation,Axa France Vie,Assurance,N26,'logos/n26.png','category/insurance.png'
+'logos/axa.png',Axa auto,Prlv De Axa,Assurance,N26,'logos/n26.png','category/insurance.png'
+'logos/cdiscount.png',Cdiscount,Payt Cdiscount,Shopping,N26,'logos/n26.png','category/shopping.png'
 

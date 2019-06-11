@@ -58,7 +58,7 @@ CSV.foreach(filepath, csv_options) do |row|
   # Here, row is an array of columns
   Operation.create(
     user: cg,
-    amount: row["amount"],
+    amount_cents: row["amount"].to_f * 100,
     date: row["date"],
     description: row["description"]
   )
@@ -90,7 +90,7 @@ CSV.foreach(filepath, csv_options) do |row|
   # Here, row is an array of columns
   Operation.create(
     user: similar,
-    amount: row["amount"],
+    amount_cents: row["amount"].to_f * 100,
     date: row["date"],
     description: row["description"]
   )
@@ -125,7 +125,7 @@ CSV.foreach(filepath, csv_options) do |row|
   # Here, row is an array of columns
   Operation.create(
     user: single,
-    amount: row["amount"],
+    amount_cents: row["amount"].to_f * 100,
     date: row["date"],
     description: row["description"]
   )
@@ -154,3 +154,11 @@ transac = Operation.all
 Converttransaction.call(transac)
 puts "Operations transformed into subscriptions!"
 
+puts" __      __                               __                              .___
+/  \    /  \ ____     ________ __   ____ |  | __   ______ ____   ____   __| _/
+\   \/\/   // __ \   /  ___/  |  \_/ ___\|  |/ /  /  ___// __ \_/ __ \ / __ |
+ \        /\  ___/   \___ \|  |  /\  \___|    <   \___ \\  ___/\  ___// /_/ |
+  \__/\  /  \___  > /____  >____/  \___  >__|_ \ /____  >\___  >\___  >____ |
+       \/       \/       \/            \/     \/      \/     \/     \/     \/
+"
+# ascii art

@@ -21,6 +21,9 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'rest-client'
 
+#add monetization and rounding functions
+gem 'money-rails'
+
 #webdriver
 gem 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
 
