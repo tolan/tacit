@@ -5,7 +5,7 @@ module ApplicationHelper
       unit: "€",
       separator: ",",
       delimiter: ".",
-      format: "%n %u"
+      format: "%n%u"
     )
   end
 end
