@@ -24,6 +24,9 @@ gem 'rest-client'
 #add monetization and rounding functions
 gem 'money-rails'
 
+#add intercom-rails
+gem "intercom-rails"
+
 #webdriver
 gem 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
 
