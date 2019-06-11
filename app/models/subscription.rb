@@ -3,9 +3,6 @@ include ActionView::Helpers::DateHelper
 class Subscription < ApplicationRecord
   belongs_to :operator
   has_many :operations
-  # monetize :amount_cents
-   monetize :price_cents
-   price = amount
 
   def new_sub?
     operations.count == 1

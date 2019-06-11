@@ -44,7 +44,6 @@ ActiveRecord::Schema.define(version: 2019_06_10_165711) do
 
   create_table "operations", force: :cascade do |t|
     t.string "description"
-    t.float "amount"
     t.date "date"
     t.bigint "bridge_id"
     t.bigint "user_id"
@@ -53,7 +52,7 @@ ActiveRecord::Schema.define(version: 2019_06_10_165711) do
     t.bigint "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "price_cents", default: 0, null: false
+    t.integer "amount_cents", default: 0, null: false
     t.index ["account_id"], name: "index_operations_on_account_id"
     t.index ["category_id"], name: "index_operations_on_category_id"
     t.index ["subscription_id"], name: "index_operations_on_subscription_id"
