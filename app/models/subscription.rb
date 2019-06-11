@@ -12,6 +12,12 @@ class Subscription < ApplicationRecord
     operations.where("amount_cents < 0").average(:amount_cents) # float
   end
 
+  def total_spent
+    operations.map do |operation|                             # operation to operation.amount (float)
+      operation.amount
+    end.inject(0) { |sum, x| sum + x }.abs
+  end
+
   # give infos relative to subscription fees variation
 
   def trend
