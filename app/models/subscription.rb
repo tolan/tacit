@@ -12,6 +12,26 @@ class Subscription < ApplicationRecord
     operations.where("amount_cents < 0").average(:amount_cents) # float
   end
 
+  def total_spent
+    operations.map do |operation|                             # operation to operation.amount (float)
+      operation.amount
+    end.inject(0) { |sum, x| sum + x }.abs
+  end
+
+  def spent_between_two_date(date1, date2)
+    operations.select do |operation|
+      operation.date < date2 && operation.date > date1 # filter operations within two date
+    end.map do |operation|                             # operation to operation.amount (float)
+      operation.amount
+    end.inject(0) { |sum, x| sum + x }.abs                 # sum the elements of the array (float)
+  end
+
+  def last_month_spent
+    start_date = Date.today.at_beginning_of_month - 1.month
+    end_date = Date.today.at_end_of_month - 1.month
+    spent_between_two_date(start_date, end_date)
+  end
+
   # give infos relative to subscription fees variation
 
   def trend

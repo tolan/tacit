@@ -38,7 +38,6 @@ class User < ApplicationRecord
 
   # TEST_CODE
 
-
   def spent_between_two_date(date1, date2)
     operations.select do |operation|
       operation.subscription.present? &&
@@ -49,11 +48,15 @@ class User < ApplicationRecord
   end
 
   def last_month_spent
-    spent_between_two_date(Time.now - 30.days, Time.now)
+    start_date = Date.today.at_beginning_of_month - 1.month
+    end_date = Date.today.at_end_of_month - 1.month
+    spent_between_two_date(start_date, end_date)
   end
 
   def last_month_var
-    spent_between_two_date(Time.now - 30.days, Time.now) - spent_between_two_date(Time.now - 60.days, Time.now - 30.days)
+    start_date_2 = Date.today.at_beginning_of_month - 2.month
+    end_date_2 = Date.today.at_end_of_month - 2.month
+    last_month_spent - spent_between_two_date(start_date_2, end_date_2)
   end
 
   def last_month_trend

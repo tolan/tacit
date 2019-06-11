@@ -1,13 +1,12 @@
-<%= render 'shared/navbarshow' %>
-<%= render 'shared/cardaffiliatedbank' %>
+<%= render 'shared/navbarshow', subscription: @subscription %>
+<%= render 'shared/card', subscription: @subscription %>
+<%= render 'shared/cardaffiliatedbank', subscription: @subscription %>
 <div class="lineseparator"></div>
-<%= render 'shared/card' subscription: @subscription %>
-<%= render 'shared/cardstats' %>
+<%= render 'shared/cardstats', subscription: @subscription, last_month_share: @last_month_share %>
 <div class="lineseparator"></div>
-<%= render 'shared/cardstatsdate' %>
+<%= render 'shared/cardstatsdate', subscription: @subscription %>
 <div class="lineseparator"></div>
-
-<%= render 'shared/cardunsubscribe' %>
+<%= render 'shared/cardunsubscribe', subscription: @subscription %>
 
 
 

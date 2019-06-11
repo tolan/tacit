@@ -32,7 +32,9 @@ CSV.foreach(filepath, csv_options) do |row|
     name: row["name"],
     regex: row["regex"],
     category: row["category"],
-    logo: row["logo"]
+    logo: row["logo"],
+    bank_name: row["bank_name"],
+    bank_logo: row["bank_logo"]
   )
 end
 
