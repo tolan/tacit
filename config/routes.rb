@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   get 'connect_item', to: 'services#connect_item', as: :connect_item
   get "/pages/:page" => "pages#demoshow"
   get "/pages/:page" => "pages#demoindex"
-  get "/pages/chart" => "pages#chart"
-
+  get "charts" => "pages#charts"
+  get "chartsshow" => "pages#chartsshow"
   resources :subscriptions, only: [ :index, :show ]
 
   get "subscriptions", to: "subscriptions#index"
