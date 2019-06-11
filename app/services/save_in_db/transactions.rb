@@ -16,7 +16,7 @@ class SaveInDb::Transactions
         #code exteral methods, and call if don't have account and/or bank
       operation = Operation.new(
         description: transaction["description"],
-        amount: transaction["amount"],
+        amount_cents: transaction["amount"],
         date: transaction["date"],
         bridge_id: transaction["id"],
         user: user,

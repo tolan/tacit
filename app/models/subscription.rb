@@ -10,6 +10,7 @@ class Subscription < ApplicationRecord
 
   def avg_fee
     operations.where("amount_cents < 0").average(:amount_cents) # float
+    # curr_format(10000)
   end
 
   def total_spent

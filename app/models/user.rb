@@ -31,8 +31,8 @@ class User < ApplicationRecord
   # def spent_between_two_date(date1, date2)
   #   operations.select do |operation|
   #     operation.date < date2 && operation.date > date1 # filter operations within two date
-  #   end.map do |operation|                             # operation to operation.amount (float)
-  #     operation.amount
+  #   end.map do |operation|                             # operation to operation.amount_cents (float)
+  #     operation.amount_cents
   #   end.inject(0) { |sum, x| sum + x }                 # sum the elements of the array (float)
   # end
 
@@ -42,8 +42,8 @@ class User < ApplicationRecord
     operations.select do |operation|
       operation.subscription.present? &&
       operation.date < date2 && operation.date > date1 # filter operations within two date
-    end.map do |operation|                             # operation to operation.amount (float)
-      operation.amount
+    end.map do |operation|                             # operation to operation.amount_cents (float)
+      operation.amount_cents
     end.inject(0) { |sum, x| sum + x }.abs                 # sum the elements of the array (float)
   end
 
