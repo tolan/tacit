@@ -2,7 +2,7 @@
 <%= render 'shared/card', subscription: @subscription %>
 <%= render 'shared/cardaffiliatedbank', subscription: @subscription %>
 <div class="lineseparator"></div>
-<%= render 'shared/cardstats', subscription: @subscription %>
+<%= render 'shared/cardstats', subscription: @subscription, last_month_share: @last_month_share %>
 <div class="lineseparator"></div>
 <%= render 'shared/cardstatsdate', subscription: @subscription %>
 <div class="lineseparator"></div>
