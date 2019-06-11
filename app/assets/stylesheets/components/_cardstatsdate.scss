@@ -41,6 +41,7 @@
   p {
     font-weight: 400;
     color: $vibrant-blue;
+    font-size: 16px;
   }
 }
 
@@ -52,7 +53,7 @@
 }
 
 .card-dates-header {
-  padding: 16px 0px;
+  margin-bottom: 16px;
   border-top-style: solid 1px $dark-blue-light;
 }
 
@@ -60,6 +61,7 @@
   p {
     font-size: 14px;
     font-weight: bold;
+    color: $dark-blue-light
   }
 }
 
