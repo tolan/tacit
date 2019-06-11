@@ -1,6 +1,6 @@
 <div class="card-affiliated-bank">
   <span class="description">
-  <strong>Amazon Prime</strong> est débité sur votre compte
+  <strong><%= subscription.operator.name  %></strong> est débité sur votre compte
   </span>
-  <%= image_tag("logos/n26.png", class: "bank-logo")%>
+  <%= image_tag( "#{subscription.operator.bank_logo.gsub(/\s|"|'/, '')}" , class: "bank_logo")%>
 </div>
