@@ -5,6 +5,14 @@ class PagesController < ApplicationController
   end
 
   def charts
-    @data = Operation.group_by_month(:date).where.not(subscription: nil).count.to_json
+    user = current_user
+    all_user_data = Operation.group_by_month(:date).where.not(subscription: nil).sum(:amount_cents)
+    all_user_data_formated = all_user_data.each { |date, amount| all_user_data[date] = (amount.fdiv(-100)).fdiv(User.count) }
+    user_data = Operation.where(user: user).group_by_month(:date).where.not(subscription: nil).sum(:amount_cents)
+    user_data_formated = user_data.each { |date, amount| user_data[date] = amount.fdiv(-100) }
+    @data = [
+      { name: "Moyenne Zappit!", data: all_user_data_formated },
+      { name: "Vos Abonnements", data: user_data_formated }
+    ].to_json
   end
 end

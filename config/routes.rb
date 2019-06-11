@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "/pages/:page" => "pages#demoshow"
   get "/pages/:page" => "pages#demoindex"
   get "charts" => "pages#charts"
-
+  get "chartsshow" => "pages#chartsshow"
   resources :subscriptions, only: [ :index, :show ]
 
 get "subscriptions", to: "subscriptions#index"
