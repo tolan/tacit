@@ -1,6 +1,9 @@
 .card-dates-container {
   overflow: hidden;
   padding: 16px;
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 .date-row, .date-header, .date-result, .card-add-reminder {
@@ -25,10 +28,19 @@
   }
 }
 
+.card-add-reminder {
+  justify-content: flex-end;
+}
+
+.date-row {
+  margin-bottom: 16px;
+}
+
 .date-result {
   justify-content: flex-end;
   p {
     font-weight: 400;
+    color: $vibrant-blue;
   }
 }
 
@@ -42,4 +54,39 @@
 .card-dates-header {
   padding: 16px 0px;
   border-top-style: solid 1px $dark-blue-light;
+}
+
+.card-add-reminder {
+  p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+
+// svg icons
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $dark-blue-light;
+}
+
+.svg-icon circle {
+  stroke: $dark-blue-light;
+  stroke-width: 1;
+}
+
+.bell, .list {
+  margin-right: 8px;
+}
+
+.edit {
+  margin-left: 8px;
+  margin-bottom: 3px;
 }
