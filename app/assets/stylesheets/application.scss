@@ -23,15 +23,11 @@ body {
   overflow-x: hidden;
 }
 
-a:hover {
-  color: inherit;
+a, a:hover, a:active {
   text-decoration: none;
+  color: $dark-blue;
 }
 
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
 
 h1, h2, h3, h4, h5 {
   font-family: $headers-font;

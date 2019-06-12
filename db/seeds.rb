@@ -72,6 +72,7 @@ puts "create similar users"
 
 url = 'https://uinames.com/api/?ext&region=france'
 
+
 5.times do
 sleep 0.1
 
