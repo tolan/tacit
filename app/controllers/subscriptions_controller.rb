@@ -13,6 +13,11 @@ class SubscriptionsController < ApplicationController
     @community_coverage = User.joins(operations: { subscription: :operator }).where('subscriptions.operator_id = ?', @operator.id).distinct.count.to_f / User.count.to_f
   end
 
+   def operator
+    @subscription = Subscription.find(params[:id])
+    @operator = @subscription.operator
+  end
+
   private
 
   def subscription_params
