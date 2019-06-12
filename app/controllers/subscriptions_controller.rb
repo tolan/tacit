@@ -6,7 +6,6 @@ class SubscriptionsController < ApplicationController
   end
 
   def show
-    raise
     @user = current_user
     @subscription = Subscription.find(params[:id])
     @last_month_share = @subscription.last_month_spent.to_f / @user.last_month_spent.to_f
