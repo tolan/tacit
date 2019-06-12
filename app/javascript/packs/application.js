@@ -19,6 +19,12 @@ if (document.querySelector('#chart-2')){
   const chart_show = document.querySelector('#chart-2');
   const data_show = chart_show.dataset.show;
   const parsed_data_show = JSON.parse(data_show)
-  new Chartkick.AreaChart("chart-2", parsed_data_show, {colors: ["#FFE8DC", "#004BB4"], points: false, suffix: "€", thousands: " "} )
-}
+  new Chartkick.AreaChart("chart-2", parsed_data_show, {
+    colors: ["#FFE8DC", "#004BB4"], points: false, suffix: "€", thousands: " ",
+      dataset: {
+        backgroundColor: "rgba(0, 75, 180, 0.6)",
+
+      }
+    })
+  }
 
