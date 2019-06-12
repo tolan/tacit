@@ -3,6 +3,7 @@ include ActionView::Helpers::DateHelper
 class Subscription < ApplicationRecord
   belongs_to :operator
   has_many :operations
+  has_one :user , through: :operations, source: :user
 
   def new_sub?
     operations.count == 1
@@ -49,11 +50,16 @@ class Subscription < ApplicationRecord
 
   # give payment frequency in string type and integer days
 
+  def sort_operations_desc
+    operations.where("amount_cents < 0").order(date: :desc)
+  end
+
   def payment_frequency
     unless new_sub?
-      withdrawls = operations.where("amount_cents < 0").order(date: :desc)
-      diff_date = (withdrawls.first.date - withdrawls[1].date)
+    withdrawls = sort_operations_desc
+    diff_date = (withdrawls.first.date - withdrawls[1].date)
     end
+    # raise
     if new_sub?
       { type: "nouvel abonnement", days: 0  }
     elsif diff_date.between?(5, 15)
@@ -73,7 +79,9 @@ class Subscription < ApplicationRecord
 
   def time_before_next_payment
     delay = payment_frequency[:days]
-    next_payment_date = operations.last.date + delay.days
+    withdrawls = sort_operations_desc
+    # next_payment_date = operations.last.date + delay.days
+    next_payment_date = withdrawls.first.date + delay.days
     distance_of_time_in_words(Date.today, next_payment_date)
   end
 end
