@@ -69,8 +69,11 @@ puts "#{cg.first_name}'s conversions added"
 
 puts "create similar users"
 
-1.times do
+
 url = 'https://uinames.com/api/?ext&region=france'
+
+5.times do
+
 
 user_serialized = open(url).read
 user = JSON.parse(user_serialized)
@@ -104,8 +107,7 @@ end
 
 puts "create single users"
 
-1.times do
-url = 'https://uinames.com/api/?ext&region=france'
+5.times do
 
 user_serialized = open(url).read
 user = JSON.parse(user_serialized)
