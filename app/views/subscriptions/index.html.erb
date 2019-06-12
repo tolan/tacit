@@ -2,7 +2,7 @@
 <%= render 'shared/cardmonthly', user: @user %>
 
 <% @subscriptions.each do |subscription|%>
-
-  <%= render 'shared/card', subscription: subscription %>
-
+  <%= link_to subscription_path(subscription) do %>
+    <%= render 'shared/card', subscription: subscription %>
+  <% end %>
 <% end %>
