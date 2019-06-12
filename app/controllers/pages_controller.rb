@@ -17,7 +17,7 @@ class PagesController < ApplicationController
   end
 
 def chartsshow
-    subscription = Subscription.find(77)
+    subscription = @subscription
     user = current_user
     all_user_data = Operation.group_by_month(:date).where(subscription: subscription).where("amount_cents < -1").sum(:amount_cents)
     all_user_data_formated = all_user_data.each { |date, amount| all_user_data[date] = (amount.fdiv(-100)).fdiv(User.count) }.select{ |date, amount| amount != 0 }
