@@ -76,4 +76,14 @@ class Subscription < ApplicationRecord
     next_payment_date = operations.last.date + delay.days
     distance_of_time_in_words(Date.today, next_payment_date)
   end
+
+  def next_payment_date
+    delay = payment_frequency[:days]
+    operations.last.date + delay.days
+  end
+
+
+  def renewal_date
+    operations.order(date: :desc).first.date + 1.year
+  end
 end
