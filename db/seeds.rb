@@ -72,8 +72,8 @@ puts "create similar users"
 
 url = 'https://uinames.com/api/?ext&region=france'
 
-5.times do
-
+5.times dosleep 0.1
+sleep 0.1
 
 user_serialized = open(url).read
 user = JSON.parse(user_serialized)
@@ -108,6 +108,7 @@ end
 puts "create single users"
 
 5.times do
+  sleep 0.1
 
 user_serialized = open(url).read
 user = JSON.parse(user_serialized)
