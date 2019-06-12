@@ -1,5 +1,36 @@
 <div class="card-synthesis">
   <p><strong>Subscriptions</strong> last month</p>
+<button class="navbar-toggler" id="nav-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--     <span  class="navbar-toggler-icon"></span> -->
+  <%= render 'shared/menuicon' %>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "Home", "/", class: "dropdown-item" %>
+          <%= link_to "Set password", edit_user_password_path, class: "dropdown-item" %>
+          <%= link_to "Register", edit_user_registration_path, class: "dropdown-item" %>
+        </li>
+        <li class="nav-item dropdown">
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <%= link_to "Blog", "#", class: "dropdown-item" %>
+            <%= link_to "L'histoire de Zapit!", "#", class: "dropdown-item" %>
+            <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+      <% else %>
+        <li class="nav-item">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+            <%= link_to "Blog", "#", class: "nav-link" %>
+            <%= link_to "L'histoire de Zapit!", "#", class: "nav-link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
   <h2><%=  curr_format(user.last_month_spent) %></h2>
   <div class="d-flex justify-content-center mr-3">
     <% image_tag("#{ user.last_month_trend}.png", class: "card-subscription-trend") %>
