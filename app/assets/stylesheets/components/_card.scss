@@ -48,7 +48,7 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 38px;
   text-transform: capitalize;
   margin-bottom: 0px;
@@ -64,17 +64,21 @@
 }
 
 .card-subscription-logo {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   flex: auto;
-
+  align-self: flex-end;
+  img  {
+    border-radius: 3px;
+  }
 }
 
 .card-subscription-date {
   flex: auto;
   display: flex;
   align-items: center;
+  align-self: flex-end;
   p {
     margin-bottom: 0px;
   }
