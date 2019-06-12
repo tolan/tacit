@@ -6,11 +6,19 @@ Rails.application.routes.draw do
   get "/pages/:page" => "pages#demoindex"
   get "charts" => "pages#charts"
   get "chartsshow" => "pages#chartsshow"
-  resources :subscriptions, only: [ :index, :show ]
+  resources :subscriptions, only: [ :index, :show ] do
+    resources :operators, only: [:show]
+  end
 
+<<<<<<< HEAD
   get "subscriptions", to: "subscriptions#index"
   get "subscriptions/:id", to: "subscriptions#show"
   get "subscriptions/:id/operators/:id", to: "operators#show" as: :operator
+=======
+  # get "subscriptions", to: "subscriptions#index"
+  # get "subscriptions/:id", to: "subscriptions#show"
+  get "subscriptions/:id/operators/:id", to: "operators#show"
+>>>>>>> master
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
