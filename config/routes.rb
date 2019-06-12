@@ -10,15 +10,9 @@ Rails.application.routes.draw do
     resources :operators, only: [:show]
   end
 
-<<<<<<< HEAD
-  get "subscriptions", to: "subscriptions#index"
-  get "subscriptions/:id", to: "subscriptions#show"
-  get "subscriptions/:id/operators/:id", to: "operators#show" as: :operator
-=======
   # get "subscriptions", to: "subscriptions#index"
   # get "subscriptions/:id", to: "subscriptions#show"
   get "subscriptions/:id/operators/:id", to: "operators#show"
->>>>>>> master
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
