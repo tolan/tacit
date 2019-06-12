@@ -3,6 +3,7 @@ class SubscriptionsController < ApplicationController
   def index
     @subscriptions = current_user.uniq_subscriptions
     @user = current_user
+    chartindex
   end
 
   def show
@@ -32,4 +33,16 @@ class SubscriptionsController < ApplicationController
         { name: "Vos Abonnements", data: user_data_formated }
       ].to_json
     end
+
+  def chartindex
+    user = current_user
+    all_user_data = Operation.group_by_month(:date).where.not(subscription: nil).where("amount_cents < -1").sum(:amount_cents)
+    all_user_data_formated = all_user_data.each { |date, amount| all_user_data[date] = (amount.fdiv(-100)).fdiv(User.count) }.select{ |date, amount| amount != 0 }
+    user_data = Operation.group_by_month(:date).where(user: user).where("amount_cents < -1").where.not(subscription: nil).sum(:amount_cents)
+    user_data_formated = user_data.each { |date, amount| user_data[date] = amount.fdiv(-100) }.select{ |date, amount| amount != 0 }
+    @dataindex = [
+      { name: "Moyenne Zappit!", data: all_user_data_formated },
+      { name: "Vos Abonnements", data: user_data_formated }
+    ].to_json
+  end
 end
