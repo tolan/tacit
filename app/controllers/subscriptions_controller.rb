@@ -9,6 +9,13 @@ class SubscriptionsController < ApplicationController
     @user = current_user
     @subscription = Subscription.find(params[:id])
     @last_month_share = @subscription.last_month_spent.to_f / @user.last_month_spent.to_f
+    @operator = @subscription.operator
+    @community_coverage = User.joins(operations: { subscription: :operator }).where('subscriptions.operator_id = ?', @operator.id).distinct.count.to_f / User.count.to_f
+  end
+
+   def operator
+    @subscription = Subscription.find(params[:id])
+    @operator = @subscription.operator
   end
 
   private

@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   get "/pages/:page" => "pages#demoindex"
   get "charts" => "pages#charts"
   get "chartsshow" => "pages#chartsshow"
-  resources :subscriptions, only: [ :index, :show ]
+  resources :subscriptions, only: [ :index, :show ] do
+    resources :operators, only: [:show]
+  end
 
-  get "subscriptions", to: "subscriptions#index"
-  get "subscriptions/:id", to: "subscriptions#show"
+  # get "subscriptions", to: "subscriptions#index"
+  # get "subscriptions/:id", to: "subscriptions#show"
   get "subscriptions/:id/operators/:id", to: "operators#show"
 
 
