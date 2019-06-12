@@ -73,8 +73,7 @@ puts "create similar users"
 url = 'https://uinames.com/api/?ext&region=france'
 
 5.times do
-
-
+sleep 0.1
 user_serialized = open(url).read
 user = JSON.parse(user_serialized)
 
@@ -108,33 +107,34 @@ end
 puts "create single users"
 
 5.times do
+  sleep 0.1
+  user_serialized = open(url).read
+  user = JSON.parse(user_serialized)
 
-user_serialized = open(url).read
-user = JSON.parse(user_serialized)
 
-single = User.create(  email: user["email"],
-                        first_name: user['name'],
-                        last_name: user["surname"],
-                        password: "Password123",
-                        household: 1,
-                        photo: user["photo"]
-                        )
+  single = User.create(  email: user["email"],
+                          first_name: user['name'],
+                          last_name: user["surname"],
+                          password: "Password123",
+                          household: 1,
+                          photo: user["photo"]
+                          )
 
-puts "#{single.first_name} created"
+  puts "#{single.first_name} created"
 
-csv_options = { col_sep: ',', headers: :first_row }
-filepath    = Rails.root + 'db/single_users.csv'
+  csv_options = { col_sep: ',', headers: :first_row }
+  filepath    = Rails.root + 'db/single_users.csv'
 
-CSV.foreach(filepath, csv_options) do |row|
-  # Here, row is an array of columns
-  Operation.create(
-    user: single,
-    amount_cents: row["amount"].to_f * 100,
-    date: row["date"],
-    description: row["description"]
-  )
-end
-puts "#{single.first_name}'conversions added to the database"
+  CSV.foreach(filepath, csv_options) do |row|
+    # Here, row is an array of columns
+    Operation.create(
+      user: single,
+      amount_cents: row["amount"].to_f * 100,
+      date: row["date"],
+      description: row["description"]
+    )
+  end
+  puts "#{single.first_name}'conversions added to the database"
 end
 
 puts "processing transactions..."
