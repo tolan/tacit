@@ -1,52 +1,187 @@
 date,description,amount
-2017-06-26,CB Amazon.fr/prem,-49.00
-2018-06-07,CB Amazon.fr/prem,-49.00
-2019-06-06,CB Amazon.fr/prem,-49.00
+2017-06-26,CB Amazon.fr/prem,-54
+2017-07-26,CB Amazon.fr/prem,-52
+2017-08-26,CB Amazon.fr/prem,-51
+2017-09-26,CB Amazon.fr/prem,-52
+2017-10-26,CB Amazon.fr/prem,-49
+2017-11-26,CB Amazon.fr/prem,-52
+2017-12-26,CB Amazon.fr/prem,-51
+2018-01-26,CB Amazon.fr/prem,-53
+2018-02-26,CB Amazon.fr/prem,-54
+2018-03-26,CB Amazon.fr/prem,-53
+2018-04-26,CB Amazon.fr/prem,-55
+2018-05-26,CB Amazon.fr/prem,-52
+2018-06-26,CB Amazon.fr/prem,-53
+2018-07-26,CB Amazon.fr/prem,-55
+2018-08-26,CB Amazon.fr/prem,-49
+2018-09-26,CB Amazon.fr/prem,-53
+2018-10-26,CB Amazon.fr/prem,-52
+2018-11-26,CB Amazon.fr/prem,-53
+2018-12-26,CB Amazon.fr/prem,-49
+2019-01-26,CB Amazon.fr/prem,-55
+2019-02-26,CB Amazon.fr/prem,-51
+2019-03-26,CB Amazon.fr/prem,-52
+2019-04-26,CB Amazon.fr/prem,-52
+2019-05-26,CB Amazon.fr/prem,-51
+2019-06-26,CB Amazon.fr/prem,-50
+2018-02-26,CB Amazon.fr/prem,-52
+2018-03-26,CB Amazon.fr/prem,-51
+2018-04-26,CB Amazon.fr/prem,-51
+2018-05-26,CB Amazon.fr/prem,-53
+2018-06-26,CB Amazon.fr/prem,-51
+2018-07-26,CB Amazon.fr/prem,-55
+2018-08-26,CB Amazon.fr/prem,-55
+2018-09-26,CB Amazon.fr/prem,-54
+2018-10-26,CB Amazon.fr/prem,-49
+2018-11-26,CB Amazon.fr/prem,-51
+2018-12-26,CB Amazon.fr/prem,-52
+2019-01-26,CB Amazon.fr/prem,-49
+2019-02-26,CB Amazon.fr/prem,-53
+2019-03-26,CB Amazon.fr/prem,-51
+2019-04-26,CB Amazon.fr/prem,-52
+2019-05-26,CB Amazon.fr/prem,-52
+2019-06-26,CB Amazon.fr/prem,-52
+2016-03-11,CB Etranger Netflix,-11.00
+2016-04-11,CB Etranger Netflix,-11.00
+2016-05-10,CB Etranger Netflix,-12.00
+2016-06-13,CB Etranger Netflix,-13.00
+2016-07-11,CB Etranger Netflix,-11.00
+2016-08-10,CB Etranger Netflix,-11.00
+2016-09-12,CB Etranger Netflix,-13.00
+2016-10-10,CB Etranger Netflix,-11.00
+2016-11-10,CB Etranger Netflix,-11.00
+2016-12-12,CB Etranger Netflix,-12.00
+2017-01-10,CB Etranger Netflix,-10.00
+2017-02-10,CB Etranger Netflix,-11.00
+2017-03-10,CB Etranger Netflix,-13.00
+2017-04-10,CB Etranger Netflix,-12.00
+2017-05-10,CB Etranger Netflix,-11.00
+2017-06-12,CB Etranger Netflix,-12.00
+2017-07-10,CB Etranger Netflix,-13.00
+2017-08-10,CB Etranger Netflix,-10.00
+2017-09-11,CB Etranger Netflix,-11.00
+2017-10-10,CB Etranger Netflix,-12.00
+2017-11-13,CB Etranger Netflix,-12.00
+2017-12-11,CB Etranger Netflix,-11.00
+2018-01-15,CB Etranger Netflix,-12.00
+2018-02-14,CB Etranger Netflix,-12.00
+2018-03-14,CB Etranger Netflix,-11.00
+2018-04-17,CB Etranger Netflix,-12.00
+2018-05-16,CB Etranger Netflix,-13.00
+2018-06-14,CB Etranger Netflix,-13.00
+2018-07-16,CB Etranger Netflix,-13.00
+2018-08-14,CB Etranger Netflix,-12.67
+2018-09-14,CB Etranger Netflix,-10.00
+2018-10-15,CB Etranger Netflix,-12.00
+2018-11-14,CB Etranger Netflix,-11.00
+2018-12-14,CB Etranger Netflix,-12.00
+2019-01-10,CB Etranger Netflix,-12.00
+2019-02-08,CB Etranger Netflix,-10.00
+2019-03-08,CB Etranger Netflix,-13.00
+2019-04-09,CB Etranger Netflix,-12.00
+2019-05-09,CB Etranger Netflix,-11.45
+2019-06-06,CB Etranger Netflix,-11.01
+2016-03-11,CB Etranger Spotify,-12.00
+2016-06-13,CB Etranger Spotify,-13.00
+2016-09-12,CB Etranger Spotify,-11.00
+2016-10-10,CB Etranger Spotify,-12.00
+2016-12-12,CB Etranger Spotify,-10.00
+2017-01-10,CB Etranger Spotify,-10.00
+2017-03-10,CB Etranger Spotify,-11.00
+2017-05-10,CB Etranger Spotify,-12.00
+2017-07-10,CB Etranger Spotify,-10.00
+2017-08-10,CB Etranger Spotify,-13.00
+2017-10-10,CB Etranger Spotify,-11.00
+2018-05-16,CB Etranger Spotify,-11.00
+2018-05-01,CB Free Mobile,-20.00
+2018-06-01,CB Free Mobile,-21.00
+2018-07-01,CB Free Mobile,-17.00
+2018-08-01,CB Free Mobile,-16.00
+2018-09-01,CB Free Mobile,-20.00
+2018-10-01,CB Free Mobile,-17.00
+2018-11-01,CB Free Mobile,-19.00
+2018-12-01,CB Free Mobile,-18.00
+2019-01-05,CB Free Mobile,-19.00
+2019-02-05,CB Free Mobile,-16.00
+2019-03-05,CB Free Mobile,-20.00
+2019-04-05,CB Free Mobile,-19.00
+2018-02-12,CB Orange,-45.52
+2018-03-02,CB Orange Vad,-93.94
+2018-07-16,CB Spotify,-13.00
+2018-08-14,CB Spotify,-13.00
+2018-09-14,CB Spotify,-12.00
+2018-10-15,CB Spotify,-13.00
+2018-12-14,CB Spotify,-12.00
+2019-03-08,CB Spotify,-12.00
+2019-04-09,CB Spotify,-10.00
+2019-05-09,CB Spotify,-13.00
+2019-06-09,CB Spotify,-11.97
+2016-04-11,CB Spotify France,-12.00
+2016-05-10,CB Spotify France,-12.00
+2016-07-11,CB Spotify France,-11.00
+2016-08-10,CB Spotify France,-10.00
+2016-11-10,CB Spotify France,-11.00
+2017-02-10,CB Spotify France,-13.00
+2017-04-10,CB Spotify France,-13.00
+2017-06-12,CB Spotify France,-13.00
+2017-09-11,CB Spotify France,-10.00
+2017-11-13,CB Spotify France,-13.00
+2017-12-11,CB Spotify France,-10.00
+2018-01-15,CB Spotify France,-12.00
+2018-02-14,CB Spotify France,-10.00
+2018-03-14,CB Spotify France,-10.00
+2018-04-17,CB Spotify France,-11.00
+2018-06-14,CB Spotify France,-11.00
+2018-11-14,CB Spotify France,-11.00
+2019-01-10,CB Spotify France,-10.00
+2019-02-08,CB Spotify France,-13.01
 2016-03-16,Prlv De Axa,-91.55
-2016-03-16,Prlv De Axa,-243.95
-2016-04-08,Prlv De Axa,-166.84
-2016-06-06,Prlv De Axa,-83.20
-2016-07-05,Prlv De Axa,-93.75
-2016-08-05,Prlv De Axa,-89.06
-2016-09-05,Prlv De Axa,-82.03
-2016-10-05,Prlv De Axa,-76.17
-2016-11-07,Prlv De Axa,-79.69
-2016-12-05,Prlv De Axa,-80.86
-2017-01-05,Prlv De Axa,-84.53
-2017-02-06,Prlv De Axa,-79.83
-2017-03-06,Prlv De Axa,-100.27
-2017-03-06,Prlv De Axa,-93.92
-2017-03-06,Prlv De Axa,-260.20
-2017-04-05,Prlv De Axa,-78.69
-2017-05-05,Prlv De Axa,-94.19
-2017-06-06,Prlv De Axa,-95.38
-2017-07-05,Prlv De Axa,-82.27
-2017-08-07,Prlv De Axa,-87.04
-2017-09-05,Prlv De Axa,-89.42
-2017-10-05,Prlv De Axa,-85.85
-2017-11-06,Prlv De Axa,-90.61
-2017-12-05,Prlv De Axa,-94.19
-2018-01-05,Prlv De Axa,-81.08
-2018-02-05,Prlv De Axa,-94.19
-2018-03-05,Prlv De Axa,-274.20
-2018-03-05,Prlv De Axa,-78.69
-2018-04-05,Prlv De Axa,-83.71
-2018-05-07,Prlv De Axa,-92.46
-2018-06-05,Prlv De Axa,-92.46
-2018-07-03,Prlv De Axa,-21.46
-2018-07-05,Prlv De Axa,-84.96
-2018-08-06,Prlv De Axa,-96.20
-2018-09-05,Prlv De Axa,-86.21
-2018-10-05,Prlv De Axa,-86.21
-2018-11-05,Prlv De Axa,-94.95
-2018-12-05,Prlv De Axa,-87.46
-2019-01-07,Prlv De Axa,-96.20
-2019-02-05,Prlv De Axa,-99.95
-2019-03-05,Prlv De Axa,-82.46
-2019-03-05,Prlv De Axa,-368.13
-2019-04-05,Prlv De Axa,-100.45
-2019-05-06,Prlv De Axa,-103.06
-2019-06-06,Prlv De Axa,99.07
+2016-03-16,Prlv De Axa,-148.98
+2016-04-08,Prlv De Axa,-153.00
+2016-06-06,Prlv De Axa,-124.81
+2016-07-05,Prlv De Axa,-140.63
+2016-08-05,Prlv De Axa,-133.60
+2016-09-05,Prlv De Axa,-123.05
+2016-10-05,Prlv De Axa,-114.26
+2016-11-07,Prlv De Axa,-119.53
+2016-12-05,Prlv De Axa,-121.29
+2017-01-05,Prlv De Axa,-126.79
+2017-02-06,Prlv De Axa,-119.75
+2017-03-06,Prlv De Axa,-150.40
+2017-03-06,Prlv De Axa,-140.88
+2017-03-06,Prlv De Axa,-7.50
+2017-04-05,Prlv De Axa,-118.04
+2017-05-05,Prlv De Axa,-141.29
+2017-06-06,Prlv De Axa,-143.08
+2017-07-05,Prlv De Axa,-123.40
+2017-08-07,Prlv De Axa,-130.56
+2017-09-05,Prlv De Axa,-134.13
+2017-10-05,Prlv De Axa,-128.77
+2017-11-06,Prlv De Axa,-135.92
+2017-12-05,Prlv De Axa,-141.29
+2018-01-05,Prlv De Axa,-121.61
+2018-02-05,Prlv De Axa,-141.29
+2018-03-05,Prlv De Axa,-144.00
+2018-03-05,Prlv De Axa,-3.87
+2018-04-05,Prlv De Axa,-125.56
+2018-05-07,Prlv De Axa,-138.68
+2018-06-05,Prlv De Axa,-138.68
+2018-07-03,Prlv De Axa,-32.18
+2018-07-05,Prlv De Axa,-127.44
+2018-08-06,Prlv De Axa,-144.31
+2018-09-05,Prlv De Axa,-129.31
+2018-10-05,Prlv De Axa,-129.31
+2018-11-05,Prlv De Axa,-142.43
+2018-12-05,Prlv De Axa,-131.19
+2019-01-07,Prlv De Axa,-144.31
+2019-02-05,Prlv De Axa,-149.93
+2019-03-05,Prlv De Axa,-1.50
+2019-03-05,Prlv De Axa,-148.50
+2019-04-05,Prlv De Axa,-150.67
+2019-05-06,Prlv De Axa,-154.58
+2019-06-06,Prlv De Axa,-148.61
+2018-03-05,Prlv De Axa France Vie Sa,-167.35
+2019-03-05,Prlv De Axa France Vie Sa,-160.34
 2016-11-30,Prlv De Bouygues Telecom,-24.34
 2016-12-30,Prlv De Bouygues Telecom,-29.56
 2017-01-30,Prlv De Bouygues Telecom,-26.33
@@ -62,7 +197,6 @@ date,description,amount
 2017-11-30,Prlv De Bouygues Telecom,-26.73
 2017-12-29,Prlv De Bouygues Telecom,-25.94
 2018-01-30,Prlv De Bouygues Telecom,-29.00
-2018-02-23,Vir Bouygues Telecom,-26.25
 2018-09-17,Prlv De Canalsat Groupe Cana,-22.36
 2018-10-04,Prlv De Canalsat Groupe Cana,-20.42
 2018-11-05,Prlv De Canalsat Groupe Cana,-22.16
@@ -119,41 +253,7 @@ date,description,amount
 2019-04-03,Prlv De Edf Clients Particulie,-87.77
 2019-05-06,Prlv De Edf Clients Particulie,-97.31
 2019-06-03,Prlv De Edf Clients Particulie,-98.26
-2016-12-05,Prlv De Engie Home Services,-19.57
-2017-01-05,Prlv De Engie Home Services,-20.28
-2017-03-06,Prlv De Engie Home Services,-15.71
-2017-04-05,Prlv De Engie Home Services,-16.45
-2017-05-05,Prlv De Engie Home Services,-15.26
-2017-06-06,Prlv De Engie Home Services,-15.41
-2017-07-05,Prlv De Engie Home Services,-16.45
-2017-08-07,Prlv De Engie Home Services,-17.64
-2017-09-05,Prlv De Engie Home Services,-17.19
-2017-10-05,Prlv De Engie Home Services,-15.86
-2017-11-06,Prlv De Engie Home Services,-17.78
-2017-12-05,Prlv De Engie Home Services,-16.30
-2018-01-05,Prlv De Engie Home Services,-15.26
-2018-02-05,Prlv De Engie Home Services,-17.05
-2018-03-05,Prlv De Engie Home Services,-16.00
-2018-04-05,Prlv De Engie Home Services,-17.50
-2018-05-07,Prlv De Engie Home Services,-17.66
-2018-06-05,Prlv De Engie Home Services,-15.69
-2018-07-05,Prlv De Engie Home Services,-15.54
-2018-08-06,Prlv De Engie Home Services,-16.00
-2018-09-05,Prlv De Engie Home Services,-15.69
-2018-10-05,Prlv De Engie Home Services,-16.30
-2018-11-05,Prlv De Engie Home Services,-17.35
-2018-12-05,Prlv De Engie Home Services,-17.05
-2019-01-07,Prlv De Engie Home Services,-15.09
-2019-02-05,Prlv De Engie Home Services,-17.77
-2019-03-05,Prlv De Engie Home Services,-18.12
-2019-04-05,Prlv De Engie Home Services,-15.82
-2019-05-06,Prlv De Engie Home Services,-15.97
-2019-05-06,Prlv De Engie Home Services,-15.97
-2019-06-06,Prlv De Engie Home Services,-16.35
 2016-04-25,Prlv De Engie,-27.42
-2016-05-03,"Prlv De Engie, Ex Gdfsuez",-61.75
-2016-06-02,"Prlv De Engie, Ex Gdfsuez",-64.60
-2016-07-04,"Prlv De Engie, Ex Gdfsuez",-63.65
 2016-08-02,Prlv De Engie,-63.65
 2016-09-02,Prlv De Engie,-61.75
 2016-10-03,Prlv De Engie,-66.50
@@ -187,19 +287,41 @@ date,description,amount
 2019-03-11,Prlv De Engie,-135.54
 2019-04-02,Prlv De Engie,-81.63
 2019-05-10,Prlv De Engie,-71.18
-2019-06-05,Prlv De Engie,70.70
-2018-05-01,CB Free Mobile,-20.00
-2018-06-01,CB Free Mobile,-21.00
-2018-07-01,CB Free Mobile,-17.00
-2018-08-01,CB Free Mobile,-16.00
-2018-09-01,CB Free Mobile,-20.00
-2018-10-01,CB Free Mobile,-17.00
-2018-11-01,CB Free Mobile,-19.00
-2018-12-01,CB Free Mobile,-18.00
-2019-01-05,CB Free Mobile,-19.00
-2019-02-05,CB Free Mobile,-16.00
-2019-03-05,CB Free Mobile,-20.00
-2019-04-05,CB Free Mobile,-19.00
+2019-06-05,Prlv De Engie,-70.70
+2016-12-05,Prlv De Engie Home Services,-19.57
+2017-01-05,Prlv De Engie Home Services,-20.28
+2017-03-06,Prlv De Engie Home Services,-15.71
+2017-04-05,Prlv De Engie Home Services,-16.45
+2017-05-05,Prlv De Engie Home Services,-15.26
+2017-06-06,Prlv De Engie Home Services,-15.41
+2017-07-05,Prlv De Engie Home Services,-16.45
+2017-08-07,Prlv De Engie Home Services,-17.64
+2017-09-05,Prlv De Engie Home Services,-17.19
+2017-10-05,Prlv De Engie Home Services,-15.86
+2017-11-06,Prlv De Engie Home Services,-17.78
+2017-12-05,Prlv De Engie Home Services,-16.30
+2018-01-05,Prlv De Engie Home Services,-15.26
+2018-02-05,Prlv De Engie Home Services,-17.05
+2018-03-05,Prlv De Engie Home Services,-16.00
+2018-04-05,Prlv De Engie Home Services,-17.50
+2018-05-07,Prlv De Engie Home Services,-17.66
+2018-06-05,Prlv De Engie Home Services,-15.69
+2018-07-05,Prlv De Engie Home Services,-15.54
+2018-08-06,Prlv De Engie Home Services,-16.00
+2018-09-05,Prlv De Engie Home Services,-15.69
+2018-10-05,Prlv De Engie Home Services,-16.30
+2018-11-05,Prlv De Engie Home Services,-17.35
+2018-12-05,Prlv De Engie Home Services,-17.05
+2019-01-07,Prlv De Engie Home Services,-15.09
+2019-02-05,Prlv De Engie Home Services,-17.77
+2019-03-05,Prlv De Engie Home Services,-18.12
+2019-04-05,Prlv De Engie Home Services,-15.82
+2019-05-06,Prlv De Engie Home Services,-15.97
+2019-05-06,Prlv De Engie Home Services,-15.97
+2019-06-06,Prlv De Engie Home Services,-16.35
+2016-05-03,"Prlv De Engie, Ex Gdfsuez",-61.75
+2016-06-02,"Prlv De Engie, Ex Gdfsuez",-64.60
+2016-07-04,"Prlv De Engie, Ex Gdfsuez",-63.65
 2019-05-07,Prlv De Free Mobile,-16.00
 2019-06-03,Prlv De Free Mobile,-20.87
 2018-05-01,Prlv De Free Telecom,-32.50
@@ -216,48 +338,6 @@ date,description,amount
 2019-04-05,Prlv De Free Telecom,-33.80
 2019-05-07,Prlv De Free Telecom,-30.49
 2019-06-03,Prlv De Free Telecom,-36.14
-2016-03-11,CB Etranger Netflix,-11.00
-2016-04-11,CB Etranger Netflix,-11.00
-2016-05-10,CB Etranger Netflix,-12.00
-2016-06-13,CB Etranger Netflix,-13.00
-2016-07-11,CB Etranger Netflix,-11.00
-2016-08-10,CB Etranger Netflix,-11.00
-2016-09-12,CB Etranger Netflix,-13.00
-2016-10-10,CB Etranger Netflix,-11.00
-2016-11-10,CB Etranger Netflix,-11.00
-2016-12-12,CB Etranger Netflix,-12.00
-2017-01-10,CB Etranger Netflix,-10.00
-2017-02-10,CB Etranger Netflix,-11.00
-2017-03-10,CB Etranger Netflix,-13.00
-2017-04-10,CB Etranger Netflix,-12.00
-2017-05-10,CB Etranger Netflix,-11.00
-2017-06-12,CB Etranger Netflix,-12.00
-2017-07-10,CB Etranger Netflix,-13.00
-2017-08-10,CB Etranger Netflix,-10.00
-2017-09-11,CB Etranger Netflix,-11.00
-2017-10-10,CB Etranger Netflix,-12.00
-2017-11-13,CB Etranger Netflix,-12.00
-2017-12-11,CB Etranger Netflix,-11.00
-2018-01-15,CB Etranger Netflix,-12.00
-2018-02-14,CB Etranger Netflix,-12.00
-2018-03-14,CB Etranger Netflix,-11.00
-2018-04-17,CB Etranger Netflix,-12.00
-2018-05-16,CB Etranger Netflix,-13.00
-2018-06-14,CB Etranger Netflix,-13.00
-2018-07-16,CB Etranger Netflix,-13.00
-2018-08-14,CB Etranger Netflix,-12.67
-2018-09-14,CB Etranger Netflix,-10.00
-2018-10-15,CB Etranger Netflix,-12.00
-2018-11-14,CB Etranger Netflix,-11.00
-2018-12-14,CB Etranger Netflix,-12.00
-2019-01-10,CB Etranger Netflix,-12.00
-2019-02-08,CB Etranger Netflix,-10.00
-2019-03-08,CB Etranger Netflix,-13.00
-2019-04-09,CB Etranger Netflix,-12.00
-2019-05-09,CB Etranger Netflix,-11.45
-2019-06-06,CB Etranger Netflix,-11.01
-2018-02-12,CB Orange,-45.52
-2018-03-02,CB Orange Vad,-93.94
 2018-04-03,Prlv De Orange,-60.68
 2018-04-30,Prlv De Orange,-86.47
 2018-05-29,Prlv De Orange,-80.97
@@ -276,11 +356,6 @@ date,description,amount
 2019-04-26,Prlv De Orange,-32.70
 2019-05-24,Prlv De Orange,-70.95
 2019-06-05,Prlv De Orange,-69.63
-2016-08-16,Prlv De Securitas Direct Sas S,-40.96
-2016-09-07,Prlv De Securitas Direct Sas S,-30.32
-2016-10-07,Prlv De Securitas Direct Sas S,-29.53
-2016-11-07,Prlv De Securitas Direct Sas S,-30.32
-2016-12-05,Prlv De Securitas Direct Sas S,-28.33
 2017-01-05,Prlv De Securitas Direct Sas,-28.33
 2017-02-06,Prlv De Securitas Direct Sas,-30.72
 2017-03-06,Prlv De Securitas Direct Sas,-30.32
@@ -313,46 +388,11 @@ date,description,amount
 2019-04-05,Prlv De Securitas Direct Sas,-35.14
 2019-05-06,Prlv De Securitas Direct Sas,-37.99
 2019-06-06,Prlv De Securitas Direct Sas,-37.01
-2016-03-11,CB Etranger Spotify,-12.00
-2016-04-11,CB Spotify France,-12.00
-2016-05-10,CB Spotify France,-12.00
-2016-06-13,CB Etranger Spotify,-13.00
-2016-07-11,CB Spotify France,-11.00
-2016-08-10,CB Spotify France,-10.00
-2016-09-12,CB Etranger Spotify,-11.00
-2016-10-10,CB Etranger Spotify,-12.00
-2016-11-10,CB Spotify France,-11.00
-2016-12-12,CB Etranger Spotify,-10.00
-2017-01-10,CB Etranger Spotify,-10.00
-2017-02-10,CB Spotify France,-13.00
-2017-03-10,CB Etranger Spotify,-11.00
-2017-04-10,CB Spotify France,-13.00
-2017-05-10,CB Etranger Spotify,-12.00
-2017-06-12,CB Spotify France,-13.00
-2017-07-10,CB Etranger Spotify,-10.00
-2017-08-10,CB Etranger Spotify,-13.00
-2017-09-11,CB Spotify France,-10.00
-2017-10-10,CB Etranger Spotify,-11.00
-2017-11-13,CB Spotify France,-13.00
-2017-12-11,CB Spotify France,-10.00
-2018-01-15,CB Spotify France,-12.00
-2018-02-14,CB Spotify France,-10.00
-2018-03-14,CB Spotify France,-10.00
-2018-04-17,CB Spotify France,-11.00
-2018-05-16,CB Etranger Spotify,-11.00
-2018-06-14,CB Spotify France,-11.00
-2018-07-16,CB Spotify,-13.00
-2018-08-14,CB Spotify,-13.00
-2018-09-14,CB Spotify,-12.00
-2018-10-15,CB Spotify,-13.00
-2018-11-14,CB Spotify France,-11.00
-2018-12-14,CB Spotify,-12.00
-2019-01-10,CB Spotify France,-10.00
-2019-02-08,CB Spotify France,-13.01
-2019-03-08,CB Spotify,-12.00
-2019-04-09,CB Spotify,-10.00
-2019-05-09,CB Spotify,-13.00
-2019-06-09,CB Spotify,11.97
+2016-08-16,Prlv De Securitas Direct Sas S,-40.96
+2016-09-07,Prlv De Securitas Direct Sas S,-30.32
+2016-10-07,Prlv De Securitas Direct Sas S,-29.53
+2016-11-07,Prlv De Securitas Direct Sas S,-30.32
+2016-12-05,Prlv De Securitas Direct Sas S,-28.33
 2018-04-10,Prlv De Suez Eau France,-60.00
 2018-05-11,Prlv De Suez Eau France,-57.00
 2018-06-11,Prlv De Suez Eau France,-49.00
@@ -365,6 +405,5 @@ date,description,amount
 2019-02-11,Prlv De Suez Eau France,-37.00
 2019-03-11,Prlv De Suez Eau France,-60.00
 2019-05-10,Prlv De Suez Eau France,-49.65
-2019-06-10,Prlv De Suez Eau France,53.08
-2018-03-05,Prlv De Axa France Vie Sa,-167.35
-2019-03-05,Prlv De Axa France Vie Sa,-160.34
+2019-06-10,Prlv De Suez Eau France,-53.08
+2018-02-23,Vir Bouygues Telecom,-26.25
