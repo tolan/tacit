@@ -11,6 +11,7 @@
       <% if user_signed_in? %>
         <li class="nav-item">
           <%= link_to "Home", "/", class: "dropdown-item" %>
+          <%= link_to "Abonnements", subscriptions_path, class: "dropdown-item" %>
           <%= link_to "Set password", edit_user_password_path, class: "dropdown-item" %>
           <%= link_to "Register", edit_user_registration_path, class: "dropdown-item" %>
         </li>
