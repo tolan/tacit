@@ -10,6 +10,8 @@ class SubscriptionsController < ApplicationController
     @subscription = Subscription.find(params[:id])
     @last_month_share = @subscription.last_month_spent.to_f / @user.last_month_spent.to_f
     chartsshow
+    @operator = @subscription.operator
+    @community_coverage = User.joins(operations: { subscription: :operator }).where('subscriptions.operator_id = ?', @operator.id).distinct.count.to_f / User.count.to_f
   end
 
   private
