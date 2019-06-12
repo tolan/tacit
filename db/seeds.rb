@@ -149,12 +149,18 @@ puts "processing transactions..."
 #   SaveInDb::Transactions.call(cg)
 
 # -------------------------------------------------------
+User.all.each do |user|
+  Converttransaction.call(user)
+end
+puts "Operations transformed into subscriptions!"
+
+
 
 #récupère toutes les transactions
-transac = Operation.all
-#traite les transactions
-Converttransaction.call(transac)
-puts "Operations transformed into subscriptions!"
+# transac = Operation.all
+# #traite les transactions
+# Converttransaction.call(transac)
+# puts "Operations transformed into subscriptions!"
 
 puts" __      __                               __                              .___
 /  \    /  \ ____     ________ __   ____ |  | __   ______ ____   ____   __| _/

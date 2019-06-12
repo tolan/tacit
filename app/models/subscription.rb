@@ -3,6 +3,7 @@ include ActionView::Helpers::DateHelper
 class Subscription < ApplicationRecord
   belongs_to :operator
   has_many :operations
+  has_one :user , through: :operations, source: :user
 
   def new_sub?
     operations.count == 1
@@ -51,9 +52,10 @@ class Subscription < ApplicationRecord
 
   def payment_frequency
     unless new_sub?
-      withdrawls = operations.where("amount_cents < 0").order(date: :asc)
-      diff_date = (withdrawls.first.date - withdrawls[1].date)
+    withdrawls = operations.where("amount_cents < 0").order(date: :desc)
+    diff_date = (withdrawls.first.date - withdrawls[1].date)
     end
+    # raise
     if new_sub?
       { type: "nouvel abonnement", days: 0  }
     elsif diff_date.between?(5, 15)

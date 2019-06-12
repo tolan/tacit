@@ -2,25 +2,26 @@ class Converttransaction
 
   # generic - job running
 
-  def self.subscription_exists?(transactions, operator)
-    result = false
-    transactions.each do |transaction|
-      result = true if transaction.operator == operator
-    end
-    return result
+  def self.subscription_exists?(operator, user)
+    !user.subscriptions.find_by(operator: operator).nil?
+    # result = false
+    # transactions.each do |transaction|
+    #   result = true if transaction.operator == operator && transaction.user == user
+    # end
+    # return result
   end
 
-  def self.call(transactions)
+  def self.call(user)
     operators = Operator.all
-    transactions.each do |transaction|
+    user.operations.each do |operation|
       operators.each do |operator|
-        if transaction.description && operator.regex && transaction.description.downcase.include?(operator.regex.downcase)
-          if self.subscription_exists?(transactions, operator) # identifier les transactions qui font parti d'un abonnement
-            subs = Subscription.find_by(operator: operator)
-            transaction.update(subscription: subs)
+        if operation.description && operator.regex && operation.description.downcase.include?(operator.regex.downcase)
+          if self.subscription_exists?(operator, user) # identifier les operations qui font parti d'un abonnement
+            subscription = Subscription.find_by(operator: operator)
+            operation.update(subscription: subscription)
           else
             new_subs = Subscription.create(operator: operator)
-            transaction.update(subscription: new_subs)
+            operation.update(subscription: new_subs)
           end
         end
       end
