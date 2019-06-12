@@ -51,7 +51,7 @@ class Subscription < ApplicationRecord
 
   def payment_frequency
     unless new_sub?
-      withdrawls = operations.where("amount_cents < 0").order(date: :desc)
+      withdrawls = operations.where("amount_cents < 0").order(date: :asc)
       diff_date = (withdrawls.first.date - withdrawls[1].date)
     end
     if new_sub?
