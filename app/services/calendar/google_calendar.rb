@@ -1,18 +1,28 @@
 class Calendar::GoogleCalendar
-
   def self.call(user)
     event = {
-      'summary' => 'New Event Title',
-      'description' => 'The description',
-      'location' => 'Location',
+      summary: 'Google I/O 2015',
+      location: '800 Howard St., San Francisco, CA 94103',
+      description: 'A chance to hear more about Google\'s developer products.',
       'start' => { 'dateTime' => Time.now + 1.day },
       'end' => { 'dateTime' => Time.now + 1.day + 1.hour },
-      'attendees' => [ { "email" => 'tolanthornton@gmail.com' },
-      { "email" =>'tolantask@gmail.com' } ] }
+      attendees: [
+        {email: 'lpage@example.com'},
+        {email: 'sbrin@example.com'},
+      ],
+      reminders: {
+        use_default: false,
+        overrides: [
+          {'method' => 'email', 'minutes': 24 * 60} ,
+          {'method' => 'popup', 'minutes': 10},
+        ],
+      },
+    }
 
-    client = Google::APIClient.new
-    client.authorization.access_token = user.token
-    service = client.discovered_api('calendar', 'v3')
+    # client = Google::APIClient.new(:application_name => 'Zapitfr', :application_version => '1.0')
+    client = Google::Apis::CalendarV3::Event.new(:application_name => 'Zapitfr', :application_version => '1.0')
+    # client.authorization.access_token = user.token
+    # service = client.discovered_api('calendar', 'v3')
 
     # client.execute(:api_method => service.events.insert,
     #                     # :parameters => {'calendarId' => current_user.email, 'sendNotifications' => true},
@@ -20,18 +30,9 @@ class Calendar::GoogleCalendar
     #                     :body => JSON.dump(event),
     #                     :headers => {'Content-Type' => 'application/json'})
 
-
-new_event = cal.events.insert.request_schema.new
-new_event.start = { 'date' => Time.now + 1.day  } #All day event
-new_event.end = { 'date' => Time.now + 1.day + 1.hour }
-new_event.description = "Description here"
-new_event.summary = "Summary here"
-result = api_client.execute(:api_method => cal.events.insert,
-    :authorization => auth_client,
-    :parameters => { 'calendarId' => 'primary'},
-    :headers => {'Content-Type' => 'application/json'},
-    :body_object => new_event)
-
+    result = client.insert_event('primary', event)
+    puts "Event created: #{result.html_link}"
   end
-
 end
+
+
