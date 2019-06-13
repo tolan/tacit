@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
+     #google calendar api integtration
          :omniauthable, :omniauth_providers => [:google_oauth2]
   has_many :operations
   has_many :subscriptions, through: :operations, source: :subscription# allow to find the column operations
@@ -11,7 +12,24 @@ class User < ApplicationRecord
   has_many :banks, through: :accounts
   mount_uploader :photo, PhotoUploader
 
+  #google calandar integration
+  def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
+    data = access_token.info
+    if (User.admins.include?(data.email))
+      user = User.find_by(email: data.email)
+      if user
+        user.provider = access_token.provider
+        user.uid = access_token.uid
+        user.token = access_token.credentials.token
+        user.save
+        user
+      else
+        redirect_to new_user_registration_path, notice: "Error."
+      end
+    end
+  end
 
+  #bridge api integration
   def has_bridge_account?
     self.uuid.present?
   end
