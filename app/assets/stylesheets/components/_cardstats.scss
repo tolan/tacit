@@ -16,12 +16,13 @@
 .data-point {
   font-family: $body-font;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: auto;
-  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  // text-transform: capitalize;
   margin-bottom: 0px;
   color: $vibrant-blue;
+  margin-bottom: 8px;
 }
 
 .data-label {

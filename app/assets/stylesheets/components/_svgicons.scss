@@ -20,6 +20,17 @@
   margin-right: 8px;
 }
 
+.bell path,
+.bell polygon
+.bell rect {
+  fill: #FFD700;
+}
+
+.bell {
+  stroke: none;
+  fill: #FFD700;
+}
+
 .edit {
   margin-left: 8px;
   margin-bottom: 3px;
@@ -36,10 +47,10 @@
 .bin path,
 .bin polygon,
 .bin rect {
-  fill: $red-warning;
+  fill: white;
 }
 
 .bin circle {
-  stroke: $red-warning;
+  stroke: white;
   stroke-width: 1;
 }

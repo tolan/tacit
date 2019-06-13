@@ -26,10 +26,9 @@
 
 .card-unsubscribe {
   overflow: hidden;
-  padding: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   .description {
     font-family: Raleway;
     font-style: normal;
@@ -37,6 +36,6 @@
     font-size: 14px;
     line-height: 16px;
     color: $dark-blue;
-    margin-bottom: 0px;
+
   }
 }

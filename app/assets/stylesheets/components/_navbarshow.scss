@@ -5,11 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #004BB4;
+  background-color: transparent;
 }
 
 .navbar-show-title {
   font-family: $body-font;
+  color: $vibrant-blue;
   font-style: normal;
   font-weight: bold;
   text-transform: none;
