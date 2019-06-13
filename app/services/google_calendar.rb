@@ -6,7 +6,7 @@ require 'fileutils'
 # require 'oauth2client'
 
 class GoogleCalendar
-  SCOPES = 'https://www.googleapis.com/auth/calendar'
+  # SCOPES = 'https://www.googleapis.com/auth/calendar'
   OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
   APPLICATION_NAME = 'Google Calendar API Ruby Quickstart'.freeze
   CREDENTIALS_PATH = 'credentials.json'.freeze

@@ -84,4 +84,16 @@ class Subscription < ApplicationRecord
     next_payment_date = withdrawls.first.date + delay.days
     distance_of_time_in_words(Date.today, next_payment_date)
   end
+
+  # def sock_renewal_date_in_date_base
+  #   date = operations.order(date: :desc).first.date + 1.year
+  #   self.anniversary_date = date
+  #   self.save!
+  #   return date
+  # end
+
+  def renewal_date
+    operations.order(date: :desc).first.date + 1.yearß
+  end
 end
+
