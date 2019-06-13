@@ -40,7 +40,7 @@ class ServicesController < ApplicationController
 
   result = service.quick_add_event(
   'primary',
-  'Another Test -- on June 13th 8:30pm-11:30pm')
+  'Late Night Test -- on June 13th 11:00pm-11:30pm')
   print result.id
   end
 end
