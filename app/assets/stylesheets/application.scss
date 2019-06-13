@@ -15,8 +15,6 @@
 
 // Typography style
 
-
-
 // slide out
 
 .slideout-menu {
@@ -63,7 +61,38 @@
   bottom: 0px;
   left: -60px;
   transform: rotate(45deg);
-  transform: scale(1.5);
+  transform: scale(1.2);
+  animation: bluedisc ease 2s infinite;
+}
+
+.bluedisc:hover {
+  animation: none;
+}
+
+@-webkit-keyframes bluedisc {
+  0% {
+    -webkit-transform: scale(1.4);
+  }
+  50% {
+      -webkit-transform: scale(1.5);
+  }
+  100% {
+      -webkit-transform: scale(1.6);
+  }
+}
+@keyframes bluedisc {
+  0% {
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  50% {
+      -moz-transform: scale(1.5);
+      transform: scale(1.5);
+  }
+  50% {
+      -moz-transform: scale(1.6);
+      transform: scale(1.6);
+  }
 }
 
 .sidebar {
