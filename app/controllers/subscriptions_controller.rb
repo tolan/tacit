@@ -23,10 +23,11 @@ class SubscriptionsController < ApplicationController
 
   def chartsshow
       subscription = Subscription.find(params[:id])
+      operator = subscription.operator.name
       user = current_user
-      all_user_data = Operation.group_by_month(:date).where(subscription: subscription).where("amount_cents < -1").sum(:amount_cents)
-      all_user_data_formated = all_user_data.each { |date, amount| all_user_data[date] = (amount.fdiv(-100)).fdiv(User.count) }.select{ |date, amount| amount != 0 }
-      user_data = Operation.group_by_month(:date).where(user: user, subscription: subscription).where("amount_cents < -1").sum(:amount_cents)
+      all_user_data = Operation.joins(subscription: :operator).group_by_month(:date).where("operators.name = ?", operator ).where("amount_cents < -1").average("operations.amount_cents / -100")
+      all_user_data_formated = all_user_data.each { |date, amount| all_user_data[date] = amount.to_f }.select { |date, amount| amount != 0 }
+      user_data = Operation.group_by_month(:date).where(subscription: subscription).where("amount_cents < -1").sum(:amount_cents)
       user_data_formated = user_data.each { |date, amount| user_data[date] = amount.fdiv(-100) }.select{ |date, amount| amount != 0 }
       @datashow = [
         { name: "Moyenne Zappit!", data: all_user_data_formated },
@@ -45,4 +46,24 @@ class SubscriptionsController < ApplicationController
       { name: "Vos Abonnements", data: user_data_formated }
     ].to_json
   end
+    # query = <<-SQL
+    #   SELECT COUNT(DISTINCT u.id) as total, (date_trunc('month', o.date::date)) as month
+    #   FROM users u
+    #   JOIN operations o ON o.user_id = u.id
+    #   WHERE o.subscription_id IS NOT NULL
+    #   GROUP BY month
+    # SQL
+
+    # user_active = ActiveRecord::Base.connection.execute(query)
+
+    # expenses = Operation.group_by_month(:date).where.not(subscription: nil).where("amount_cents < -1").sum("amount_cents / -100")
+    # # user_active = Operation.group_by_month(operation.date).where.not(subscription: nil).where("amount_cents < -1").sum("amount_cents / -100")
+    # all_user_data = exenses.fdiv(user_active).group_by_month
+    # all_user_data_formated = all_user_data.each { |date, amount| all_user_data[date] = amount.to_f }.select { |date, amount| amount != 0 }
+    # user_data = Operation.group_by_month(:date).where(user: user).where("amount_cents < -1").where.not(subscription: nil).sum(:amount_cents)
+    # user_data_formated = user_data.each { |date, amount| user_data[date] = amount.fdiv(-100) }.select { |date, amount| amount != 0 }
+    # @dataindex = [
+    #   { name: "Moyenne Zappit!", data: all_user_data_formated },
+    #   { name: "Vos Abonnements", data: user_data_formated }
+    # ].to_json
 end

@@ -7,6 +7,6 @@
 <%= render 'shared/cardstats', subscription: @subscription, last_month_share: @last_month_share %>
 <div class="lineseparator"></div>
 <%= render 'shared/cardaffiliatedbank', subscription: @subscription %>
+<%#= link_to operator_path(@subscription.operator) do %>
 <%= render 'shared/cardunsubscribe', subscription: @subscription %>
 <style>#intercom-container { display:none; }</style>
-
