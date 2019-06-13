@@ -62,16 +62,12 @@
       <% else %>
         <%= render 'shared/flashes' %>
         <%= yield %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
       <% end %>
-      <%= render 'shared/flashes' %>
-      <%= yield %>
-      <%# if action_name == "home" %>
-      <%#= render 'shared/footer' %>
-      <%# end %>
     </div>
 
     <!-- slide out cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
