@@ -1,6 +1,10 @@
 import "bootstrap";
 import Chartkick from "chartkick"
 import Chart from "chart.js"
+import 'mmenu-light/src/mmenu-light.scss';
+import { initSlideout } from '../plugins/init_slideout';
+
+initSlideout();
 
 Chartkick.use(Chart)
 // use built in chartkick method method

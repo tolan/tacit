@@ -16,6 +16,9 @@ class PagesController < ApplicationController
     ].to_json
   end
 
+def demoindex
+end
+
 def chartsshow
     subscription = @subscription
     user = current_user

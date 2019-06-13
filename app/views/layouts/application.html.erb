@@ -44,21 +44,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>All your subscriptions in <strong>1 place</strong></title>
+    <title>Vos abonnements</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if action_name == "home" %>
-    <%= render 'shared/navbar' %>
-    <% end %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
-    <% if action_name == "home" %>
-    <%= render 'shared/footer' %>
-    <% end %>
+    <%= render 'shared/navbardynamic'  %>
+    <div id="panel">
+      <%# if action_name == "home" %>
+      <%#= render 'shared/navbar' %>
+      <%# end %>
+      <%= render 'shared/flashes' %>
+      <%= yield %>
+      <% if action_name == "home" %>
+      <%= render 'shared/footer' %>
+      <% end %>
+    </div>
+
+    <!-- slide out cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

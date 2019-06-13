@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get 'connect_item', to: 'services#connect_item', as: :connect_item
-  get "/pages/:page" => "pages#demoshow"
   get "/pages/:page" => "pages#demoindex"
+  get "/pages/:page" => "pages#demoshow"
   get "charts" => "pages#charts"
   get "chartsshow" => "pages#chartsshow"
   resources :subscriptions, only: [ :index, :show ] do
