@@ -11,7 +11,7 @@ logo,name,regex,category,bank_name,bank_logo,category_logo
 'logos/securitas.png',Securitas,Securitas,Home Services,N26,'logos/n26.png','category/home_services.png'
 'logos/spotify.png',Spotify,Spotify,Entertainment,N26,'logos/n26.png','category/entertainment.png'
 'logos/suez.png',Suez,Suez Eau,Energie,N26,'logos/n26.png','category/energy.png'
-'logos/axa.png',Axa habitation,Axa France Vie,Assurance,N26,'logos/n26.png','category/insurance.png'
-'logos/axa.png',Axa auto,Prlv De Axa,Assurance,N26,'logos/n26.png','category/insurance.png'
+'logos/axa.png',Axa assurance,Axa France Vie,Assurance,N26,'logos/n26.png','category/insurance.png'
+'logos/axa.png',Axa auto,Prlvt De Axa,Assurance,N26,'logos/n26.png','category/insurance.png'
 'logos/cdiscount.png',Cdiscount,Payt Cdiscount,Shopping,N26,'logos/n26.png','category/shopping.png'
 
