@@ -51,20 +51,28 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <% if action_name != "home" && action_name!="show"%>
     <%= render 'shared/navbardynamic'  %>
+    <% end %>
     <div id="panel">
-      <%# if action_name == "home" %>
-      <%#= render 'shared/navbar' %>
-      <%# end %>
+      <% if action_name == "home" %>
+        <%= render 'shared/navbar' %>
+        <%= render 'shared/flashes' %>
+        <%= yield %>
+      <% else %>
+        <%= render 'shared/flashes' %>
+        <%= yield %>
+      <% end %>
       <%= render 'shared/flashes' %>
       <%= yield %>
-      <% if action_name == "home" %>
-      <%= render 'shared/footer' %>
-      <% end %>
+      <%# if action_name == "home" %>
+      <%#= render 'shared/footer' %>
+      <%# end %>
     </div>
 
     <!-- slide out cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

@@ -34,6 +34,18 @@ color: $vibrant-blue;
 
 }
 
+.zapit-bis {
+  margin-top: 16px;
+  margin-left: 16px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: $vibrant-blue;
+}
+
 #logo:hover {
   transform: perspective(400px) translate3d(-10px, 0px, -10px) scale(0.93);
 }

@@ -2,11 +2,8 @@ import "bootstrap";
 import Chartkick from "chartkick"
 import Chart from "chart.js"
 import 'mmenu-light/src/mmenu-light.scss';
-import { initSlideout } from '../plugins/init_slideout';
 
-initSlideout();
-
-Chartkick.use(Chart)
+Chartkick.use(Chart);
 // use built in chartkick method method
 
 // index chart
@@ -22,6 +19,7 @@ if (document.querySelector('#chart-1')){
 }
 
 
+
 // // show chart
 if (document.querySelector('#chart-2')){
   const chart_show = document.querySelector('#chart-2');
@@ -33,5 +31,19 @@ if (document.querySelector('#chart-2')){
         backgroundColor: "rgba(0, 75, 180, 0.6)",
       }
     })
-  }
+  };
+
+  var slideout = new Slideout({
+          'panel': document.getElementById('panel'),
+          'menu': document.getElementById('menu'),
+          'padding': 256,
+          'tolerance': 70
+        });
+
+
+// Toggle button
+     document.querySelector('.hamburger').addEventListener('click', function() {
+       slideout.toggle();
+       $(".hamburger").toggleClass("active");
+     });
 

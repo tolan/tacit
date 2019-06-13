@@ -1,5 +1,17 @@
 <nav id="menu">
-  <header>
-    <h2>Menu</h2>
-  </header>
+  <%= link_to "#", class: "navbar-logo-brand" do %>
+    <span class="zapit-bis">Zapit</span>
+  <% end %>
+    <div class="sidebar">
+      <ul>
+        <li>Accueil</li>
+        <li>S'inscrire</li>
+        <li>Se connecter</li>
+        <li>Se déconnecter</li>
+       </ul>
+    </div>
+    <div class="bluedisc">
+      <%= image_tag("blue-disc.png")  %>
+    </div>
 </nav>
+
