@@ -32,6 +32,13 @@ gem 'money-rails'
 #add intercom-rails
 gem "intercom-rails"
 
+#add google calendar
+# gem 'google-api-client', :require => 'google/api_client'
+gem 'google-api-client'#, '0.8.2', require: 'google/api_client'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+
+
 #webdriver
 gem 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
 
