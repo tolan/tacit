@@ -1,4 +1,5 @@
-<%= render 'shared/chartindex', datasindex: @dataindex %>
+<%= render 'shared/fixednav'  %>
+<%#= render 'shared/chartindex', datasindex: @dataindex %>
 <%= render 'shared/cardmonthly', user: @user %>
 
 <% @subscriptions.each do |subscription|%>
@@ -6,3 +7,6 @@
     <%= render 'shared/card', subscription: subscription %>
   <% end %>
 <% end %>
+
+<style>#intercom-container { display:none; }</style>
+

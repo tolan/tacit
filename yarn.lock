@@ -2186,6 +2186,11 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
+decouple@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/decouple/-/decouple-0.0.2.tgz#cb373640c37f987a5f6866724ccd424a80f9d9a2"
+  integrity sha1-yzc2QMN/mHpfaGZyTM1CSoD52aI=
+
 deep-equal@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
@@ -2391,6 +2396,10 @@ elliptic@^6.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
+
+"emitter@git+https://github.com/Mango/emitter.git#0.0.7":
+  version "0.0.7"
+  resolved "git+https://github.com/Mango/emitter.git#41ab8a3956269c7ed468bde50203e15b3274152f"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -4131,6 +4140,11 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdir
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mmenu-light@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/mmenu-light/-/mmenu-light-1.0.6.tgz#5ebce55656aadadfa5a5391e1307aeca4f9e1240"
+  integrity sha512-SoUPQu2QJTbl3QYciAJOviWRDjGgOuThVof9i2gUJKkInQV/Oan0NRn9L2pIq4+a1ji9QAWXFmg9ETkD19cxDg==
 
 moment@^2.10.2:
   version "2.24.0"
@@ -6096,6 +6110,14 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+slideout@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/slideout/-/slideout-1.0.1.tgz#49f2fbd7e4155fe0dbe6d95938f012243565f625"
+  integrity sha1-SfL71+QVX+Db5tlZOPASJDVl9iU=
+  dependencies:
+    decouple "0.0.2"
+    emitter "git+https://github.com/Mango/emitter.git#0.0.7"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

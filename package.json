@@ -7,7 +7,9 @@
     "chart.js": "^2.8.0",
     "chartkick": "^3.1.0",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0"
+    "mmenu-light": "^1.0.6",
+    "popper.js": "^1.15.0",
+    "slideout": "^1.0.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.5.1"

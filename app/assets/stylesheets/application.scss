@@ -15,12 +15,184 @@
 
 // Typography style
 
+// slide out
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+  background: $light-gradient;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: $light-blue; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.bluedisc {
+  position: fixed;
+  bottom: 0px;
+  left: -60px;
+  transform: rotate(45deg);
+  transform: scale(1.2);
+  animation: bluedisc ease 2s infinite;
+}
+
+.bluedisc:hover {
+  animation: none;
+}
+
+@-webkit-keyframes bluedisc {
+  0% {
+    -webkit-transform: scale(1.4);
+  }
+  50% {
+      -webkit-transform: scale(1.5);
+  }
+  100% {
+      -webkit-transform: scale(1.6);
+  }
+}
+@keyframes bluedisc {
+  0% {
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  50% {
+      -moz-transform: scale(1.5);
+      transform: scale(1.5);
+  }
+  50% {
+      -moz-transform: scale(1.6);
+      transform: scale(1.6);
+  }
+}
+
+.sidebar {
+  // padding: auto;
+  margin-top: 20%;
+  ul {
+  padding-left: 0px;
+  }
+  li {
+    list-style: none;
+    font-family: $headers-font;
+    color: $vibrant-blue;
+    font-style: normal;
+    // font-weight: 400;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 32px;
+    margin-left: 24px;
+  }
+}
+
+// burger button
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 32px;
+  margin-top: 32px;
+  position: relative;
+  // top: 50%;
+  // margin-left: 24px;
+  // margin-top: 24px;
+  transform: translateY(-50%);
+  background: transparent;
+  border-radius: 50%;
+
+}
+
+.hamburger:hover {
+  background: transparent;
+}
+
+
+.bars,
+.bars:before,
+.bars:after {
+  position: relative;
+  width: 32px;
+  height: 2px;
+  margin: 0 auto;
+  background: $vibrant-blue;
+  border-radius: 3px;
+  transition: top .2s .2s,
+    transform .2s,
+    background 0 .2s;
+}
+
+.bars:before,
+.bars:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.bars:before {
+  top: -10px;
+}
+
+.bars:after {
+  top: 10px;
+}
+
+.active .bars:before,
+.active .bars:after {
+  transition: top .2s,
+    transform .2s .2s;
+  top: 0;
+}
+
+.active .bars {
+  background: transparent;
+}
+
+.active .bars:before {
+  transform: rotate(45deg);
+}
+
+.active .bars:after {
+  transform: rotate(-45deg);
+}
+
   // Headers
 
 body {
   background: $light-blue;
-  // padding: 16px;
+  padding: 16px;
   overflow-x: hidden;
+  // width: 100%;
+  // height: 100%
 }
 
 a, a:hover, a:active {
