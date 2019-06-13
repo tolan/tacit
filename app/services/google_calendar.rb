@@ -3,8 +3,10 @@ require 'googleauth'
 require 'googleauth/stores/file_token_store'
 require 'date'
 require 'fileutils'
+# require 'oauth2client'
 
 class GoogleCalendar
+  SCOPES = 'https://www.googleapis.com/auth/calendar'
   OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
   APPLICATION_NAME = 'Google Calendar API Ruby Quickstart'.freeze
   CREDENTIALS_PATH = 'credentials.json'.freeze
@@ -12,7 +14,7 @@ class GoogleCalendar
   # created automatically when the authorization flow completes for the first
   # time.
   TOKEN_PATH = 'token.yaml'.freeze
-  SCOPE = Google::Apis::CalendarV3::AUTH_CALENDAR_READONLY
+  SCOPE = Google::Apis::CalendarV3::AUTH_CALENDAR_EVENTS
 
   ##
   # Ensure valid credentials, either by restoring from the saved credentials
@@ -53,15 +55,15 @@ end
 
 
 # rails c
- service = GoogleCalendar.new.call
+# service = GoogleCalendar.new.call
 # follow the instructions in the terminals
 
 # calendar_id = 'primary'
- response = service.list_events(calendar_id,
-                                max_results: 10,
-                                single_events: true,
-                                order_by: 'startTime',
-                                time_min: DateTime.now.rfc3339)
+# response = service.list_events(calendar_id,
+#                                max_results: 10,
+#                                single_events: true,
+#                                order_by: 'startTime',
+#                                time_min: DateTime.now.rfc3339)
 # puts 'Upcoming events:'
 # puts 'No upcoming events found' if response.items.empty?
 # response.items.each do |event|
