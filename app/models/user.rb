@@ -56,7 +56,7 @@ class User < ApplicationRecord
   def last_month_var
     start_date_2 = Date.today.at_beginning_of_month - 2.month
     end_date_2 = Date.today.at_end_of_month - 2.month
-    last_month_spent - spent_between_two_date(start_date_2, end_date_2)
+    -(last_month_spent - spent_between_two_date(start_date_2, end_date_2))
   end
 
   def last_month_trend
