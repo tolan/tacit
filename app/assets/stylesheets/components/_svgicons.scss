@@ -29,6 +29,12 @@
 .bell {
   stroke: none;
   fill: #FFD700;
+  display: initial;
+  &:hover {
+    stroke: #FFD700;
+    stroke-width: 1px;
+    transform: scale(1.1);
+  }
 }
 
 // bell-2 items
@@ -49,6 +55,10 @@
   stroke-width: 24px;
   fill: #FFD700;
   display: none;
+}
+
+.other {
+  display: none !important;
 }
 
 .edit {
