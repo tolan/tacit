@@ -18,7 +18,7 @@ class ServicesController < ApplicationController
          @start_time = "12:00pm"
          @end_time = "1:00pm"
 
-      test_variable = 'Rapel: Abonnement Axa Auto'
+      @test_variable = 'Rapel: Abonnement Axa Auto'
       # @test_variable = 'Tollie test -- Axa Auto'
 
       #reminder 1 - today
