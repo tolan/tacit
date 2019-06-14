@@ -39,10 +39,22 @@ if (document.querySelector('#chart-2')){
           'tolerance': 70
         });
 
-
 // Toggle button
-     document.querySelector('.hamburger').addEventListener('click', function() {
-       slideout.toggle();
-       $(".hamburger").toggleClass("active");
-     });
+if(document.querySelector('.hamburger')){
+   document.querySelector('.hamburger').addEventListener('click', function() {
+     slideout.toggle();
+     $(".hamburger").toggleClass("active");
+   });
+}
 
+
+// Google Calendar Bell Icon Toggle
+if (document.querySelector(".bell")) {
+ const bell = document.querySelector(".bell");
+ const bell2 = document.querySelector(".bell-2");
+   bell.addEventListener('click', () => {
+     bell.classList.add("display-none");
+     bell2.classList.remove("display-none");
+     alert("Ajout du rappel [<%= @test_variable %>] à l'agenda Google le <%= @today %> et le <%= @renewal_date %>");
+   });
+ }

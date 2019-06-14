@@ -18,7 +18,8 @@ class ServicesController < ApplicationController
          @start_time = "8:00pm"
          @end_time = "9:00pm"
 
-      @test_variable = 'Rapel: Abonnement Axa Auto'
+      # @test_variable = 'Rapel: Abonnement Axa Auto'
+      @test_variable = 'Tollie Test 123'
 
       #reminder 1 - today
       service.quick_add_event(

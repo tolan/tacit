@@ -1,14 +1,1 @@
 
-
-
-const bell = document.querySelector(".bell");
-const bell2 = document.querySelector(".bell-2");
-
-if (bell) {
-  bell.addEventListener('click', () => {
-    bell.classList.add("display-none");
-    bell2.classList.remove("display-none");
-    alert("Ajout du rappel [<%= @test_variable %>] à l'agenda Google le <%= @today %> et le <%= @renewal_date %>");
-  });
-}
-
