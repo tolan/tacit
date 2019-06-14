@@ -27,6 +27,7 @@ body {
     "lamp title sun sun";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, minmax(20px, auto));
+  margin-top: -120px;
 }
 
 .hero_cta {
@@ -52,20 +53,20 @@ body {
 .cta_btn {
   width: 220px;
   height: 44px;
+  font-family: Raleway;
   // position: absolute;
   cursor: pointer;
   background: $vibrant-blue;
   border: none;
   border-radius: 2px;
-  font-weight: bold;
   font-size: 20px;
-  text-align: center;
+
   color: #ffffff;
   // transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-  padding: 5px 20px;
+  padding: 10px;
+  margin-top: 16px;
 
   &:hover {
-    transform: translateY(-3px);
     opacity: 0.7;
     background: $vibrant-blue-lighter;
     color: white;
