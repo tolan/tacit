@@ -15,8 +15,8 @@ class ServicesController < ApplicationController
     service = GoogleCalendar.new.call
          @renewal_date = " 2020-06-06"
          @today = Date.today
-         @start_time = "12:00pm"
-         @end_time = "1:00pm"
+         @start_time = "8:00pm"
+         @end_time = "9:00pm"
 
       @test_variable = 'Rapel: Abonnement Axa Auto'
       # @test_variable = 'Tollie test -- Axa Auto'
