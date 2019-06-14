@@ -1,31 +1,31 @@
 
+<div class="container-cancel-page-title">
+  <%= image_tag @operator.logo.gsub(/\s|"|'/, ''), class: "logo-cancel-page" %>
+  <h2><%= @operator.name %></h2>
+</div>
 
-<div class="container">
-  <div class="row" >
-    <div class="col-sm-4" >
-      <%= image_tag @operator.logo.gsub(/\s|"|'/, ''), class: "card-subscription-logo" %>
-    </div>
-    <div class="col-sm-8">
-      <h2><%= @operator.name %>
-    </div>
-  </div>
-<div>
-  <h3>Pour joindre le service résiliation de <%= @operator.name %>:</h3>
-    <br>
+<div class="container-cancel-page-content">
+  <h3>Pour joindre le service résiliation de <strong> <%= @operator.name %></strong> : </h3>
+  <div class="text-container">
     <h4>email:</h4>
-      <p>resilier@<%= @operator.name %><%=  %></p>
-    <br>
+    <p>resilier@<%= @operator.name.downcase.split(" ").join("-") %>.com</p>
+  </div>
+  <div class="text-container">
     <h4>Téléphone:</h4>
-      <p>+331 55 92 40 00</p>
-    <br>
+    <a href="tel:+33155924000">+33 15 59 24 00</a>
+  </div>
+  <div class="text-container-address">
     <h4>adresse:</h4>
-      <p><strong><%= @operator.name %> France - service résiliation</strong></p>
-      <p>313 Terrasses de l’Arche</p>
-      <p>92727 Nanterre Cedex</p>
-<br>
-  <h3>A garder en tête:</h2>
+    <p><strong><%= @operator.name %> France - service résiliation</strong>
+    313 Terrasses de l’Arche
+    92727 Nanterre Cedex</p>
+  </div>
+  <div class="text-container-address">
+    <h4>Infos clefs :</h4>
     <p>En tant que particulier, vous disposez d’un délai de rétractation sur votre abonnement : 14 jours à compter de la date de souscription, sans avoir à motiver votre décision. Dans ce cas, vous êtes remboursé pour la période d’assurance non utilisée. Pour procéder, adressez une lettre recommandée de renonciation à <strong><%= @operator.name %></strong> en indiquant votre nom et votre numéro de contrat.</p>
+  </div>
 </div>
-</div>
+
+
 
 

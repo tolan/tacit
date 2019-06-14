@@ -51,7 +51,7 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if action_name != "home" && action_name!="show"%>
+    <% if action_name != "home" %>
     <%= render 'shared/navbardynamic'  %>
     <% end %>
     <div id="panel">

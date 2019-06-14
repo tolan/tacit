@@ -25,10 +25,13 @@
 
 
 .card-unsubscribe {
+  position: sticky;
+  bottom: 16px;
+  right: 16px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   .description {
     font-family: Raleway;
     font-style: normal;

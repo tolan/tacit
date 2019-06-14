@@ -70,187 +70,187 @@ puts "#{cg.first_name}'s conversions added"
 puts "create cyril bis"
 
 
-# url = 'https://uinames.com/api/?ext&region=france'
+url = 'https://uinames.com/api/?ext&region=france'
 
 
-# 1.times do
-# sleep 2
+1.times do
+sleep 2
 
-# user_serialized = open(url).read
-# user = JSON.parse(user_serialized)
+user_serialized = open(url).read
+user = JSON.parse(user_serialized)
 
-# bis = User.create(  email: user["email"],
-#                         first_name: user['name'],
-#                         last_name: user["surname"],
-#                         password: "Password123",
-#                         household: 4,
-#                         photo: user["photo"]
-#                         )
+bis = User.create(  email: user["email"],
+                        first_name: user['name'],
+                        last_name: user["surname"],
+                        password: "Password123",
+                        household: 4,
+                        photo: user["photo"]
+                        )
 
-# puts "#{bis.first_name} created"
+puts "#{bis.first_name} created"
 
-# csv_options = { col_sep: ',', headers: :first_row }
-# filepath    = Rails.root + 'db/cyril_bis.csv'
+csv_options = { col_sep: ',', headers: :first_row }
+filepath    = Rails.root + 'db/cyril_bis.csv'
 
-# CSV.foreach(filepath, csv_options) do |row|
-#   # Here, row is an array of columns
-#   Operation.create(
-#     user: bis,
-#     amount_cents: row["amount"].to_f * 100,
-#     date: row["date"],
-#     description: row["description"]
-#   )
-# end
+CSV.foreach(filepath, csv_options) do |row|
+  # Here, row is an array of columns
+  Operation.create(
+    user: bis,
+    amount_cents: row["amount"].to_f * 100,
+    date: row["date"],
+    description: row["description"]
+  )
+end
 
-# puts "#{bis.first_name}'s conversions added to the database"
+puts "#{bis.first_name}'s conversions added to the database"
 
-# end
+end
 
-# puts "create similar users"
+puts "create similar users"
 
-# 2.times do
-#   sleep 2
+2.times do
+  sleep 2
 
-#   user_serialized = open(url).read
-#   user = JSON.parse(user_serialized)
-
-
-#   similar = User.create(  email: user["email"],
-#                           first_name: user['name'],
-#                           last_name: user["surname"],
-#                           password: "Password123",
-#                           household: 1,
-#                           photo: user["photo"]
-#                           )
-
-#   puts "#{similar.first_name} created"
-
-#   csv_options = { col_sep: ',', headers: :first_row }
-#   filepath    = Rails.root + 'db/similar_users.csv'
-
-#   CSV.foreach(filepath, csv_options) do |row|
-#     # Here, row is an array of columns
-#     Operation.create(
-#       user: similar,
-#       amount_cents: row["amount"].to_f * 100,
-#       date: row["date"],
-#       description: row["description"]
-#     )
-#   end
-#   puts "#{similar.first_name}'conversions added to the database"
-# end
-
-# 4.times do
-#   sleep 2
-
-#   user_serialized = open(url).read
-#   user = JSON.parse(user_serialized)
+  user_serialized = open(url).read
+  user = JSON.parse(user_serialized)
 
 
-#   average = User.create(  email: user["email"],
-#                           first_name: user['name'],
-#                           last_name: user["surname"],
-#                           password: "Password123",
-#                           household: 1,
-#                           photo: user["photo"]
-#                           )
+  similar = User.create(  email: user["email"],
+                          first_name: user['name'],
+                          last_name: user["surname"],
+                          password: "Password123",
+                          household: 1,
+                          photo: user["photo"]
+                          )
 
-#   puts "#{average.first_name} created"
+  puts "#{similar.first_name} created"
 
-#   csv_options = { col_sep: ',', headers: :first_row }
-#   filepath    = Rails.root + 'db/average_user.csv'
+  csv_options = { col_sep: ',', headers: :first_row }
+  filepath    = Rails.root + 'db/similar_users.csv'
 
-#   CSV.foreach(filepath, csv_options) do |row|
-#     # Here, row is an array of columns
-#     Operation.create(
-#       user: average,
-#       amount_cents: row["amount"].to_f * 100,
-#       date: row["date"],
-#       description: row["description"]
-#     )
-#   end
-#   puts "#{average.first_name}'conversions added to the database"
-# end
+  CSV.foreach(filepath, csv_options) do |row|
+    # Here, row is an array of columns
+    Operation.create(
+      user: similar,
+      amount_cents: row["amount"].to_f * 100,
+      date: row["date"],
+      description: row["description"]
+    )
+  end
+  puts "#{similar.first_name}'conversions added to the database"
+end
 
-# 8.times do
-#   sleep 2
+4.times do
+  sleep 2
 
-#   user_serialized = open(url).read
-#   user = JSON.parse(user_serialized)
-
-
-#   low = User.create(  email: user["email"],
-#                           first_name: user['name'],
-#                           last_name: user["surname"],
-#                           password: "Password123",
-#                           household: 1,
-#                           photo: user["photo"]
-#                           )
-
-#   puts "#{low.first_name} created"
-
-#   csv_options = { col_sep: ',', headers: :first_row }
-#   filepath    = Rails.root + 'db/low_user.csv'
-
-#   CSV.foreach(filepath, csv_options) do |row|
-#     # Here, row is an array of columns
-#     Operation.create(
-#       user: low,
-#       amount_cents: row["amount"].to_f * 100,
-#       date: row["date"],
-#       description: row["description"]
-#     )
-#   end
-#   puts "#{low.first_name}'conversions added to the database"
-# end
+  user_serialized = open(url).read
+  user = JSON.parse(user_serialized)
 
 
-# 2.times do
-#   sleep 2
+  average = User.create(  email: user["email"],
+                          first_name: user['name'],
+                          last_name: user["surname"],
+                          password: "Password123",
+                          household: 1,
+                          photo: user["photo"]
+                          )
 
-#   user_serialized = open(url).read
-#   user = JSON.parse(user_serialized)
+  puts "#{average.first_name} created"
+
+  csv_options = { col_sep: ',', headers: :first_row }
+  filepath    = Rails.root + 'db/average_user.csv'
+
+  CSV.foreach(filepath, csv_options) do |row|
+    # Here, row is an array of columns
+    Operation.create(
+      user: average,
+      amount_cents: row["amount"].to_f * 100,
+      date: row["date"],
+      description: row["description"]
+    )
+  end
+  puts "#{average.first_name}'conversions added to the database"
+end
+
+8.times do
+  sleep 2
+
+  user_serialized = open(url).read
+  user = JSON.parse(user_serialized)
 
 
-#   lowbis = User.create(  email: user["email"],
-#                           first_name: user['name'],
-#                           last_name: user["surname"],
-#                           password: "Password123",
-#                           household: 1,
-#                           photo: user["photo"]
-#                           )
+  low = User.create(  email: user["email"],
+                          first_name: user['name'],
+                          last_name: user["surname"],
+                          password: "Password123",
+                          household: 1,
+                          photo: user["photo"]
+                          )
 
-#   puts "#{lowbis.first_name} created"
+  puts "#{low.first_name} created"
 
-#   csv_options = { col_sep: ',', headers: :first_row }
-#   filepath    = Rails.root + 'db/low_user_bis.csv'
+  csv_options = { col_sep: ',', headers: :first_row }
+  filepath    = Rails.root + 'db/low_user.csv'
 
-#   CSV.foreach(filepath, csv_options) do |row|
-#     # Here, row is an array of columns
-#     Operation.create(
-#       user: lowbis,
-#       amount_cents: row["amount"].to_f * 100,
-#       date: row["date"],
-#       description: row["description"]
-#     )
-#   end
-#   puts "#{lowbis.first_name}'conversions added to the database"
-# end
+  CSV.foreach(filepath, csv_options) do |row|
+    # Here, row is an array of columns
+    Operation.create(
+      user: low,
+      amount_cents: row["amount"].to_f * 100,
+      date: row["date"],
+      description: row["description"]
+    )
+  end
+  puts "#{low.first_name}'conversions added to the database"
+end
 
-# puts "processing transactions..."
 
-# bridge_users = Bridge::Users::List.call # lister les user côté Bridge => bridge_users
+2.times do
+  sleep 2
 
-# bridge_cyril = bridge_users.find {|user| user["email"] == cg.email} # récupérer le bridge_user correspondant à Cyril => bridge_cyril
+  user_serialized = open(url).read
+  user = JSON.parse(user_serialized)
 
-# cg.uuid = bridge_cyril["uuid"]# récupérer les transactions de bridge_cyril
 
-#   # bridge_cyril_transactions = Bridge::Transactions::List.call(cg)
-# # enregistrer les operations et les associées à cyril
-# puts "Creating Operations!"
-#   SaveInDb::Transactions.call(cg)
+  lowbis = User.create(  email: user["email"],
+                          first_name: user['name'],
+                          last_name: user["surname"],
+                          password: "Password123",
+                          household: 1,
+                          photo: user["photo"]
+                          )
 
-# -------------------------------------------------------
+  puts "#{lowbis.first_name} created"
+
+  csv_options = { col_sep: ',', headers: :first_row }
+  filepath    = Rails.root + 'db/low_user_bis.csv'
+
+  CSV.foreach(filepath, csv_options) do |row|
+    # Here, row is an array of columns
+    Operation.create(
+      user: lowbis,
+      amount_cents: row["amount"].to_f * 100,
+      date: row["date"],
+      description: row["description"]
+    )
+  end
+  puts "#{lowbis.first_name}'conversions added to the database"
+end
+
+puts "processing transactions..."
+
+bridge_users = Bridge::Users::List.call # lister les user côté Bridge => bridge_users
+
+bridge_cyril = bridge_users.find {|user| user["email"] == cg.email} # récupérer le bridge_user correspondant à Cyril => bridge_cyril
+
+cg.uuid = bridge_cyril["uuid"]# récupérer les transactions de bridge_cyril
+
+  # bridge_cyril_transactions = Bridge::Transactions::List.call(cg)
+# enregistrer les operations et les associées à cyril
+puts "Creating Operations!"
+  SaveInDb::Transactions.call(cg)
+
+-------------------------------------------------------
 User.all.each do |user|
   Converttransaction.call(user)
 end

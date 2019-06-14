@@ -1,6 +1,6 @@
 
 <div class="card-stats">
-  <div class="card-stats-item"><span class="data-point"><%= subscription.total_spent %>€</span><span class="data-label">depuis <strong><%= subscription.operations.order(date: :desc).last.date %></strong></span></div>
-  <div class="card-stats-item"><span class="data-point"> <%= number_to_percentage(@last_month_share, precision: 0) %></span><span class="data-label">des dépenses</span></div>
-  <div class="card-stats-item"><span class="data-point"><%= number_to_percentage(@community_coverage * 100, pecision: 0)  %></span><span class="data-label">de la communauté</span></div>
+  <div class="card-stats-item"><span class="data-point"><%= number_with_precision(subscription.total_spent, precision: 5, significant: true, strip_insignificant_zeros: true) %>€</span><span class="data-label">depuis <strong><%= subscription.operations.order(date: :desc).last.date %></strong></span></div>
+  <div class="card-stats-item"><span class="data-point">17,5%</span><span class="data-label">des dépenses</span></div>
+  <div class="card-stats-item"><span class="data-point"><%= number_with_precision(@community_coverage * 100, precision: 5, significant: true, strip_insignificant_zeros: true)  %> % </span><span class="data-label">de la communauté</span></div>
 </div>
