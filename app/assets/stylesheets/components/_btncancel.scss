@@ -1,13 +1,13 @@
 .float{
-  // position:absolute;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
   width:60px;
   height:60px;
-  // bottom:20px;
-  // right:20px;
+  bottom:20px;
+  right:20px;
   background-color: $vibrant-blue;
   color:#FFF;
   border-radius:50px;
