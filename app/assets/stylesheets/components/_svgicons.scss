@@ -31,6 +31,26 @@
   fill: #FFD700;
 }
 
+// bell-2 items
+
+.bell-2, .list {
+  margin-right: 8px;
+}
+
+.bell-2 path,
+.bell-2 polygon
+.bell-2 rect {
+  fill: #FFD700;
+}
+
+
+.bell-2 {
+  stroke: black;
+  stroke-width: 24px;
+  fill: #FFD700;
+  display: none;
+}
+
 .edit {
   margin-left: 8px;
   margin-bottom: 3px;
