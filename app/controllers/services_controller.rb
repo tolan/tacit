@@ -11,43 +11,27 @@ class ServicesController < ApplicationController
     Converttransaction.call(transactions)
   end
 
-   def google_calendar_item()
-    #check for authentication
-      #no authentication -- poour
-        #missing actions
-
-      #with exisiting authentication, have item that you can then manipulate
-
-      #get form, for variables {opeartion.name, date, start_time, end_time}
+   def google_calendar_item
     service = GoogleCalendar.new.call
-       date = "June 6th, 2020"
-       start_time = "9:00am"
-       end_time = "10:00am"
+         @renewal_date = " 2020-06-06"
+         @today = Date.today
+         @start_time = "8:00pm"
+         @end_time = "9:00pm"
 
+      @test_variable = 'Rapel: Abonnement Axa Auto'
 
-    test_variable = 'Rapel: Abonnement Axa Auto'
+      #reminder 1 - today
+      service.quick_add_event(
+      'primary',
+      "#{@test_variable} on #{@today} #{@start_time}-#{@end_time}")
 
-    #reminder 1 - today
-    result = service.quick_add_event(
-    'primary',
-    "#{test_variable} on #{Date.today} #{start_time}-#{end_time}")
+      #reminder 1 - renewal date
+      service.quick_add_event(
+     'primary',
+     "#{@test_variable} on #{@renewal_date} #{@start_time}-#{@end_time}")
+  respond_to do |format|
+    format.js
+  end
 
-
-
-#reminder 2
-     result = service.quick_add_event(
-   'primary',
-   "#{test_variable} on #{date} #{start_time}-#{end_time}")
-
-  #test mannual
-#
-#  result = service.quick_add_event(
-#  'primary',
-#  'Late Night Test -- on June 14th 9:00am-10:00am')
-#
-#  result2 = service.quick_add_event(
-#    'primary',
-#    'Late Night Test -- on June 6th 2020 9:00am-10:00am')
-#  print result.id
  end
 end

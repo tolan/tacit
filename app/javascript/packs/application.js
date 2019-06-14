@@ -24,11 +24,8 @@ if (document.querySelector('#chart-2')){
   const chart_show = document.querySelector('#chart-2');
   const data_show = chart_show.dataset.show;
   const parsed_data_show = JSON.parse(data_show)
-  new Chartkick.LineChart("chart-2", parsed_data_show, {
-    colors: ["#004BB4", "#F8D1BE"], points: false, suffix: "€", thousands: " ", legend: "bottom", defer: true,
-      dataset: {
-
-  }
+  new Chartkick.AreaChart("chart-2", parsed_data_show, {
+    colors: ["#004BB4", "#F8D1BE"], points: false, suffix: "€", thousands: " ", legend: "bottom",
     })
   };
 
