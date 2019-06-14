@@ -27,8 +27,31 @@
 }
 
 .bell {
-  stroke: none;
+  stroke: #FFD700;
+  stroke-width: 1px;
   fill: #FFD700;
+}
+
+// bell-2 items
+
+.bell-2, .list {
+  margin-right: 8px;
+}
+
+.bell-2 path,
+.bell-2 polygon
+.bell-2 rect {
+  fill: #FFD700;
+}
+
+.bell-2 {
+  stroke: black;
+  stroke-width: 12px;
+  fill: #FFD700;
+}
+
+.display-none {
+  display: none;
 }
 
 .edit {
