@@ -2,7 +2,9 @@
   <p><strong>Subscriptions</strong> last month</p>
   <h2><%=  curr_format(user.last_month_spent) %></h2>
   <div class="d-flex justify-content-center mr-3">
-    <%= image_tag("#arrow_down.png", class: "card-subscription-trend") %>
+
+    <%= image_tag("arrow_down.png", class: "card-subscription-trend") %>
+
     <% if user.last_month_trend == 'arrow_up' %>
       <div class="card-synthesis-trend-up">
         <p>increase by <span class="var-amount"><%= curr_format(user.last_month_var.abs) %></span></p>
