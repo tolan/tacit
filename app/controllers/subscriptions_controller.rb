@@ -7,6 +7,15 @@ class SubscriptionsController < ApplicationController
   end
 
   def show
+    @foo = 'bar'
+
+    #google cal items duplicate
+    @test_variable = 'Rapel: Abonnement Axa Auto'
+    @renewal_date = " 2020-06-06"
+    @today = Date.today
+    @start_time = "8:00pm"
+    @end_time = "9:00pm"
+
     @user = current_user
     @subscription = Subscription.find(params[:id])
     @last_month_share = @subscription.last_month_spent.to_f / @user.last_month_spent.to_f

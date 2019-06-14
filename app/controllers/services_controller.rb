@@ -13,13 +13,15 @@ class ServicesController < ApplicationController
 
    def google_calendar_item
     service = GoogleCalendar.new.call
+
+         @test_variable = 'Rapel: Abonnement Axa Auto'
          @renewal_date = " 2020-06-06"
          @today = Date.today
          @start_time = "8:00pm"
          @end_time = "9:00pm"
 
       # @test_variable = 'Rapel: Abonnement Axa Auto'
-      @test_variable = 'Tollie Test 123'
+      # @test_variable = 'Tollie Test 123'
 
       #reminder 1 - today
       service.quick_add_event(

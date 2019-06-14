@@ -55,6 +55,6 @@ if (document.querySelector(".bell")) {
    bell.addEventListener('click', () => {
      bell.classList.add("display-none");
      bell2.classList.remove("display-none");
-     alert("Ajout du rappel [<%= @test_variable %>] à l'agenda Google le <%= @today %> et le <%= @renewal_date %>");
+     alert(`Ajout du rappel ${document.querySelector('#test_variable').dataset.myData} à l'agenda Google le ${document.querySelector('#today').dataset.myData} et le ${document.querySelector('#renewal_date').dataset.myData}`);
    });
  }
